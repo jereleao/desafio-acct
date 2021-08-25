@@ -29,3 +29,17 @@ Após fazer as alterações relativas a sua parte no **projeto**:
 Prepare as alterações para o *upload*, usando os commandos *git add .* e *git commit*. No que diz respeito ao **commit**, lembre-se de comentar apropriadamente, descrevendo o que foi feito nesse estágio do seu código;
 
 Usando o comando *git push -u origin master*, faça o **upload** das alterações feitas.
+
+4. Finalmente, registre (**open**) o **Pull request** das alterações efetuadas
+
+![screenshot 01](img/screenshot_02.png)
+
+Na janela do navegador, no seu *repositório* no **Github.com**, clique no botão **contribute** e siga os passos indicados.
+
+5. Sugestões
+
+Por fim, fiquem à vontade para propor alterações no fluxo de trabalho.
+
+Lembrando que, como se trata de um trabalho em grupo, o mínimo de organização se faz necessário, levando-se em consideração que nem todos do time estão disponíveis a qualquer momento do dia, ou da noite.
+
+Ou seja, é preciso considerar que nem sempre a comunicação se dará de forma síncrona e o código precisa rodar sem erros.
