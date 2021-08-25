@@ -3,4 +3,5 @@
 
 Arquivos de imagem 
 
-.   screenshot_01.txt
+.   screenshot_00.png - Imagem inicial (repo de Jeremias Leão);
+.   screenshot_01.png - Imagem inicial (repo de Franklin Siqueira);
