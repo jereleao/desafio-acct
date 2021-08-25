@@ -1,0 +1,7 @@
+// Copyright 2021 Franklin Siqueira.
+// SPDX-License-Identifier: Apache-2.0
+
+Arquivos de imagem 
+
+.   screenshot_00.png - Imagem inicial (repo de Jeremias Leão);
+.   screenshot_01.png - Imagem inicial (repo de Franklin Siqueira);
