@@ -17,5 +17,5 @@ Sugere-se colocar neste arquivo os links relativos ao projeto (inclusive os dos 
 #### Layout proposto (basta copiar e editar última linha):
 | data   |      Inserção/Alteração      |  Teamate |
 |----------|:-------------:|------:|
-| 25/08/21 |  arquivo [INITGUIDE.md](/master/docs/INITGUIDE.md) | Franklin |
-| 25/08/21 |  arquivo [changelog.md](/master/docs/changelog.md) | Franklin |
+| 25/08/21 |  arquivo [INITGUIDE.md](/docs/INITGUIDE.md) | Franklin |
+| 25/08/21 |  arquivo [changelog.md](/docs/changelog.md) | Franklin |
