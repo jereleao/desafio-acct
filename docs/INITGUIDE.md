@@ -4,9 +4,13 @@
 
 1. Fork do projeto para o Github do componente do grupo (teamate)
 
+![screenshot 01](img/screenshot_00.png)
+
     .   Estando no **repositório do projeto**, observe o botão *fork* canto superior direito da tela do seu navegador. Clique nesse botão para criar uma cópia para a sua conta no Github.com;
 
 2. Clone do projeto para desenvolvimento em sua máquina
+
+![screenshot 01](img/screenshot_01.png)
 
     .   Vá para o repositório criado em sua conta. Já na tela do repositório copiado, observe o botão *code* (em algumas telas ele será um botão verde, no lado direito, na quarta linha da tela do navegador. Ao clicar nesse botão, irá aparecer um trecho de código com a seguinte aparência:
 
@@ -18,4 +22,10 @@
     
         *git clone https: //github.com/<**conta_github**>/desafio-acct.git*
 
-3. 
+3. Push das alterações feitas para o repositório **remoto**
+
+    .   Após fazer as alterações relativas a sua parte no **projeto**:
+
+    .   Prepare as alterações para o *upload*, usando os commandos *git add .* e *git commit*. No que diz respeito ao **commit**, lembre-se de comentar apropriadamente, descrevendo o que foi feito nesse estágio do seu código;
+
+    . Usando o comando *git push -u origin master*, faça o **upload** das alterações feitas.
