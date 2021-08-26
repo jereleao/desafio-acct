@@ -41,7 +41,7 @@ export const HoverContent = styled.div`
 
   p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 300;
     line-height: 1.6;
     margin-bottom: 1rem;

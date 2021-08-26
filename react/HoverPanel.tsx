@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Panel from './components/panel'
-import * as S from './HoverPanelStyle'
+import * as S from './styles/hover-panel'
 
 const HoverPanel: StorefrontFunctionComponent = ({}) => {
   return (
