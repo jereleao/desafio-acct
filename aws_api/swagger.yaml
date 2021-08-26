@@ -1,0 +1,142 @@
+swagger: "2.0"
+info:
+  description: "Esta e uma API para cadastro e atualizacao de leads desenvolvida para o desafio final do HiringCorder#2 patrocinado pela ACCT e outras empresas"
+  version: "0.0.1"
+  title: "AWS Leads API"
+
+host: "wfue8x1b1a.execute-api.us-east-1.amazonaws.com"
+basePath: "/v1"
+tags:
+- name: "lead"
+  description: "Manipulacao e consulta de leads"
+
+  
+schemes:
+- "https"
+- "http"
+paths:
+  /leads:
+    post:
+      tags:
+      - "lead"
+      summary: "Add a new lead to the data"
+      description: ""
+      operationId: "addLead"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Lead information"
+        required: true
+        schema:
+          $ref: "#/definitions/Lead"
+      responses:
+        "200":
+          description: "successful operation"
+    get:
+      tags:
+      - "lead"
+      summary: "Get lead by email"
+      description: ""
+      operationId: "getLeadByEmail"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "email"
+        in: "query"
+        description: "The email that needs to be fetched."
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/LeadList"
+    put:
+      tags:
+      - "lead"
+      summary: "Updated lead"
+      description: "This can only be done with lead id."
+      operationId: "updateLead"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "query"
+        description: "name that need to be updated"
+        required: true
+        type: "string"
+      - in: "body"
+        name: "body"
+        description: "Updated user object"
+        required: true
+        schema:
+          $ref: "#/definitions/Lead"
+      responses:
+        "200":
+          description: "successful operation"
+  /leads/all:
+    get:
+      tags:
+      - "lead"
+      summary: "Logs user into the system"
+      description: ""
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/LeadList"
+definitions:
+  Lead:
+    type: "object"
+    required: ["name","email","phone","country","company"]
+    properties:
+      name:
+        type: "string"
+      email:
+        type: "string"
+      phone:
+        type: "string"
+      country:
+        type: "string"
+      company:
+        type: "string"
+      company_position:
+        type: "string"
+      company_size:
+        type: "string"
+      url:
+        type: "string"
+      message:
+        type: "string"
+      client_type:
+        type: "string"
+        default: "prospect"
+        enum:
+        - "client"
+        - "prospect"
+    xml:
+      name: "Lead"
+  LeadList:
+    type: "object"
+    required: ["Items","Count","ScannedCount"]
+    properties:
+      Items:
+        type: "array"
+        items: {
+          $ref: "#/definitions/Lead"
+        }
+      Count:
+        type: "integer"
+      ScannedCount:
+        type: "integer"
+    xml:
+      name: "LeadList"
+externalDocs:
+  description: "Issue AWS API #6"
+  url: "https://github.com/JerryLion91/desafio-acct/issues/6"
