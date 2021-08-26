@@ -1,7 +1,7 @@
 import React from 'react'
 import * as S from './styled'
 
-interface IPanelProps {
+interface IServiceCard {
   bgImageUrl: string
   mainTitle: string
   hoverTitle: string
@@ -9,7 +9,7 @@ interface IPanelProps {
   link: string
 }
 
-const Panel: React.FC<IPanelProps> = ({
+const ServiceCard: React.FC<IServiceCard> = ({
   bgImageUrl,
   mainTitle,
   hoverTitle,
@@ -17,21 +17,21 @@ const Panel: React.FC<IPanelProps> = ({
   link,
 }) => {
   return (
-    <S.PanelCard url={bgImageUrl}>
+    <S.Card url={bgImageUrl}>
       <S.MainContent>
         <h4>
           {mainTitle} <span>_</span>
         </h4>
       </S.MainContent>
       <S.HoverContent>
-        <h4>{hoverTitle}</h4>
+        <h3>{hoverTitle}</h3>
         <p>{text}</p>
         <a href={link}>
           <span>SAIBA MAIS</span>
         </a>
       </S.HoverContent>
-    </S.PanelCard>
+    </S.Card>
   )
 }
 
-export default Panel
+export default ServiceCard

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const PanelContent = styled.div`
+export const ServicesContainer = styled.section`
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 1fr;

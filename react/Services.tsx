@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Panel from './components/panel'
-import * as S from './styles/hover-panel'
+import ServiceCard from './components/service-card'
+import * as S from './styles/services'
 
-const HoverPanel: StorefrontFunctionComponent = ({}) => {
+const Services: StorefrontFunctionComponent = ({}) => {
   return (
-    <S.PanelContent>
-      <Panel
+    <S.ServicesContainer>
+      <ServiceCard
         bgImageUrl="https://acct.global/wp-content/uploads/2020/11/flip-delivery-squads.jpg"
         mainTitle="Quality Assurance"
         hoverTitle="Confiança e credibilidade"
@@ -17,7 +17,7 @@ const HoverPanel: StorefrontFunctionComponent = ({}) => {
               contra defeitos e mal funcionamento."
         link="https://dev-acct.pantheonsite.io/pt/servicos/quality-assurance/"
       />
-      <Panel
+      <ServiceCard
         bgImageUrl="https://acct.global/wp-content/uploads/2020/11/flip-growth.jpg"
         mainTitle="Growth e Data"
         hoverTitle="Insights para o amanhã"
@@ -28,7 +28,7 @@ const HoverPanel: StorefrontFunctionComponent = ({}) => {
               necessárias para prever o futuro."
         link="https://acct.global/servicos/growth-data/"
       />
-      <Panel
+      <ServiceCard
         bgImageUrl="https://acct.global/wp-content/uploads/2020/11/flip-exp-design.jpg"
         mainTitle="Experience Design"
         hoverTitle="Conectando com pessoas"
@@ -39,7 +39,7 @@ const HoverPanel: StorefrontFunctionComponent = ({}) => {
               seus projetos e processos de forma inteligente."
         link="https://acct.global/pt/servicos/experience-design/"
       />
-      <Panel
+      <ServiceCard
         bgImageUrl="https://acct.global/wp-content/uploads/2020/11/flip-tecnology.jpg"
         mainTitle="Tecnologia"
         hoverTitle="Criando o futuro"
@@ -50,15 +50,8 @@ const HoverPanel: StorefrontFunctionComponent = ({}) => {
               soluções digitais."
         link="https://acct.global/pt/servicos/tecnologia/"
       />
-    </S.PanelContent>
+    </S.ServicesContainer>
   )
 }
 
-// Countdown.schema = {
-//   title: 'editor.countdown.title',
-//   description: 'editor.countdown.description',
-//   type: 'object',
-//   properties: {},
-// }
-
-export default HoverPanel
+export default Services

@@ -27,29 +27,33 @@ export const MainContent = styled.div`
 
 export const HoverContent = styled.div`
   display: none;
-  width: 85%;
+  width: 80%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  h4 {
+  h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.58rem;
     font-weight: 600;
-    margin-bottom: 0.50rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: #040404;
   }
 
   p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.6;
     margin-bottom: 1rem;
+    color: #1d1d1d;
   }
 
   a {
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     font-weight: 400;
     text-decoration: underline;
     color: #1d1d1d;
@@ -59,16 +63,16 @@ export const HoverContent = styled.div`
     }
   }
 `
-interface IPanelCard {
+interface ICard {
   url: string
 }
 
-export const PanelCard = styled.div<IPanelCard>`
+export const Card = styled.div<ICard>`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 400px;
   background-image: url(${props => props.url});
   background-size: cover;
   background-position: center center;
@@ -88,5 +92,7 @@ export const PanelCard = styled.div<IPanelCard>`
 
   h4 {
     font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
   }
 `

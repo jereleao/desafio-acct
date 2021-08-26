@@ -1,5 +1,8 @@
 {
-  "hoverPanel": {
-    "component": "HoverPanel"
+  "services": {
+    "component": "Services"
+  },
+  "clients": {
+    "component": "Clients"
   }
 }

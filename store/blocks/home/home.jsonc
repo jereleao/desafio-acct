@@ -1,16 +1,17 @@
 {
   "store.home": {
     "blocks": [
-      "rich-text",
-      "hoverPanel"
+      // "rich-text",
+      "clients",
+      "services"
     ]
-  },
-  "rich-text": {
-    "props": {
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
-    }
   }
+  // "rich-text": {
+  //   "props": {
+  //     "text": "VTEX Store Framework",
+  //     "textAlignment": "CENTER",
+  //     "textPosition": "CENTER",
+  //     "font": "t-heading-1"
+  //   }
+  // }
 }
