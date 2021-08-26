@@ -1,5 +1,11 @@
 {
-    "store.custom#about-us": {
-      "path": "/about-us"
-    }
+  "store.custom#about-us": {
+    "path": "/about-us"
+  },
+  "store.custom#services": {
+    "path": "/servicos"
+  },
+  "store.custom#industries": {
+    "path": "/categorias-industriais"
   }
+}
