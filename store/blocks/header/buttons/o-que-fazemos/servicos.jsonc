@@ -1,0 +1,85 @@
+{
+  "overlay-trigger#o-que-fazemos-servicos": {
+    "props": {
+      "trigger": "hover"
+    },
+
+    "children": [
+      "flex-layout.row#o-que-fazemos-servicos",
+      "overlay-layout#o-que-fazemos-servicos"
+    ]
+  },
+  "flex-layout.row#o-que-fazemos-servicos": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "menu-item"
+    },
+    "children": ["link#servicos", "flex-layout.col#nav-down"]
+  },
+  "link#servicos": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "serviços",
+      "blockClass": "menu-link-servicos"
+    }
+  },
+  "overlay-layout#o-que-fazemos-servicos": {
+    "props": {
+      "placement": "right",
+      "offsets": { "skidding": 48, "distance": 0 }
+    },
+    "children": ["flex-layout.col#o-que-fazemos-servicos-overlay"]
+  },
+  "flex-layout.col#o-que-fazemos-servicos-overlay": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "link#quality-assurance",
+      "link#data-e-growth",
+      "link#experience-design",
+      "link#technology"
+    ]
+  },
+  "link#quality-assurance": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "quality assurance",
+      "blockClass": "menu-link-nav"
+    }
+  },
+  "link#data-e-growth": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "data e growth",
+      "blockClass": "menu-link-nav"
+    }
+  },
+  "link#experience-design": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "experience design",
+      "blockClass": "menu-link-nav"
+    }
+  },
+  "link#technology": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "Tecnologia",
+      "blockClass": "menu-link-nav"
+    }
+  }
+}
