@@ -1,5 +1,8 @@
 {
-  "countdown": {
-    "component": "Countdown"
+  "services": {
+    "component": "Services"
+  },
+  "clients": {
+    "component": "Clients"
   }
 }
