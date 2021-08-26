@@ -6,9 +6,7 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": [
-      "sticky-layout#desktop"
-    ]
+    "children": ["sticky-layout#desktop"]
   },
   "sticky-layout#desktop": {
     "props": {
@@ -22,22 +20,24 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "colGap": 3
     },
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
-      "search-bar",
+      "flex-layout.col#inicio",
+      "flex-layout.col#acct",
+      "flex-layout.col#o-que-fazemos",
+      "flex-layout.col#blog",
+      "flex-layout.col#parceiros",
+      "flex-layout.col#contato",
+      "flex-layout.col#spacer",
       "locale-switcher",
-      "login",
       "minicart.v2"
     ]
   },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
+
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
@@ -48,10 +48,37 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://acct.global/wp-content/uploads/2021/06/logo-acct-black.svg",
-      "width": "110"
+      "url": "assets/logo-acct-black.svg",
+      "width": "145"
     }
   },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#nav-down": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "nav-down"
+    },
+    "children": ["icon#nav-down"]
+  },
+  "icon#nav-down": {
+    "props": {
+      "id": "nav-caret--down",
+      "size": 12,
+      "isActive": true
+    }
+  },
+
+  //
+
+  //
+
+  //
+
+  //
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },
