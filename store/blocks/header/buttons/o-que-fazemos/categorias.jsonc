@@ -21,7 +21,7 @@
   },
   "link#categorias": {
     "props": {
-      "href": "/",
+      "href": "/categorias-industriais",
       "displayMode": "button",
       "buttonProps": { "variant": "secondary", "size": "small" },
       "label": "categorias industriais",
