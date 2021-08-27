@@ -21,7 +21,7 @@
   },
   "link#servicos": {
     "props": {
-      "href": "/",
+      "href": "/servicos",
       "displayMode": "button",
       "buttonProps": { "variant": "secondary", "size": "small" },
       "label": "serviços",
