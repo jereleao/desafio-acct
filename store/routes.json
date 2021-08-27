@@ -1,6 +1,6 @@
 {
   "store.custom#about-us": {
-    "path": "/about-us"
+    "path": "/sobre-nos"
   },
   "store.custom#services": {
     "path": "/servicos"
@@ -9,3 +9,7 @@
     "path": "/categorias-industriais"
   }
 }
+   
+    
+
+
