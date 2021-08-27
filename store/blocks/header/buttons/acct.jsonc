@@ -47,7 +47,7 @@
   },
   "link#about-us": {
     "props": {
-      "href": "/about-us",
+      "href": "/sobre-nos",
       "displayMode": "button",
       "buttonProps": { "variant": "secondary", "size": "small" },
       "label": "sobre nós",
