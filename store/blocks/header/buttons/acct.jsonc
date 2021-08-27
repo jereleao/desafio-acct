@@ -1,0 +1,75 @@
+{
+  "flex-layout.col#acct": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "menu-item"
+    },
+    "children": ["overlay-trigger#acct"]
+  },
+  "overlay-trigger#acct": {
+    "props": {
+      "trigger": "hover"
+    },
+    "children": ["flex-layout.row#acct", "overlay-layout#acct"]
+  },
+  "flex-layout.row#acct": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "menu-item"
+    },
+    "children": ["link#acct", "flex-layout.col#nav-down"]
+  },
+  "link#acct": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "acct",
+      "blockClass": "menu-link-nav"
+    }
+  },
+  "overlay-layout#acct": {
+    "props": {
+      "placement": "bottom",
+      "offsets": { "skidding": 50, "distance": 30 }
+    },
+    "children": ["flex-layout.col#acct-overlay"]
+  },
+  "flex-layout.col#acct-overlay": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "menu-item"
+    },
+    "children": ["link#about-us", "link#imprensa", "link#carreiras"]
+  },
+  "link#about-us": {
+    "props": {
+      "href": "/about-us",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "sobre nós",
+      "blockClass": "menu-link"
+    }
+  },
+  "link#imprensa": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "imprensa e mídia",
+      "blockClass": "menu-link"
+    }
+  },
+  "link#carreiras": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "carreiras",
+      "blockClass": "menu-link"
+    }
+  }
+}

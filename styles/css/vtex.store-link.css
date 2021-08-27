@@ -1,0 +1,14 @@
+.buttonLink--menu-link,
+.buttonLink--menu-link-nav,
+.buttonLink--menu-link-servicos {
+  border: none;
+}
+.buttonLink--menu-link:hover {
+  border: none;
+}
+.label--menu-link-nav {
+  padding: 0 5px 0 16px;
+}
+.label--menu-link-servicos {
+  padding: 0 116.32px 0 16px;
+}
