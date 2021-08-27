@@ -25,13 +25,6 @@
       "blockClass": "page-title"
     }
   },
-  "rich-text#underscore": {
-    "props": {
-      "text": "_",
-      "font": "t-heading-1",
-      "blockClass": "page-title-blink"
-    }
-  },
   "image#industries-banner": {
     "props": {
       "src": "assets/industries/cover-industries.jpg",

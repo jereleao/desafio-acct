@@ -7,8 +7,7 @@
     "assets": "0.x",
     "styles": "2.x",
     "react": "3.x",
-    "store": "0.x",
-    "messages": "1.x"
+    "store": "0.x"
   },
   "scripts": {
     "postreleasy": "vtex publish --verbose"
