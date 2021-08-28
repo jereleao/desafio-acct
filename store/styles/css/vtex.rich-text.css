@@ -14,3 +14,22 @@
     opacity: 0;
   }
 }
+
+.paragraph--about-title,
+.paragraph--about-text {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+}
+
+.paragraph--about-title {
+  font-size: 2rem;
+}
+
+.paragraph--about-text {
+  font-size: 1.25rem;
+}
+
+.paragraph--about-button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}

@@ -4,12 +4,9 @@
   },
   "store.custom#services": {
     "path": "/servicos"
-  },
-  "store.custom#industries": {
-    "path": "/categorias-industriais"
   }
 }
-   
-    
+
+
 
 
