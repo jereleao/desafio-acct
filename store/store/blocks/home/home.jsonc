@@ -3,6 +3,14 @@
     "blocks": ["flex-layout.row#about-us", "clients", "services", "formulario"]
   },
 
+  "services": {
+    "props": {
+      "squadImg": "assets/hovers/delivery-squads.jpg",
+      "growthImg": "assets/hovers/growth.jpg",
+      "designImg": "assets/hovers/exp-design.jpg",
+      "tecImg": "assets/hovers/tecnology.jpg"
+    }
+  },
   "flex-layout.row#about-us": {
     "props": {
       "fullWidth": true,
@@ -17,7 +25,6 @@
       "flex-layout.row#about-button-row"
     ]
   },
-
   "flex-layout.row#about-title-row": {
     "props": {
       "fullWidth": true,
