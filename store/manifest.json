@@ -1,6 +1,6 @@
 {
   "vendor": "hiringcoders202113",
-  "name": "desafio-acct",
+  "name": "desafio-acct-store",
   "version": "0.0.0",
   "builders": {
     "docs": "0.x",
