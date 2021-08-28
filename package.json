@@ -13,5 +13,8 @@
     "eslint-config-vtex-react": "^6.2.1",
     "prettier": "^1.19.1",
     "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "tachyons": "^4.12.0"
   }
 }
