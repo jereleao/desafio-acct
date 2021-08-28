@@ -3,6 +3,7 @@ import { LRUCache, Service } from '@vtex/api'
 
 import { Clients } from './clients'
 import { leadUpdater } from './middlewares/leadUpdater'
+import { getPhone } from './middlewares/getPhone'
 
 
 const TIMEOUT_MS = 5000
@@ -35,11 +36,11 @@ declare global {
 
   //Declara a forma do "ctx.state"
   interface State extends RecorderState {
-    code: number
+    phone: string
   }
 
   //Declara a forma do context de evento a ser utilizado a ser utilizado pelo middleware.
-  interface StatusChangeContext extends EventContext<Clients> {
+  interface OrderPlacedContext extends EventContext<Clients> {
     body: {
       domain: string
       orderId: string
@@ -49,12 +50,18 @@ declare global {
       lastChangeDate: string
     }
   }
+
+  interface TesteContext extends EventContext<Clients> {
+    body: {
+      phone: string
+    }
+  }
 }
 
 //Exporta o serviço definindo os clientes e eventos.
 export default new Service({
   clients,
   events: {
-    leadUpdater
+    leadUpdater: [leadUpdater, getPhone]
   }
 })
