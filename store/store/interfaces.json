@@ -1,4 +1,7 @@
 {
+  "formulario": {
+    "component": "Formulario"
+  },
   "services": {
     "component": "Services"
   },
