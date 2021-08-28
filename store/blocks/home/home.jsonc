@@ -1,7 +1,8 @@
 {
   "store.home": {
-    "blocks": ["flex-layout.row#about-us", "clients", "services"]
+    "blocks": ["flex-layout.row#about-us", "clients", "services", "formulario"]
   },
+
   "flex-layout.row#about-us": {
     "props": {
       "fullWidth": true,
@@ -30,6 +31,7 @@
       "flex-layout.row#about-title-row2"
     ]
   },
+
   "flex-layout.row#about-title-row1": {
     "props": {
       "fullWidth": true,
@@ -91,7 +93,6 @@
   },
   "rich-text#about-text": {
     "props": {
-      // "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Quando o assunto é e-commerce, somos líderes! Desenvolvemos soluções para empresas que buscam crescimento. Seja a criação de um aplicativo móvel, um site totalmente novo ou aumentar o desempenho e a inteligência da sua organização, nós oferecemos o suporte necessário às empresas na era digital.",
       "textColor": "c-default",
@@ -108,7 +109,6 @@
       "textPosition": "CENTER",
       "text": "Saiba mais sobre nós",
       // "textColor": "c-on-emphasis",
-      // "font": "t-heading-5",
       "blockClass": "about-button"
     }
   }

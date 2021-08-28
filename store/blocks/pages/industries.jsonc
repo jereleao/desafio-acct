@@ -1,15 +1,15 @@
 {
-  "store.custom#services": {
+  "store.custom#industries": {
     "blocks": [
-      "stack-layout#services",
-      "search-result-layout.customQuery#servicos"
+      "stack-layout#industries",
+      "search-result-layout.customQuery#industries"
     ]
   },
-  "stack-layout#services": {
-    "children": ["image#service-banner", "flex-layout.row#service-title"]
+  "stack-layout#industries": {
+    "children": ["image#industries-banner", "flex-layout.row#industries-title"]
   },
-  "flex-layout.row#service-title": {
-    "children": ["rich-text#service-title", "rich-text#underscore"],
+  "flex-layout.row#industries-title": {
+    "children": ["rich-text#industries-title", "rich-text#underscore"],
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "center",
@@ -17,27 +17,26 @@
       "preventVerticalStretch": true
     }
   },
-  "rich-text#service-title": {
+  "rich-text#industries-title": {
     "props": {
-      "text": "SERVIÇOS",
+      "text": "INDÚSTRIAS",
       "font": "t-heading-1",
       "textColor": "c-action-secondary",
       "blockClass": "page-title"
     }
   },
-  "image#service-banner": {
+  "image#industries-banner": {
     "props": {
-      "src": "assets/servicos/cover-services.jpg",
+      "src": "assets/industries/cover-industries.jpg",
       "blockClass": "page-banner"
     }
   },
-  "search-result-layout.customQuery#servicos": {
+  "search-result-layout.customQuery#industries": {
     "props": {
       "querySchema": {
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
-        "maxItemsPerPage": 8,
-        "queryField": "1",
+        "queryField": "2",
         "mapField": "c"
       }
     },
