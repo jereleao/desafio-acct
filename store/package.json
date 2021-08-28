@@ -30,5 +30,7 @@
     "prettier": "^2.0.2",
     "typescript": "^3.8.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "author": "Grupo 13 Hiring Coders#2",
+  "description": ""
 }
