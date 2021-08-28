@@ -5,6 +5,8 @@ const dynamo = new AWS.DynamoDB.DocumentClient();
 const TableName = 'LeadCaptureTable';
 
 exports.handler = async (event, context) => {
+  // console.log('Received event:', JSON.stringify(event, null, 2));
+
   let body;
   let statusCode = '200';
   const headers = {
@@ -26,26 +28,30 @@ exports.handler = async (event, context) => {
         break;
       case 'GET':
         const ScanFilter = {
-          email: {
+          phone: {
             ComparisonOperator: 'EQ',
-            AttributeValueList: [event.queryStringParameters.email],
+            AttributeValueList: [event.queryStringParameters.phone],
           },
         };
-        body = await dynamo.scan({ TableName, ScanFilter }).promise();
+        const { Items } = await dynamo
+          .scan({ TableName, ScanFilter })
+          .promise();
+        body = Items[0];
         break;
       case 'POST':
         paramsBody.created_at = dateNow.toISOString();
         paramsBody.updated_at = dateNow.toISOString();
         paramsBody.id = context.awsRequestId;
+        paramsBody.client_type = 'PROSPECT';
         await dynamo.put({ TableName, Item: paramsBody }).promise();
         body = paramsBody;
         break;
       case 'PUT':
         paramsBody.updated_at = dateNow.toISOString();
-        body = await dynamo
+        await dynamo
           .update({
             TableName,
-            Key: { id: 'b76f5a5b-d32a-40ce-a59a-0b90af7e8dc7' },
+            Key: { id: paramsBody.id },
             AttributeUpdates: {
               client_type: {
                 Action: 'PUT',
@@ -58,6 +64,7 @@ exports.handler = async (event, context) => {
             },
           })
           .promise();
+        body = paramsBody;
         break;
       case 'OPTIONS':
         break;
