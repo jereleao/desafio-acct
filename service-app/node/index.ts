@@ -51,7 +51,7 @@ declare global {
     }
   }
 
-  interface TesteContext extends EventContext<Clients> {
+  interface LeadContext extends EventContext<Clients> {
     body: {
       phone: string
     }
@@ -62,6 +62,6 @@ declare global {
 export default new Service({
   clients,
   events: {
-    leadUpdater: [leadUpdater, getPhone]
+    getPhone: [getPhone, leadUpdater]
   }
 })

@@ -1,19 +1,31 @@
+import { NotFoundError } from "@vtex/api"
+
 //Define o middleware leadUpdater, responsável por requerer a atualização das informações de lead junto à API externa.
 export async function leadUpdater(
-    ctx: OrderPlacedContext,
+    ctx: LeadContext,
     next: () => Promise<any>
   ) {
+    const {
+      state: { phone }
+    } = ctx
 
-    //Recebe o context e extrai o orderId.
-    const orderId = ctx.body.orderId
+    //Con
+    const id = (await ctx.clients.lead.getItem(phone)).id
 
-    //Com base no orderId, busca as informações da order através do cliente OMS.
-    const orderBody =  await ctx.clients.oms.order(orderId)
+    if (!id) {
+      throw new NotFoundError('Lead não cadastrado')
+    }
 
-    //Extrai a informação desejada das informações da order. Nesse caso, o telefone.
-    const phone = (orderBody.clientProfileData.phone).replace('+55','')
+    //Monta o body para envio e atualização na base da API da AWS.
+    const body = {
+      "id": id,
+      "client_type": "CLIENT"
+    }
 
-    ctx.state.phone = phone
-
+    //Envia as informações de atualização da lead com base na função putItem do cliente lead.
+    await ctx.clients.lead.putItem(body).
+    then((response) => console.log(response))
+    .catch((reason) => console.log('Algo deu errado:', reason?.response?.data))
+  
     await next()
   }

@@ -18,11 +18,12 @@ export default class Lead extends ExternalClient {
     })
   }
 
-  // Define a função de requisição de put à API.
+  // Define a função de requisição de PUT à API.
   public async putItem(data: Object): Promise<any> {
     return this.http.put('/v1/leads', JSON.stringify(data))
   }
 
+  // Define a função de requisição de GET à API.
   public async getItem(phone: String): Promise<any> {
     return this.http.get('/v1/leads', { params: { phone: phone } })
   }
