@@ -1,0 +1,18 @@
+{
+  "flex-layout.col#parceiros": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "menu-item"
+    },
+    "children": ["link#parceiros"]
+  },
+  "link#parceiros": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "parceiros",
+      "blockClass": "menu-link"
+    }
+  }
+}

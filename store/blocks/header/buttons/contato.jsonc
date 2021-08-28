@@ -1,0 +1,19 @@
+{
+  "flex-layout.col#contato": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "menu-item"
+    },
+    "children": ["link#contato"]
+  },
+
+  "link#contato": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "contato",
+      "blockClass": "menu-link"
+    }
+  }
+}

@@ -1,5 +1,11 @@
 {
   "formulario": {
     "component": "Formulario"
+  },
+  "services": {
+    "component": "Services"
+  },
+  "clients": {
+    "component": "Clients"
   }
 }

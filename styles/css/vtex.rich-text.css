@@ -1,0 +1,16 @@
+.paragraph--page-title {
+  margin: 80px 0;
+  font-size: 36px;
+}
+.paragraph--page-title-blink {
+  color: #fcc200;
+  margin: 80px 0;
+  font-size: 36px;
+  animation: blink 1s step-start infinite;
+  -webkit-animation: blink 1s step-start infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

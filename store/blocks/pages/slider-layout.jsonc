@@ -1,0 +1,128 @@
+{
+    "slider-layout#about-us": {
+        "children": [
+            "image#person1",
+            "image#person2",
+            "image#person3",
+            "image#person4",
+            "image#person5",
+            "image#person6",
+            "image#person7",
+            "image#person8",
+            "image#person9",
+            "image#person10",
+            "image#person11",
+            "image#person12",
+            "image#person13",
+            "image#person14",
+            "image#person15",
+            "image#person16",
+            "image#person17",
+            "image#person18",
+            "image#person19"
+        ],
+
+        "props": {
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": true
+            }
+        }
+    },
+
+    "image#person1":{
+        "props":{
+            "src": "assets/about-us/time/ammon-cunha-150x150.jpg"
+        }
+    },
+    "image#person2":{
+        "props":{
+            "src": "assets/about-us/time/ana-lebre-150x150.png"
+        }
+    },
+    "image#person3":{
+        "props":{
+            "src": "assets/about-us/time/andre-dudek-150x150.png"
+        }
+    },
+    "image#person4":{
+        "props":{
+            "src": "assets/about-us/time/anna-chimenes-150x150.png"
+        }
+    },
+    "image#person5":{
+        "props":{
+            "src": "assets/about-us/time/barbara-cruz-150x150.png"
+        }
+    },
+    "image#person6":{
+        "props":{
+            "src": "assets/about-us/time/camila-santos-150x150.png"
+        }
+    },
+    "image#person7":{
+        "props":{
+            "src": "assets/about-us/time/carlos-oliveira-150x150.png"
+        }
+    },
+    "image#person8":{
+        "props":{
+            "src": "assets/about-us/time/cecilia-pereira-150x150.png"
+        }
+    },
+    "image#person9":{
+        "props":{
+            "src": "assets/about-us/time/fabio-feichtinger-150x150.png"
+        }
+    },
+    "image#person10":{
+        "props":{
+            "src": "assets/about-us/time/fatima-raizaro-150x150.png"
+        }
+    },
+    "image#person11":{
+        "props":{
+            "src": "assets/about-us/time/frederico-heitmann-150x150.png"
+        }
+    },
+    "image#person12":{
+        "props":{
+            "src": "assets/about-us/time/guilherme-cardoso-150x150.png"
+        }
+    },
+    "image#person13":{
+        "props":{
+            "src": "assets/about-us/time/juan-nader-150x150.jpg"
+        }
+    },
+    "image#person14":{
+        "props":{
+            "src": "assets/about-us/time/marcos-cipriani-150x150.png"
+        }
+    },
+    "image#person15":{
+        "props":{
+            "src": "assets/about-us/time/rafael-esberard-150x150.png"
+        }
+    },
+    "image#person16":{
+        "props":{
+            "src": "assets/about-us/time/rafael-rossini-150x150.jpg"
+        }
+    },
+    "image#person17":{
+        "props":{
+            "src": "assets/about-us/time/rodrigo-de-gouveia-150x150.png"
+        }
+    },
+    "image#person18":{
+        "props":{
+            "src": "assets/about-us/time/urania-reis-150x150.png"
+        }
+    },
+    "image#person19":{
+        "props":{
+            "src": "assets/about-us/time/victor-angelotti-150x150.png"
+        }
+    }
+}

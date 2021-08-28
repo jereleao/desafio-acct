@@ -1,0 +1,64 @@
+{
+  "flex-layout.col#o-que-fazemos": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "menu-item"
+    },
+    "children": ["overlay-trigger#o-que-fazemos"]
+  },
+  "overlay-trigger#o-que-fazemos": {
+    "props": {
+      "trigger": "hover"
+    },
+
+    "children": [
+      "flex-layout.row#o-que-fazemos",
+      "overlay-layout#o-que-fazemos"
+    ]
+  },
+  "flex-layout.row#o-que-fazemos": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "menu-item"
+    },
+    "children": ["link#o-que-fazemos", "flex-layout.col#nav-down"]
+  },
+  "link#o-que-fazemos": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "o que fazemos",
+      "blockClass": "menu-link-nav"
+    }
+  },
+  "overlay-layout#o-que-fazemos": {
+    "props": {
+      "placement": "bottom",
+      "offsets": { "skidding": 50, "distance": 30 }
+    },
+    "children": ["flex-layout.col#o-que-fazemos-overlay"]
+  },
+  "flex-layout.col#o-que-fazemos-overlay": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "overlay-trigger#o-que-fazemos-servicos",
+      "overlay-trigger#o-que-fazemos-categorias",
+      "link#cases"
+    ]
+  },
+  "link#cases": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "cases",
+      "blockClass": "menu-link"
+    }
+  }
+}

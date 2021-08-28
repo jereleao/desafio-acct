@@ -1,0 +1,115 @@
+{
+  "overlay-trigger#o-que-fazemos-categorias": {
+    "props": {
+      "trigger": "hover"
+    },
+
+    "children": [
+      "flex-layout.row#o-que-fazemos-categorias",
+      "overlay-layout#o-que-fazemos-categorias"
+    ]
+  },
+  "flex-layout.row#o-que-fazemos-categorias": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "menu-item"
+    },
+    "children": ["link#categorias", "flex-layout.col#nav-down"]
+  },
+  "link#categorias": {
+    "props": {
+      "href": "/categorias-industriais",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "categorias industriais",
+      "blockClass": "menu-link-nav"
+    }
+  },
+  "overlay-layout#o-que-fazemos-categorias": {
+    "props": {
+      "placement": "right",
+      "offsets": { "skidding": 64, "distance": 0 }
+    },
+    "children": ["flex-layout.col#o-que-fazemos-categorias-overlay"]
+  },
+  "flex-layout.col#o-que-fazemos-categorias-overlay": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "link#eletrodomesticos",
+      "link#bens-de-consumo",
+      "link#eletronicos",
+      "link#casa-e-jardim",
+      "link#supermercados",
+      "link#moda",
+      "link#farmacia"
+    ]
+  },
+  "link#eletrodomesticos": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "eletrodomesticos",
+      "blockClass": "menu-link-nav"
+    }
+  },
+  "link#bens-de-consumo": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "bens-de-consumo",
+      "blockClass": "menu-link-nav"
+    }
+  },
+  "link#eletronicos": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "eletronicos",
+      "blockClass": "menu-link-nav"
+    }
+  },
+  "link#casa-e-jardim": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "casa-e-jardim",
+      "blockClass": "menu-link-nav"
+    }
+  },
+  "link#supermercados": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "supermercados",
+      "blockClass": "menu-link-nav"
+    }
+  },
+  "link#moda": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "moda",
+      "blockClass": "menu-link-nav"
+    }
+  },
+  "link#farmacia": {
+    "props": {
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": { "variant": "secondary", "size": "small" },
+      "label": "farmacia",
+      "blockClass": "menu-link-nav"
+    }
+  }
+}

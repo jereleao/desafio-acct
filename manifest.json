@@ -7,8 +7,7 @@
     "assets": "0.x",
     "styles": "2.x",
     "react": "3.x",
-    "store": "0.x",
-    "messages": "1.x"
+    "store": "0.x"
   },
   "scripts": {
     "postreleasy": "vtex publish --verbose"
@@ -24,6 +23,9 @@
     "vtex.carousel": "2.x",
     "vtex.shelf": "1.x",
     "vtex.menu": "2.x",
+    "vtex.store-icons": "0.x",
+    "vtex.store-link": "0.x",
+    "vtex.overlay-layout": "0.x",
     "vtex.minicart": "2.x",
     "vtex.product-details": "1.x",
     "vtex.product-kit": "1.x",

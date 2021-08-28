@@ -1,0 +1,46 @@
+{
+  "store.custom#services": {
+    "blocks": [
+      "stack-layout#services",
+      "search-result-layout.customQuery#servicos"
+    ]
+  },
+  "stack-layout#services": {
+    "children": ["image#service-banner", "flex-layout.row#service-title"]
+  },
+  "flex-layout.row#service-title": {
+    "children": ["rich-text#service-title", "rich-text#underscore"],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#service-title": {
+    "props": {
+      "text": "SERVIÇOS",
+      "font": "t-heading-1",
+      "textColor": "c-action-secondary",
+      "blockClass": "page-title"
+    }
+  },
+  "image#service-banner": {
+    "props": {
+      "src": "assets/servicos/cover-services.jpg",
+      "blockClass": "page-banner"
+    }
+  },
+  "search-result-layout.customQuery#servicos": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "1",
+        "mapField": "c"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#custom-layout"]
+  }
+}

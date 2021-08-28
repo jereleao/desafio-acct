@@ -1,0 +1,50 @@
+{
+  "search-result-layout.desktop#custom-layout": {
+    "children": ["flex-layout.row#homesearch"],
+    "props": {
+      "defaultGalleryLayout": "many"
+    }
+  },
+  "flex-layout.row#homesearch": {
+    "children": ["search-content"]
+  },
+  "search-content": {
+    "blocks": ["gallery", "not-found"]
+  },
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "whole",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": 1
+        },
+        {
+          "name": "two",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": 2
+        },
+        {
+          "name": "many",
+          "component": "ManyByLineSummary",
+          "itemsPerRow": {
+            "desktop": 2,
+            "tablet": 2,
+            "mobile": 1
+          }
+        }
+      ],
+      "OneOrTwoLineSummary": "product-summary.shelf#customQuery",
+      "ManyByLineSummary": "product-summary.shelf#customQuery"
+    }
+  },
+  "product-summary.shelf#customQuery": {
+    "children": [
+      "product-summary-name",
+      "product-summary-image",
+      "product-summary-description",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  }
+}
