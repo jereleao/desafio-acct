@@ -1,12 +1,12 @@
-import React from 'react'
-import * as S from './styled'
+import React from 'react';
+import * as S from './styled';
 
 interface IServiceCard {
-  bgImageUrl: string
-  mainTitle: string
-  hoverTitle: string
-  text: string
-  link: string
+  bgImageUrl: string;
+  mainTitle: string;
+  hoverTitle: string;
+  text: string;
+  link: string;
 }
 
 const ServiceCard: React.FC<IServiceCard> = ({
@@ -31,7 +31,7 @@ const ServiceCard: React.FC<IServiceCard> = ({
         </a>
       </S.HoverContent>
     </S.Card>
-  )
-}
+  );
+};
 
-export default ServiceCard
+export default ServiceCard;

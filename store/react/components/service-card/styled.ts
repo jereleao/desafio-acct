@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const MainContent = styled.div`
   text-align: center;
@@ -23,7 +23,7 @@ export const MainContent = styled.div`
       }
     }
   }
-`
+`;
 
 export const HoverContent = styled.div`
   display: none;
@@ -62,9 +62,9 @@ export const HoverContent = styled.div`
       text-decoration: none;
     }
   }
-`
+`;
 interface ICard {
-  url: string
+  url: string;
 }
 
 export const Card = styled.div<ICard>`
@@ -73,7 +73,7 @@ export const Card = styled.div<ICard>`
   align-items: center;
   justify-content: center;
   height: 400px;
-  background-image: url(${props => props.url});
+  background-image: url(${(props) => props.url});
   background-size: cover;
   background-position: center center;
   background-color: #eee;
@@ -95,4 +95,4 @@ export const Card = styled.div<ICard>`
     font-size: 2.5rem;
     margin: 0;
   }
-`
+`;

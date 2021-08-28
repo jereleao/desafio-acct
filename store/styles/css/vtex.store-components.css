@@ -6,3 +6,13 @@
   max-width: none;
   height: 232px;
 }
+
+.infoCardContainer--about-info-card {
+  border: 0;
+  background: none;
+}
+
+.infoCardHeadline--about-info-card {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2.5rem;
+}
