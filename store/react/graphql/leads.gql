@@ -1,12 +1,12 @@
 query Query {
-  leads{
+  leads {
     id
     name
     phone
     company
     company_position
     company_size
-    url
+    email
     message
     client_type
     created_at

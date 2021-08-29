@@ -1,11 +1,14 @@
-import React, { FC } from 'react';
-import { Layout, PageBlock, Table } from 'vtex.styleguide';
-import { useQuery } from 'react-apollo';
+import React, { FC } from 'react'
+import { Layout, PageBlock, Table } from 'vtex.styleguide'
+import { useQuery } from 'react-apollo'
 
-import leads from './graphql/leads.gql'
+import LEADS from './graphql/leads.gql'
 
 const AdminLeads: FC = () => {
-  const { } = useQuery(leads)
+  const { loading, error, data } = useQuery(LEADS)
+
+  console.log({ loading, error, data })
+
   const defaultSchema = {
     properties: {
       id: {
@@ -66,10 +69,12 @@ const AdminLeads: FC = () => {
   return (
     <Layout>
       <PageBlock title="Cadastros" variation="full">
-        <Table fullWidth
+        <Table
+          fullWidth
           schema={defaultSchema}
-          items={leads}
-          density="high" />
+          items={data?.leads}
+          density="high"
+        />
       </PageBlock>
     </Layout>
   )
