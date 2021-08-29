@@ -1,0 +1,35 @@
+{
+  "name": "desafio-acct",
+  "vendor": "hiringcoders202113",
+  "version": "0.0.0",
+  "title": "GraphQL Example",
+  "description": "Reference app for VTEX IO GraphQL Services",
+  "mustUpdateAt": "2022-01-04",
+  "categories": [],
+  "dependencies": {},
+  "builders": {
+    "docs": "0.x",
+    "graphql": "1.x",
+    "node": "6.x"
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "wfue8x1b1a.execute-api.us-east-1.amazonaws.com",
+        "path": "*"
+      }
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "graphql-query"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,43 @@
+# To really understand GraphQL, go to https://graphql.org/learn/
+
+type Lead {
+  id: ID!
+  name: String!
+  phone: String!
+  company: String!
+  email: String!
+  country: String!
+  company_position: String
+  company_size: String
+  url: String
+  message: String!
+  client_type: String!
+  created_at: String!
+  updated_at: String!
+}
+
+# It is necessary to generate input types for creating books
+# ref: http://graphql.org/graphql-js/mutations-and-input-types/
+input InputLeadPT {
+  nome: String!
+  telefone: String!
+  empresa: String!
+  email: String!
+  pais: String!
+  cargo: String
+  numcolaboradores: String
+  url: String
+  caixa: String!
+}
+
+type Query {
+  # Cache control can only be set at root fields
+  lead(phone: String!): Lead
+  leads: [Lead] @cacheControl(scope: PUBLIC, maxAge: SHORT)
+
+}
+
+type Mutation {
+  # You should always return the whole object in a mutation, not only a boolean. This will help in browser caching
+  newLead(lead: InputLeadPT!): Lead
+}
