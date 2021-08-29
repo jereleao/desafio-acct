@@ -10,7 +10,6 @@ export const ButtonContainer = styled.a`
         src: url(assets/fonts/MaterialIcons-Regular.ttf)
     }
 
-    scroll-behavior: smooth;
     bottom: 100px;
     height: 45px;
     width: 45px;

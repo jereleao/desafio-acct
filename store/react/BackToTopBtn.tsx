@@ -7,6 +7,15 @@ const BackToTopBtn: StorefrontFunctionComponent = ({ }) => {
     const [scrollPosition, setScrollPosition] = useState(0);
     const [classActive, setClassActive] = useState("");
 
+    // Função responsável por retornar o scroll para o início da página.
+    function backToTop(): void {
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        })
+    }
+
     // Função responsável por calcular a altura máximo do doc.
     function getDocHeight(): number {
         return Math.max(
@@ -54,7 +63,7 @@ const BackToTopBtn: StorefrontFunctionComponent = ({ }) => {
 
     return (
         <>
-            <S.ButtonContainer href="#" className={`${classActive}`}>
+            <S.ButtonContainer onClick={backToTop} className={`${classActive}`}>
 
                 <S.SvgIcon xmlns="http://www.w3.org/2000/svg" width="48%" height="48%" viewBox="0 0 24 24">
                     <path d="M6.7,18.29L6.7,18.29c0.39,0.39,1.02,0.39,1.41,0L12,14.42l3.88,3.88c0.39,0.39,1.02,0.39,1.41,0l0,0 c0.39-0.39,0.39-1.02,0-1.41l-4.59-4.59c-0.39-0.39-1.02-0.39-1.41,0L6.7,16.88C6.31,17.27,6.31,17.9,6.7,18.29z" />
