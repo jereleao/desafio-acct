@@ -8,7 +8,7 @@
   "clients": {
     "component": "Clients"
   },
-  "backtotopbtn": {
+  "back-to-top-btn": {
     "component": "BackToTopBtn"
   }
 }

@@ -1,6 +1,6 @@
 {
   "store.home": {
-    "blocks": [ "backtotopbtn","flex-layout.row#about-us", "clients", "services", "formulario"]
+    "blocks": [ "back-to-top-btn","flex-layout.row#about-us", "clients", "services", "formulario"]
   },
 
   "flex-layout.row#about-us": {
