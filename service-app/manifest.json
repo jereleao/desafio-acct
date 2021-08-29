@@ -1,9 +1,9 @@
 {
-  "name": "service-example",
-  "vendor": "vtex",
+  "name": "lead-service",
+  "vendor": "hiringcoders202113",
   "version": "0.2.0",
-  "title": "Service Example",
-  "description": "Reference app for VTEX IO Services",
+  "title": "Lead Service",
+  "description": "Serviço para atualização do status da lead a partir da primeira compra realizada.",
   "mustUpdateAt": "2018-01-04",
   "categories": [],
   "dependencies": {},
@@ -38,6 +38,16 @@
       }
     },
     {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/profile-system/*"
+      }
+    },
+    {
+      "name": "Get_Account_By_Identifier"
+    },
+    {
       "name": "OMSViewer"
     },
     {
@@ -48,13 +58,6 @@
     },
     {
       "name": "POWER_USER_DS"
-    },
-    {
-      "name": "outbound-access",
-      "attrs": {
-        "host": "api.vtex.com",
-        "path": "/{{account}}/dataentities/*"
-      }
     },
     {
       "name": "ADMIN_DS"

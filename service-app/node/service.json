@@ -6,7 +6,7 @@
   "maxReplicas": 4,
   "workers": 1,
   "events": {
-    "leadUpdater": {
+    "getEmail": {
       "sender": "vtex.orders-broadcast",
       "topics": ["order-created"]
     }
