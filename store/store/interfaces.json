@@ -8,10 +8,13 @@
   "clients": {
     "component": "Clients"
   },
-  "slider1": {
-    "component": "SliderTest1"
+  "slider-tecnology": {
+    "component": "SliderTecnology"
   },
-  "slider2": {
-    "component": "SliderTest2"
+  "slider-engineering": {
+    "component": "SliderEngineering"
+  },
+  "slider-product": {
+    "component": "SliderProduct"
   }
 }
