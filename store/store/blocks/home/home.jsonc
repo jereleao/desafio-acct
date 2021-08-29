@@ -1,7 +1,8 @@
 {
   "store.home": {
     "blocks": [
-      "slider-layout#text-test",
+      // "slider1",
+      "slider-layout#home",
       "flex-layout.row#about-us",
       "clients",
       "services",
@@ -9,23 +10,29 @@
     ]
   },
 
-  "slider-layout#text-test": {
+  "slider-layout#home": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
         "phone": 1
       },
-      "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "showPaginationDots": "never"
+      "showPaginationDots": "never",
+      "blockClass": "slider"
+      // "infinite": true,
+      // "autoplay": {
+      //   "timeout": 5000,
+      //   "stopOnHover": true
+      // }
     },
-    "children": ["image#technology", "rich-text#2", "rich-text#3"]
+    "children": ["slider1", "slider2"]
   },
-  "image#technology": {
+
+  /*"image#technology": {
     "props": {
-      "src": "assets/slide/slider-home-technology.webp",
-      "maxHeight": 24
+      "src": "assets/slide/slider-home-technology.webp"
+      // "maxHeight": 24
     }
   },
 
@@ -43,7 +50,7 @@
     "props": {
       "text": "Test3"
     }
-  },
+  },*/
 
   // ----- Custom component Services images -----
   "services": {
@@ -53,6 +60,14 @@
       "designImg": "assets/hovers/exp-design.jpg",
       "tecImg": "assets/hovers/tecnology.jpg"
     }
+  },
+
+  "slider1": {
+    "props": { "squadImg": "assets/hovers/delivery-squads.jpg" }
+  },
+
+  "slider2": {
+    "props": { "growthImg": "assets/hovers/growth.jpg" }
   },
 
   // ----- Home: About-us -----
