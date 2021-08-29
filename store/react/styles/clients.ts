@@ -6,6 +6,7 @@ export const ClientsContainer = styled.section`
   align-items: center;
   padding-top: 4rem;
   padding-bottom: 6rem;
+  /* background: linear-gradient( 135deg, rgb(227, 28, 88) 0%, rgb(15, 29, 64) 100%); */
 `
 
 export const Title = styled.h3`

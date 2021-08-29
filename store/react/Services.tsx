@@ -1,9 +1,5 @@
 import React from 'react';
 
-import SquadImg from '../assets/hovers/delivery-squads.jpg';
-import GrowthImg from '../assets/hovers/growth.jpg';
-import DesignImg from '../assets/hovers/exp-design.jpg';
-import TecImg from '../assets/hovers/tecnology.jpg';
 import ServiceCard from './components/service-card';
 import * as S from './styles/services';
 
@@ -11,7 +7,7 @@ const Services: StorefrontFunctionComponent = ({}) => {
   return (
     <S.ServicesContainer>
       <ServiceCard
-        bgImageUrl={SquadImg}
+        bgImageUrl='https://acct.global/wp-content/uploads/2020/11/flip-delivery-squads.jpg'
         mainTitle='Quality Assurance'
         hoverTitle='Confiança e credibilidade'
         text='Um sistema de garantia de qualidade tem como objetivo aumentar a
@@ -22,7 +18,7 @@ const Services: StorefrontFunctionComponent = ({}) => {
         link='https://dev-acct.pantheonsite.io/pt/servicos/quality-assurance/'
       />
       <ServiceCard
-        bgImageUrl={GrowthImg}
+        bgImageUrl='https://acct.global/wp-content/uploads/2020/11/flip-growth.jpg'
         mainTitle='Growth e Data'
         hoverTitle='Insights para o amanhã'
         text='Os dados são a nova moeda, portanto, a aplicação de um processo
@@ -33,7 +29,7 @@ const Services: StorefrontFunctionComponent = ({}) => {
         link='https://acct.global/servicos/growth-data/'
       />
       <ServiceCard
-        bgImageUrl={DesignImg}
+        bgImageUrl='https://acct.global/wp-content/uploads/2020/11/flip-exp-design.jpg'
         mainTitle='Experience Design'
         hoverTitle='Conectando com pessoas'
         text='Experience design é uma questão de empatia. Ao criar experiências,
@@ -44,7 +40,7 @@ const Services: StorefrontFunctionComponent = ({}) => {
         link='https://acct.global/pt/servicos/experience-design/'
       />
       <ServiceCard
-        bgImageUrl={TecImg}
+        bgImageUrl='https://acct.global/wp-content/uploads/2020/11/flip-tecnology.jpg'
         mainTitle='Tecnologia'
         hoverTitle='Criando o futuro'
         text='Na ACCT vivemos e respiramos o desenvolvimento de software. Mais de 60%

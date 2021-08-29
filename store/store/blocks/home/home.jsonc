@@ -3,6 +3,7 @@
     "blocks": ["flex-layout.row#about-us", "clients", "services", "formulario"]
   },
 
+  // ----- Home: About-us -----
   "flex-layout.row#about-us": {
     "props": {
       "fullWidth": true,
@@ -13,8 +14,8 @@
     },
     "children": [
       "flex-layout.row#about-title-row",
-      "flex-layout.row#about-text-row",
-      "flex-layout.row#about-button-row"
+      "rich-text#about-text",
+      "rich-text#about-button"
     ]
   },
 
@@ -35,6 +36,7 @@
   "flex-layout.row#about-title-row1": {
     "props": {
       "fullWidth": true,
+      "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "blockClass": "about-title-row1"
@@ -56,13 +58,14 @@
       "textPosition": "CENTER",
       "text": "liderança global",
       "textColor": "c-link",
-      "blockClass": "about-title"
+      "blockClass": "about-title-yellow"
     }
   },
 
   "flex-layout.row#about-title-row2": {
     "props": {
       "fullWidth": true,
+      "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "blockClass": "about-title-row2"
@@ -84,13 +87,10 @@
       "textPosition": "CENTER",
       "text": "soluções para comércio digital",
       "textColor": "c-link",
-      "blockClass": "about-title"
+      "blockClass": "about-title-yellow"
     }
   },
 
-  "flex-layout.row#about-text-row": {
-    "children": ["rich-text#about-text"]
-  },
   "rich-text#about-text": {
     "props": {
       "textPosition": "CENTER",
@@ -100,15 +100,11 @@
     }
   },
 
-  "flex-layout.row#about-button-row": {
-    "children": ["rich-text#about-button"]
-  },
   "rich-text#about-button": {
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Saiba mais sobre nós",
-      // "textColor": "c-on-emphasis",
       "blockClass": "about-button"
     }
   }
