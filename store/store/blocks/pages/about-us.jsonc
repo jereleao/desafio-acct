@@ -1,5 +1,5 @@
 {
-    "store.custom#about-us": {
+    "store.custom#about-us": { /* front-end da página SOBRE-NOS utilizando o vtex io */
     "blocks": ["info-card#info-card-banner", 
       "rich-text#projetando",
       "flex-layout.row#somos",
@@ -7,7 +7,7 @@
       "flex-layout.row#icons-porque",
       "rich-text#time",
       "rich-text#time-subtitle",
-      "slider-layout#about-us",
+      "slider-layout#about-us", /* slider com os integrantes do Time ACCT, arquivo /pages/slider-layout.jsonc */
       "back-to-top-button"
     ]
     },
@@ -22,7 +22,7 @@
       }
     },
 
-    "rich-text#projetando":{
+    "rich-text#projetando":{ /* título projetando...digital e suas configurações */
       "props":{
         "textAlignment": "CENTER",
         "textPosition": "CENTER",
@@ -30,17 +30,17 @@
       }
     },
 
-    "flex-layout.row#somos": {
-      "children": ["flex-layout.col#text-somos", "image#somos-image"]
+    "flex-layout.row#somos": { /* bloco destinado as colunas após o título projetando..., que descreve o propósito da ACCT */
+      "children": ["flex-layout.col#text-somos", "image#somos-image"] /* conteúdos da flex-laoytu.row#somos, hierarquia children */
     },
-    "flex-layout.col#text-somos": {
+    "flex-layout.col#text-somos": { /* bloco destinado para o texto descritivo do flex-layout.row#somos */
       "children": ["rich-text#description-somos"],
       "props": {
         "blockclass": "textColumn",
         "preventVerticalStretch": true
       }
     },
-    "image#somos-image": {
+    "image#somos-image": { /* imagem utilizada no flex-layout.row#somos */
       "props": {
         "src": "assets/about-us/fundos/img-about-us-1536x1053.jpg",
         "maxHeight": 400,
@@ -48,14 +48,14 @@
         "blockClass": "somos-img"
       }
     },
-    "rich-text#description-somos": {
+    "rich-text#description-somos": { /* texto utilizado no flex-layout.row#somos */
       "props": {
         "text": "Somos uma empresa de arquitetura e engenharia de software com 11 anos de história solucionando problemas de negócios com tecnologia. \n \n A **ACCT** passou por um rápido crescimento nos últimos 5 anos e hoje tem mais de 200 funcionários, em 3 países diferentes. \n \n Nós também temos o orgulho de dizer que a **ACCT** esteve envolvida em algumas das maiores implementações e projetos de e-commerce do mundo. \n \n Clientes globais como Unilever, Ab-Inbev, Carrefour e Whirpool nos escolheram para desenvolver seus produtos digitais porque confiam em nossa capacidade de fornecer soluções com a mais alta qualidade de design, engenharia e desenvolvimento.",
         "blockClass": "about"
       }
     },
 
-    "rich-text#porque-acct": {
+    "rich-text#porque-acct": { /* título Por que...ACCT e suas configurações */
       "props":{
         "textAlignment": "CENTER",
         "textPosition": "CENTER",
@@ -63,22 +63,22 @@
       }
     },
 
-    "flex-layout.row#icons-porque": {
-      "children": ["flex-layout.row#img-icons"]
+    "flex-layout.row#icons-porque": { /* bloco do tipo flex layout para os ícones relacionados ao título Por que...ACCT */
+      "children": ["flex-layout.row#img-icons"] /* conteúdo da flex-layout.row#icons-porque */
     },
 
-    "flex-layout.row#img-icons":{
+    "flex-layout.row#img-icons":{ /* bloco do tipo flex layout que organiza os ícones e seus respectivos títulos */
       "children": ["flex-layout.col#engenharia", 
         "flex-layout.col#habilidades", 
         "flex-layout.col#lider",
         "flex-layout.col#suporte",
         "flex-layout.col#seguranca"      
-        ]
+        ]  /* declaração dos blocos de cada ícone a ser usado */
     },
-    "flex-layout.col#engenharia":{
+    "flex-layout.col#engenharia":{  /* bloco referente ao ícone engenharia */
       "children":["image#icon-engenharia", "rich-text#title-engenharia"]
     },
-    "image#icon-engenharia": {
+    "image#icon-engenharia": { /* imagem do ícone engenharia */
       "props": {
         "src": "assets/about-us/icones/icon_dashboard.svg",
         "maxHeight": 100,
@@ -86,15 +86,15 @@
         "blockClass": "icon-engenharia"
       }
     },
-    "rich-text#title-engenharia":{
+    "rich-text#title-engenharia":{ /* título do ícone engenharia */
       "props": {
         "text": "Engenharia de Dados de Alta Complexidade"
       }
     },
-    "flex-layout.col#habilidades":{
+    "flex-layout.col#habilidades":{ /* bloco referente ao ícone habilidades */
       "children":["image#icon-habilidades", "rich-text#title-habilidades"]
     },
-    "image#icon-habilidades": {
+    "image#icon-habilidades": { /* imagem do ícone habilidades */
       "props": {
         "src": "assets/about-us/icones/icon_development.svg",
         "maxHeight": 100,
@@ -102,15 +102,15 @@
         "blockClass": "icon-habilidades"
       }
     },
-    "rich-text#title-habilidades":{
+    "rich-text#title-habilidades":{ /* título do ícone habilidades */
       "props": {
         "text": "Habilidades Técnicas"
       }
     },
-    "flex-layout.col#lider":{
+    "flex-layout.col#lider":{ /* bloco referente ao ícone líder */
       "children":["image#icon-lider", "rich-text#title-lider"]
     },
-    "image#icon-lider": {
+    "image#icon-lider": { /* imagem do ícone líder */
       "props": {
         "src": "assets/about-us/icones/icon_integration.svg",
         "maxHeight": 100,
@@ -118,15 +118,15 @@
         "blockClass": "icon-lider"
       }
     },
-    "rich-text#title-lider":{
+    "rich-text#title-lider":{ /* título do ícone líder */
       "props": {
         "text": "Líder de Mercado em Implementações \n VTEX IO"
       }
     },
-    "flex-layout.col#suporte":{
+    "flex-layout.col#suporte":{ /* bloco referente ao ícone suporte */
       "children":["image#icon-suporte", "rich-text#title-suporte"]
     },
-    "image#icon-suporte": {
+    "image#icon-suporte": { /* imagem do ícone suporte */
       "props": {
         "src": "assets/about-us/icones/icon_customer-service.svg",
         "maxHeight": 100,
@@ -134,15 +134,15 @@
         "blockClass": "icon-suporte"
       }
     },
-    "rich-text#title-suporte":{
+    "rich-text#title-suporte":{ /* título do ícone suporte */
       "props": {
         "text": "Excelente Suporte ao Cliente"
       }
     },
-    "flex-layout.col#seguranca":{
+    "flex-layout.col#seguranca":{ /* bloco referente ao ícone segurança */
       "children":["image#icon-seguranca", "rich-text#title-seguranca"]
     },
-    "image#icon-seguranca": {
+    "image#icon-seguranca": { /* imagem do ícone segurança */
       "props": {
         "src": "assets/about-us/icones/icon_shield.svg",
         "maxHeight": 100,
@@ -150,20 +150,20 @@
         "blockClass": "icon-seguranca"
       }
     },
-    "rich-text#title-seguranca":{
+    "rich-text#title-seguranca":{ /* título do ícone segurança */
       "props": {
         "text": "Segurança e Confiabilidade"
       }
     },
 
-    "rich-text#time":{
+    "rich-text#time":{ /* título da seção Time_ */
       "props":{
         "textAlignment": "CENTER",
         "textPosition": "CENTER",
         "text": "### Time_"
       }
     },
-    "rich-text#time-subtitle":{
+    "rich-text#time-subtitle":{ /* subtítulo da seção Time_ */
       "props":{
         "textAlignment": "CENTER",
         "textPosition": "CENTER",
@@ -171,7 +171,7 @@
       }
     },
 
-    "back-to-top-button": {
+    "back-to-top-button": { /* botão de voltar ao topo */
         "props": {
           "display": "caret-icon"
         }

@@ -1,7 +1,8 @@
 {
     "slider-layout#about-us": {
         "children": [
-            "image#person1",
+            /*"image#person1",*/
+            "info-card#person1",
             "image#person2",
             "image#person3",
             "image#person4",
@@ -30,6 +31,12 @@
         }
     },
 
+    "info-card#person1":{
+        "src": "assets/about-us/time/ammon-cunha-150x150.jpg",
+        "isFullModeStyle": false,
+        "headline": " **Ammon Cunha** \n criador de conteúdo ",
+        "textPosition": "center"
+    },
     "image#person1":{
         "props":{
             "src": "assets/about-us/time/ammon-cunha-150x150.jpg"
