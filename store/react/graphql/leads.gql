@@ -1,0 +1,15 @@
+query Query {
+  leads{
+    id
+    name
+    phone
+    company
+    company_position
+    company_size
+    url
+    message
+    client_type
+    created_at
+    updated_at
+  }
+}
