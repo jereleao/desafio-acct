@@ -1,8 +1,64 @@
 {
   "store.home": {
-    "blocks": ["flex-layout.row#about-us", "clients", "services", "formulario"]
+    "blocks": [
+      "back-to-top-btn",
+      "slider-layout#home",
+      "flex-layout.row#about-us",
+      "clients",
+      "services",
+      "formulario"
+    ]
   },
 
+  // ----- Custom component images -----
+  "services": {
+    "props": {
+      "squadImg": "assets/hovers/delivery-squads.jpg",
+      "growthImg": "assets/hovers/growth.jpg",
+      "designImg": "assets/hovers/exp-design.jpg",
+      "tecImg": "assets/hovers/tecnology.jpg"
+    }
+  },
+
+  "slider-tecnology": {
+    "props": { "tecnologyImg": "assets/slide/slider-home-technology.webp" }
+  },
+  "slider-engineering": {
+    "props": { "engineeringImg": "assets/slide/slider-home-engineering.webp" }
+  },
+  "slider-product": {
+    "props": { "productImg": "assets/slide/slider-home-product.webp" }
+  },
+  "slider-info": {
+    "props": {
+      "rocketImg": "assets/slide/foguete-acct.gif",
+      "quadranteImg": "assets/slide/quadrante_vtex_2021.webp"
+    }
+  },
+
+  // ----- Home: Slider -----
+  "slider-layout#home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "blockClass": "slider",
+      // O slide não funciona se o showNavigationArrows estiver ativo
+      // "showNavigationArrows": "desktopOnly",
+      "usePagination": true,
+      "showPaginationDots": "never"
+      // "infinite": true,
+      // "autoplay": {
+      //   "timeout": 5000,
+      //   "stopOnHover": true
+      // }
+    },
+    "children": ["slider-tecnology", "slider-engineering", "slider-product", "slider-info"]
+  },
+
+  // ----- Home: About-us -----
   "flex-layout.row#about-us": {
     "props": {
       "fullWidth": true,
@@ -13,11 +69,10 @@
     },
     "children": [
       "flex-layout.row#about-title-row",
-      "flex-layout.row#about-text-row",
-      "flex-layout.row#about-button-row"
+      "rich-text#about-text",
+      "rich-text#about-button"
     ]
   },
-
   "flex-layout.row#about-title-row": {
     "props": {
       "fullWidth": true,
@@ -35,6 +90,7 @@
   "flex-layout.row#about-title-row1": {
     "props": {
       "fullWidth": true,
+      "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "blockClass": "about-title-row1"
@@ -56,13 +112,14 @@
       "textPosition": "CENTER",
       "text": "liderança global",
       "textColor": "c-link",
-      "blockClass": "about-title"
+      "blockClass": "about-title-yellow"
     }
   },
 
   "flex-layout.row#about-title-row2": {
     "props": {
       "fullWidth": true,
+      "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "blockClass": "about-title-row2"
@@ -84,13 +141,10 @@
       "textPosition": "CENTER",
       "text": "soluções para comércio digital",
       "textColor": "c-link",
-      "blockClass": "about-title"
+      "blockClass": "about-title-yellow"
     }
   },
 
-  "flex-layout.row#about-text-row": {
-    "children": ["rich-text#about-text"]
-  },
   "rich-text#about-text": {
     "props": {
       "textPosition": "CENTER",
@@ -100,15 +154,11 @@
     }
   },
 
-  "flex-layout.row#about-button-row": {
-    "children": ["rich-text#about-button"]
-  },
   "rich-text#about-button": {
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Saiba mais sobre nós",
-      // "textColor": "c-on-emphasis",
       "blockClass": "about-button"
     }
   }

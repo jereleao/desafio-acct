@@ -1,4 +1,5 @@
 {
+
     "store.custom#about-us": { /* front-end da página SOBRE-NOS utilizando o vtex io */
     "blocks": [ 
       "stack-layout#about-us",
@@ -230,5 +231,7 @@
         "props": {
           "display": "caret-icon"
         }
+
     }
+  }
 }

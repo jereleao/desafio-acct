@@ -15,8 +15,6 @@ type Lead {
   created_at: String!
   updated_at: String!
 }
-
-# It is necessary to generate input types for creating books
 # ref: http://graphql.org/graphql-js/mutations-and-input-types/
 input InputLeadPT {
   nome: String!
