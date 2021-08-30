@@ -9,7 +9,7 @@
   padding: 8em 0;
 }
 
-@media(min-width: 900px) {
+@media (min-width: 900px) {
   .flexRowContent--about-flex-card {
     width: 80%;
   }
@@ -25,14 +25,11 @@
 .flexRowContent--about-title-row {
   width: 100%;
   flex-direction: column;
-
   align-items: center;
-}
-
   margin: 1rem 0 2rem;
 }
 
-@media(max-width: 840px) {
+@media (max-width: 840px) {
   .flexRowContent--about-title-row1,
   .flexRowContent--about-title-row2 {
     flex-direction: column;
