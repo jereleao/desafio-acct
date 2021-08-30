@@ -8,8 +8,7 @@
     "styles": "2.x",
     "react": "3.x",
     "store": "0.x",
-    "messages": "1.x",
-    "admin": "0.x"
+    "messages": "1.x"
   },
   "scripts": {
     "postreleasy": "vtex publish --verbose"
@@ -51,8 +50,7 @@
     "vtex.iframe": "0.x",
     "vtex.breadcrumb": "1.x",
     "vtex.sticky-layout": "0.x",
-    "vtex.add-to-cart-button": "0.x",
-    "hiringcoders202113.desafio-acct": "0.x"
+    "vtex.add-to-cart-button": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
