@@ -6,7 +6,7 @@
       "flex-layout.row#about-us",
       "clients",
       "services",
-      "formulario"
+      "flex-layout.row#form"
     ]
   },
 
@@ -161,5 +161,19 @@
       "text": "Saiba mais sobre nós",
       "blockClass": "about-button"
     }
+    },
+  "flex-layout.row#form": {
+    "props": {
+      "horizontalAlign": "right",
+      "blockClass": "form"
+    },
+    "children": ["flex-layout.col#form"]
+  },
+  "flex-layout.col#form": {
+    "props": {
+      "width": "50%",
+      "blockClass": "form"
+    },
+    "children": ["formulario"]
   }
 }
