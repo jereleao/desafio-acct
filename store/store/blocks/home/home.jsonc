@@ -28,6 +28,12 @@
   "slider-product": {
     "props": { "productImg": "assets/slide/slider-home-product.webp" }
   },
+  "slider-info": {
+    "props": {
+      "rocketImg": "assets/slide/foguete-acct.gif",
+      "quadranteImg": "assets/slide/quadrante_vtex_2021.webp"
+    }
+  },
 
   // ----- Home: Slider -----
   "slider-layout#home": {
@@ -41,14 +47,14 @@
       // O slide não funciona se o showNavigationArrows estiver ativo
       // "showNavigationArrows": "desktopOnly",
       "usePagination": true,
-      "showPaginationDots": "never",
-      "infinite": true,
-      "autoplay": {
-        "timeout": 5000,
-        "stopOnHover": true
-      }
+      "showPaginationDots": "never"
+      // "infinite": true,
+      // "autoplay": {
+      //   "timeout": 5000,
+      //   "stopOnHover": true
+      // }
     },
-    "children": ["slider-tecnology", "slider-engineering", "slider-product"]
+    "children": ["slider-tecnology", "slider-engineering", "slider-product", "slider-info"]
   },
 
   // ----- Home: About-us -----
