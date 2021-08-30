@@ -16,3 +16,37 @@
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2.5rem;
 }
+
+.imageElement--somos-img {
+  margin-right: 50px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 85%;
+  height: auto;
+}
+
+.imageElement--icon-engenharia {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.imageElement--icon-habilidades {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.imageElement--icon-lider {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.imageElement--icon-suporte {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.imageElement--icon-seguranca {
+  margin-left: 70px;
+  margin-right: 70px;
+}

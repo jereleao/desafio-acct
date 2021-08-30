@@ -1,7 +1,7 @@
 {
     "store.custom#about-us": { /* front-end da página SOBRE-NOS utilizando o vtex io */
-    "blocks": ["info-card#info-card-banner", 
-      "rich-text#projetando",
+    "blocks": [ 
+      "flex-layout.row#title-projetando",
       "flex-layout.row#somos",
       "rich-text#porque-acct",
       "flex-layout.row#icons-porque",
@@ -12,21 +12,22 @@
     ]
     },
 
-    "info-card#info-card-banner":{
-      "props":{
-        "isFullModeStyle": true,
-        "headline": "Sobre nós",
-        "textPosition": "LEFT",
-        "textAlignment": "LEFT",
-        "font": "Open Sans Condensed"
-      }
+    "flex-layout.row#title-projetando":{
+      "children":["rich-text#projetando1", "rich-text#projetando2"]
     },
 
-    "rich-text#projetando":{ /* título projetando...digital e suas configurações */
+    "rich-text#projetando1":{ /* título projetando...digital e suas configurações */
       "props":{
         "textAlignment": "CENTER",
         "textPosition": "CENTER",
-        "text": "## Projetando o futuro do comércio digital"
+        "text": "Projetando o"
+      }
+    },
+    "rich-text#projetando2":{ /* título projetando...digital e suas configurações */
+      "props":{
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "futuro do comércio digital"
       }
     },
 
@@ -88,6 +89,8 @@
     },
     "rich-text#title-engenharia":{ /* título do ícone engenharia */
       "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
         "text": "Engenharia de Dados de Alta Complexidade"
       }
     },
@@ -104,6 +107,8 @@
     },
     "rich-text#title-habilidades":{ /* título do ícone habilidades */
       "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
         "text": "Habilidades Técnicas"
       }
     },
@@ -120,6 +125,8 @@
     },
     "rich-text#title-lider":{ /* título do ícone líder */
       "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
         "text": "Líder de Mercado em Implementações \n VTEX IO"
       }
     },
@@ -136,6 +143,8 @@
     },
     "rich-text#title-suporte":{ /* título do ícone suporte */
       "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
         "text": "Excelente Suporte ao Cliente"
       }
     },
@@ -152,7 +161,9 @@
     },
     "rich-text#title-seguranca":{ /* título do ícone segurança */
       "props": {
-        "text": "Segurança e Confiabilidade"
+        "text": "Segurança e Confiabilidade",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
       }
     },
 
@@ -160,14 +171,14 @@
       "props":{
         "textAlignment": "CENTER",
         "textPosition": "CENTER",
-        "text": "### Time_"
+        "text": "Time"
       }
     },
     "rich-text#time-subtitle":{ /* subtítulo da seção Time_ */
       "props":{
         "textAlignment": "CENTER",
         "textPosition": "CENTER",
-        "text": "###### A ACCT tem uma equipe interna de alto desempenho com recursos de 360 graus para fornecer soluções de tecnologia de alta complexidade."
+        "text": "A ACCT tem uma equipe interna de alto desempenho com recursos de 360 graus para fornecer soluções de tecnologia de alta complexidade."
       }
     },
 
