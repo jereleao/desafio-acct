@@ -1,0 +1,320 @@
+  //
+  //  Hiring Coders 2021 | Gama Academy | ACCT | VTEXT 
+  //
+  //  Projeto ACCT Clone
+  //  Grupo 13
+  //
+  //
+  //
+  //                                             Footer Section
+  //                                          Franklin Siqueira
+  /////////////////////////////////////////////////////////////
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop", 
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-desktop-franklin"
+    ]
+  },
+  //
+  //
+  //                                Desktop section starts here
+  /////////////////////////////////////////////////////////////
+  "flex-layout.row#footer-desktop-franklin": {
+    "children": [
+      "flex-layout.col#footer-GPTW-logo-desktop",
+      "flex-layout.col#footer-logo-social-desktop",
+      "flex-layout.col#footer-places-brazil-desktop",
+      "flex-layout.col#footer-places-spain-desktop",
+      "flex-layout.col#footer-places-us-desktop"
+    ],
+    "props": {
+      "blockClass": "credits",
+      "paddingTop": 8,
+      "paddingBottom": 8
+    }
+  },
+
+  "flex-layout.col#footer-GPTW-logo-desktop": {
+    "props": {
+      "verticalAlign": "top",
+      "blockClass": "colStampFranklin"
+    },
+    "children": [
+      "logo#GPTW"
+    ]
+  },
+  "logo#GPTW": {
+    "props": {
+      "title": "Logo GPTW Stamp",
+      "href": "/",
+      "url": "assets/selo-gptw-2021.svg",
+      "width": "120"
+    }
+  },
+
+  "flex-layout.col#footer-logo-social-desktop": {
+    "props": {
+      "verticalAlign": "top"
+    },
+    "children": [
+      "flex-layout.row#footer-logo-desktop",
+      "flex-layout.row#footer-social-desktop",
+      "flex-layout.row#footer-email-desktop"
+    ]
+  },
+  "flex-layout.row#footer-logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "blockClass": "logoRowFranklin"
+    },
+    "children": ["logo#acct"]
+  },
+  "logo#acct": {
+    "props": {
+      "blockClass": "logoLinkFranklin",
+      "title": "Logo ACCT",
+      "href": "/",
+      "url": "assets/logo-acct-black.svg",
+      "width": "145"
+    }
+  },
+  "flex-layout.row#footer-social-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children": ["social-networks"]
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Linkedin",
+          "url": "https://www.linkedin.com/company/acctglobal/"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/channel/UCv-y0Z8ZIu6kP-MpebdIVZA"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/acct.global"
+        }
+      ],
+      "showInColor": false
+    }
+  },
+  "flex-layout.row#footer-email-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children": ["rich-text#footer-email"]
+  },
+  "rich-text#footer-email": {
+    "props": {
+      "text": "contato@acct.global",
+      "blockClass": "footer",
+      "font": "Open Sans Condensed"
+    }
+  },
+
+  "flex-layout.col#footer-places-brazil-desktop": {
+    "props": {
+      "verticalAlign": "top",
+      "blockClass": "colAddressesFranklin"
+    },
+    "children": ["rich-text#footer-brazil"]
+  },
+  "flex-layout.col#footer-places-spain-desktop": {
+    "props": {
+      "verticalAlign": "top",
+      "blockClass": "colAddressesFranklin"
+    },
+    "children": ["rich-text#footer-spain"]
+  },
+  "flex-layout.col#footer-places-us-desktop": {
+    "props": {
+      "verticalAlign": "top",
+      "blockClass": "colAddressesFranklin"
+    },
+    "children": ["rich-text#footer-us"]
+  },
+  "rich-text#footer-brazil": {
+    "props": {
+      "text": "**BRAZIL** \n \n Al. Prof. Lucas Nogueira Garcez, 1395 \n Atibaia - SP \n \n Av. das Nações Unidas, 11.857 - 8º Andar - Brooklin - São Paulo - SP",
+      "blockClass": "richTextAddressesFranklin"
+    }
+  },
+  "rich-text#footer-spain": {
+    "props": {
+      "text": "**SPAIN** \n \n Carrer Provença, 339 \n 08037 - Barcelona",
+      "blockClass": "richTextAddressesFranklin"
+    }
+  },
+  "rich-text#footer-us": {
+    "props": {
+      "text": "**UNITED STATES** \n \n 12 East 49th Street \n NY \n 10017 - New York",
+      "blockClass": "richTextAddressesFranklin"
+    }
+  },
+  //
+  //
+  //                                Mobile section starts here
+  ////////////////////////////////////////////////////////////
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-mobile-row-1"
+    ]
+  },
+  "flex-layout.row#footer-mobile-row-1": {
+    "children": [
+      // "flex-layout.col#footer-mobile-row-1-col-1",
+      "flex-layout.row#footer-mobile-row-1-col-1"
+    ],
+    "props": {
+      // "blockClass": "credits",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 2
+    }
+  },
+  "flex-layout.row#footer-mobile-row-1-col-1": {
+    "children": [
+      "flex-layout.col#footer-images-mobile",
+      "rich-text#footer-brazil-mobile",
+      "rich-text#footer-spain-mobile",
+      "rich-text#footer-us-mobile"
+    ],
+    "props": {
+      // "blockClass": "credits",
+      "paddingTop": 4,
+      "paddingBottom": 8
+      // "rowGap": 1,
+      // "colGap": 1
+    }
+  },
+  "flex-layout.col#footer-mobile-row-1-col-1": {
+    "children": [
+      "flex-layout.col#footer-images-mobile",
+      "flex-layout.col#footer-places-brazil-mobile",
+      "flex-layout.col#footer-places-spain-mobile",
+      "flex-layout.col#footer-places-us-mobile"
+    ],
+    "props": {
+      // "blockClass": "credits",
+      "paddingTop": 4,
+      "paddingBottom": 4
+      // "rowGap": 1,
+      // "colGap": 1
+    }
+  },
+  "flex-layout.col#footer-images-mobile": {
+    "children":[
+      "flex-layout.col#footer-GPTW-stamp-mobile",
+      "logo#acct-mobile",
+      "flex-layout.row#footer-social-mobile",
+      "flex-layout.row#footer-email-desktop"
+    ],
+    "props": {
+      "blockClass": "colACCTFranklin",
+      "preventVerticalStretch": false,
+      "verticalAlign": "middle",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.row#footer-social-mobile": {
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children": ["social-networks"]
+  },
+  "flex-layout.col#footer-GPTW-stamp-mobile": {
+    "props": {
+      "verticalAlign": "middle",
+      "preventVerticalStretch": true,
+      "width": "50%"
+    },
+    "children": ["logo#GPTW-mobile"]
+  },
+  "logo#GPTW-mobile": {
+    "props": {
+      "title": "Logo GPTW Stamp",
+      "url": "assets/selo-gptw-2021.svg",
+      "width": "100"
+    }
+  },
+  "flex-layout.col#footer-logo-mobile": {
+    "props": {
+      "verticalAlign": "middle",
+      "width": "50%"
+    },
+    "children": ["logo#acct-mobile"]
+  },
+  "logo#acct-mobile": {
+    "props": {
+      "title": "Logo ACCT",
+      "href": "/",
+      "url": "assets/logo-acct-black.svg",
+      "width": "100px",
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.col#footer-places-brazil-mobile": {
+    "props": {
+      "verticalAlign": "top",
+      "blockClass": "colAddressesMobileFranklin"
+    },
+    "children": ["rich-text#footer-brazil-mobile"]
+  },
+  "flex-layout.col#footer-places-spain-mobile": {
+    "props": {
+      "verticalAlign": "top",
+      "horizontalAlign": "center",
+      "blockClass": "colAddressesMobileFranklin"
+    },
+    "children": ["rich-text#footer-spain-mobile"]
+  },
+  "flex-layout.col#footer-places-us-mobile": {
+    "props": {
+      "verticalAlign": "top",
+      "textAlign": "center",
+      "blockClass": "colAddressesMobileFranklin"
+    },
+    "children": ["rich-text#footer-us-mobile"]
+  },
+  "rich-text#footer-brazil-mobile": {
+    "props": {
+      "horizontalAlign":"center",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**BRAZIL** \n \n Al. Prof. Lucas Nogueira Garcez, 1395 \n Atibaia - SP \n \n Av. das Nações Unidas, 11.857 - 8º Andar - Brooklin - São Paulo - SP",
+      "blockClass": "richTextAddressesMobileFranklin"
+    }
+  },
+  "rich-text#footer-spain-mobile": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**SPAIN** \n \n Carrer Provença, 339 \n 08037 - Barcelona",
+      "blockClass": "richTextAddressesMobileFranklin"
+    }
+  },
+  "rich-text#footer-us-mobile": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**UNITED STATES** \n \n 12 East 49th Street \n NY \n 10017 - New York",
+      "blockClass": "richTextAddressesMobileFranklin"
+    }
+  }
+}

@@ -46,7 +46,7 @@ const Formulario: StorefrontFunctionComponent = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-column w-100">
+    <form onSubmit={handleSubmit} className="flex flex-column w-50">
       <h3>Solicite nosso contato:</h3>
       <div className="flex mb5">
         <label className="w-50  flex flex-column mr4">
@@ -171,9 +171,7 @@ const Formulario: StorefrontFunctionComponent = () => {
             name="caixa"
             value={lead.caixa}
             required
-            onChange={({
-              target: { value },
-            }: React.ChangeEvent<HTMLTextAreaElement>) =>
+            onChange={({ target: { value } }: any) =>
               handleFormChange('caixa', value)
             }
           ></textarea>

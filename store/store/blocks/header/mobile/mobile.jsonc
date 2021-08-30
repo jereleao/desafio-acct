@@ -1,0 +1,159 @@
+  //
+  //  Hiring Coders 2021 | Gama Academy | ACCT | VTEXT 
+  //
+  //  Projeto ACCT Clone
+  //  Grupo 13
+  //
+  //
+  //
+  //                                      Mobile Drawer Section
+  //                          Franklin Siqueira / Jeremias Leão
+  /////////////////////////////////////////////////////////////
+{
+    "drawer": {
+        "blocks": ["drawer-header#acct-drawer"],
+        "props":{
+            "size": 50,
+            "slideDirection": "rightToLeft",
+            "isFullWidth": true
+        },
+        "children": [
+            "menu#drawer"
+        ]
+    },
+    "drawer-header#acct-drawer":{
+        "children": [
+            // you need to include the block `drawer-close-button` somewhere inside here
+            "flex-layout.row#mobile-header",
+            "logo",
+            "drawer-close-button"
+        ]
+    },
+    "flex-layout.row#mobile-header":{
+        "children":[
+            "logo#mobile",
+            "logo"
+        ]
+    },
+    "logo#mobile": {
+        "props": {
+            "title": "Logomarca 2",
+            "href": "/",
+            "url": "/store/assets/logo-acct-white.svg",
+            "width": "145",
+            "blockClass": "logo"
+        }
+    },
+    // REFERÊNCIA
+    // Início
+    // ACCT+
+    // O que fazemos+
+    // Blog
+    // Parceiros
+    // Contato
+    // Idiomas:
+    // EN PT ES
+    "menu#drawer": {
+        "children": [
+            "menu-item#inicio",
+            "menu-item#acct",
+            "menu-item#o-que-fazemos",
+            "menu-item#blog",
+            "menu-item#contato",
+            "menu-item#idiomas"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    "menu-item#inicio":{
+        "props": {
+            "id": "menu-item-inicio",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/",
+              "noFollow": false,
+              "tagTitle": "Inicio",
+              "text": "Início"
+            }
+          }
+    },
+    "menu-item#acct":{
+        "props": {
+            "id": "menu-item-acct",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/",
+              "noFollow": false,
+              "tagTitle": "Acct",
+              "text": "ACCT"
+            }
+          }
+    },
+    "menu-item#o-que-fazemos":{
+        "props": {
+            "id": "menu-item-o-que-fazemos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/",
+              "noFollow": false,
+              "tagTitle": "o-que-fazemos",
+              "text": "O que fazemos"
+            }
+          }
+    },
+    "menu-item#blog":{
+        "props": {
+            "id": "menu-item-blog",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/",
+              "noFollow": false,
+              "tagTitle": "blog",
+              "text": "Blog"
+            }
+          }
+    },
+    "menu-item#contato":{
+        "props": {
+            "id": "menu-item-contato",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/",
+              "noFollow": false,
+              "tagTitle": "contato",
+              "text": "Contato"
+            }
+          }
+    },
+    "menu-item#idiomas":{
+        "props": {
+            "id": "menu-item-idiomas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/",
+              "noFollow": false,
+              "tagTitle": "idiomas",
+              "text": "Idiomas:"
+            }
+          }
+    }
+}
