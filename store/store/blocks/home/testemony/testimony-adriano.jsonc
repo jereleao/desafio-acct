@@ -1,0 +1,119 @@
+{
+  "flex-layout.row#testimony-adriano": {
+    "props": {
+      "fullwidth": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "testimony"
+    },
+    "children": [
+      "flex-layout.row#testimony-adriano-title-row",
+      "image#testimony-adriano-quote",
+      "rich-text#testimony-adriano-text",
+      "flex-layout.row#testimony-adriano-profile-row"
+    ]
+  },
+
+  "flex-layout.row#testimony-adriano-title-row": {
+    "props": {
+      "fullwidth": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "testimony-title-row"
+    },
+    "children": ["rich-text#testimony-adriano-title", "rich-text#testimony-adriano_"]
+  },
+  "rich-text#testimony-adriano-title": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Depoimentos",
+      "textColor": "c-default",
+      "blockClass": "testimony-title"
+    }
+  },
+  "rich-text#testimony-adriano_": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "_",
+      "textColor": "c-link",
+      "blockClass": "testimony_"
+    }
+  },
+
+  "image#testimony-adriano-quote": {
+    "props": {
+      "src": "assets/quote.svg",
+      "blockClass": "testimony-quote"
+    }
+  },
+
+  "rich-text#testimony-adriano-text": {
+    "props": {
+      "textPosition": "CENTER",
+      "text": "A Tok & Stok precisava evoluir sua experiência de compra online. Nossas lojas já estão bastante consolidadas e somos referência em experiência em móveis e decoração. Nosso desafio era fazer exatamente esse mesmo movimento no digital, de forma bastante acelerada.",
+      "textColor": "c-muted-1",
+      "blockClass": "testimony-text"
+    }
+  },
+
+  "flex-layout.row#testimony-adriano-profile-row": {
+    "props": {
+      "fullwidth": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "testimony-profile-row"
+    },
+    "children": [
+      "image#testimony-adriano-profile-img",
+      "flex-layout.row#testimony-adriano-profile-text-row"
+    ]
+  },
+
+  "flex-layout.row#testimony-adriano-profile-text-row": {
+    "props": {
+      "fullwidth": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "testimony-profile-text-row"
+    },
+    "children": [
+      "rich-text#testimony-adriano-profile-name",
+      "rich-text#testimony-adriano-profile-occupation"
+    ]
+  },
+  "image#testimony-adriano-profile-img": {
+    "props": {
+      "src": "assets/testimony/adriano-tok-stok.jpg",
+      "blockClass": "testimony-profile-img"
+    }
+  },
+  "rich-text#testimony-adriano-profile-name": {
+    "props": {
+      "textPosition": "CENTER",
+      "text": "ADRIANO DI BELLA TAVOLLASSI",
+      "blockClass": "testimony-profile-name"
+    }
+  },
+  "rich-text#testimony-adriano-profile-occupation": {
+    "props": {
+      "textPosition": "CENTER",
+      "text": "Ex-Diretor de E-commerce e Digital - Tok & Stok",
+      "textColor": "c-muted-1",
+      "blockClass": "testimony-profile-occupation"
+    }
+  }
+}

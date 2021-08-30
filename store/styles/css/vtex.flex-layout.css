@@ -1,5 +1,13 @@
+.flexCol--nav-down {
+  padding-right: 0.75rem;
+}
+
 .flexRow--menu-item:hover {
   color: #fcc200;
+}
+
+.flexRowContent--main-header-mobile {
+  align-items: center;
 }
 
 .flexRowContent--about-flex-card {
@@ -45,4 +53,45 @@
   background-size: cover;
   background-position-x: center;
   padding: 96px 20px;
+}
+
+/* ----- Testimony ----- */
+.flexRow--testimony {
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.flexRowContent--testimony {
+  width: calc(100% - 10px);
+  align-items: center;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+@media (min-width: 700px) {
+  .flexRowContent--testimony {
+    width: calc(100% - 150px);
+  }
+}
+
+@media (max-width: 400px) {
+  .flexRowContent--testimony-profile-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flexRowContent--testimony-profile-text-row {
+    align-items: center;
+  }
+}
+
+
+.flexRowContent--testimony,
+.flexRowContent--testimony-profile-text-row {
+  flex-direction: column;
+}
+
+.flexRowContent--testimony-profile-text-row {
+  height: 100%;
+  justify-content: center;
 }
