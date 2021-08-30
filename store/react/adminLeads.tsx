@@ -11,33 +11,29 @@ const AdminLeads: FC = () => {
 
   const defaultSchema = {
     properties: {
-      id: {
-        title: 'Id',
-        width: 200,
-      },
       name: {
         title: 'Name',
-        minWidth: 350,
-      },
-      phone: {
-        title: 'Phone',
-        minWidth: 100,
-      },
-      company: {
-        title: 'Company',
-        minWidth: 100,
+        minWidth: 250,
       },
       email: {
         title: 'Email',
-        minWidth: 100,
+        minWidth: 200,
+      },
+      phone: {
+        title: 'Phone',
+        minWidth: 110,
       },
       country: {
         title: 'Country',
         minWidth: 100,
       },
+      company: {
+        title: 'Company',
+        minWidth: 200,
+      },
       company_position: {
         title: 'Company Position',
-        minWidth: 100,
+        minWidth: 200,
       },
       company_size: {
         title: 'Company Size',
@@ -45,11 +41,11 @@ const AdminLeads: FC = () => {
       },
       url: {
         title: 'URL',
-        minWidth: 100,
+        minWidth: 200,
       },
       message: {
         title: 'Message',
-        minWidth: 100,
+        minWidth: 200,
       },
       client_type: {
         title: 'Client Type',
@@ -57,11 +53,11 @@ const AdminLeads: FC = () => {
       },
       created_at: {
         title: 'Created At',
-        minWidth: 100,
+        minWidth: 230,
       },
       updated_at: {
         title: 'Updated_At',
-        minWidth: 100,
+        minWidth: 230,
       },
     },
   }
