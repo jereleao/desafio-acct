@@ -3,10 +3,10 @@
     "blocks": [
       "back-to-top-btn",
       "slider-layout#home",
-      "flex-layout.row#about-us",
+      "flex-layout.row#home-about-us",
       "clients",
       "services",
-      "flex-layout.row#testimony",
+      "slider-layout#testimony",
       "flex-layout.row#form"
     ]
   },
@@ -37,7 +37,7 @@
     }
   },
 
-  // ----- Home: Slider -----
+  // ----- Main Slider -----
   "slider-layout#home": {
     "props": {
       "itemsPerPage": {
@@ -57,114 +57,29 @@
     "children": ["slider-tecnology", "slider-engineering", "slider-product", "slider-info"]
   },
 
-  // ----- About-us -----
-  "flex-layout.row#about-us": {
+  // ----- Testimony Slider -----
+  "slider-layout#testimony": {
     "props": {
-      "fullWidth": true,
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "blockClass": "about-flex-card"
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "blockClass": "testimony-slider",
+      "showNavigationArrows": "desktopOnly",
+      "usePagination": true,
+      "showPaginationDots": "never",
+      "infinite": true,
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      }
     },
     "children": [
-      "flex-layout.row#about-title-row",
-      "rich-text#about-text",
-      "rich-text#about-button"
+      "flex-layout.row#testimony-nelson",
+      "flex-layout.row#testimony-gustavo",
+      "flex-layout.row#testimony-adriano"
     ]
-  },
-  "flex-layout.row#about-title-row": {
-    "props": {
-      "fullWidth": true,
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "blockClass": "about-title-row"
-    },
-    "children": [
-      "flex-layout.row#about-title-row1",
-      "flex-layout.row#about-title-row2"
-    ]
-  },
-
-  "flex-layout.row#about-title-row1": {
-    "props": {
-      "fullWidth": true,
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "blockClass": "about-title-row1"
-    },
-    "children": ["rich-text#about-title1", "rich-text#about-title-yellow1"]
-  },
-  "rich-text#about-title1": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "Buscamos constantemente a",
-      "textColor": "c-default",
-      "blockClass": "about-title"
-    }
-  },
-  "rich-text#about-title-yellow1": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "liderança global",
-      "textColor": "c-link",
-      "blockClass": "about-title-yellow"
-    }
-  },
-
-  "flex-layout.row#about-title-row2": {
-    "props": {
-      "fullWidth": true,
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "blockClass": "about-title-row2"
-    },
-    "children": ["rich-text#about-title2", "rich-text#about-title-yellow2"]
-  },
-  "rich-text#about-title2": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "quando se trata de",
-      "textColor": "c-default",
-      "blockClass": "about-title"
-    }
-  },
-  "rich-text#about-title-yellow2": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "soluções para comércio digital",
-      "textColor": "c-link",
-      "blockClass": "about-title-yellow"
-    }
-  },
-
-  "rich-text#about-text": {
-    "props": {
-      "textPosition": "CENTER",
-      "text": "Quando o assunto é e-commerce, somos líderes! Desenvolvemos soluções para empresas que buscam crescimento. Seja a criação de um aplicativo móvel, um site totalmente novo ou aumentar o desempenho e a inteligência da sua organização, nós oferecemos o suporte necessário às empresas na era digital.",
-      "textColor": "c-default",
-      "blockClass": "about-text"
-    }
-  },
-
-  "rich-text#about-button": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "Saiba mais sobre nós",
-      "blockClass": "about-button"
-    }
-  },
-
-  // ----- Testemony -----
-  "flex-layout.row#testimony": {
-    "children": ["flex-layout.row#testimony-title-row"]
   },
 
   // ----- Form -----
