@@ -1,6 +1,8 @@
 import React from "react";
+import { useMutation, useQuery } from 'react-apollo';
+import ADD_LEAD from "./graphql/addlead.gql"
 
-interface Lead {
+interface InputLeadPT {
   nome: string;
   telefone: string;
   empresa: string;
@@ -13,7 +15,7 @@ interface Lead {
 }
 
 const Formulario: StorefrontFunctionComponent = () => {
-  const [lead, setLead] = React.useState({
+  const clearLead = {
     nome: "",
     telefone: "",
     empresa: "",
@@ -23,21 +25,24 @@ const Formulario: StorefrontFunctionComponent = () => {
     cargo: "",
     url: "",
     caixa: "",
-  });
+  }
+  const [lead, setLead] = React.useState(clearLead);
+const[addLead,{loading, data, error }]  = useMutation(ADD_LEAD, {onCompleted:() => setLead(clearLead)})
+console.log({loading, data, error })
 
   const handleFormChange = (property: string, value: string) =>
     setLead((prev) => ({ ...prev, [property]: value }));
 
-  const sendLead = (lead: Lead) => {
-    console.log(lead);
+  const sendLead = (lead: InputLeadPT) => {
+    addLead({variables:{lead}})
   };
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     sendLead(lead);
   };
 
+
   return (
-    <div className="w-100">
       <div className="flex justify-end center w-70">
         <form onSubmit={handleSubmit} className="flex flex-column w-50">
           <h3>Solicite nosso contato:</h3>
@@ -166,7 +171,6 @@ const Formulario: StorefrontFunctionComponent = () => {
                 type="text"
                 name="url"
                 value={lead.url}
-                required
                 onChange={({
                   target: { value },
                 }: React.ChangeEvent<HTMLInputElement>) =>
@@ -199,9 +203,11 @@ const Formulario: StorefrontFunctionComponent = () => {
           >
             Enviar
           </button>
+          {data && <p className="c-button-blue">Obrigado pela sua mensagem, já foi enviada</p>}
+          {error && <p className="b--warning ba bw1 b--solid pv3 ph6">Ocorreu um erro ao tentar enviar sua mensagem. Por favor, tente novamente mais tarde.</p> }
         </form>
       </div>
-    </div>
+    
   );
 };
 
