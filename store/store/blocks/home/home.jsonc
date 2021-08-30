@@ -1,12 +1,13 @@
 {
   "store.home": {
     "blocks": [
+      "back-to-top-btn",
       "slider-layout#home",
       "flex-layout.row#about-us",
       "clients",
       "services",
       "flex-layout.row#testimony",
-      "formulario"
+      "flex-layout.row#form"
     ]
   },
 
@@ -45,20 +46,18 @@
         "phone": 1
       },
       "blockClass": "slider",
-      // O slide não funciona se o showNavigationArrows estiver ativo
-      // "showNavigationArrows": "desktopOnly",
       "usePagination": true,
-      "showPaginationDots": "never"
-      // "infinite": true,
-      // "autoplay": {
-      //   "timeout": 5000,
-      //   "stopOnHover": true
-      // }
+      "showPaginationDots": "never",
+      "infinite": true,
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      }
     },
     "children": ["slider-tecnology", "slider-engineering", "slider-product", "slider-info"]
   },
 
-  // ----- Home: About-us -----
+  // ----- About-us -----
   "flex-layout.row#about-us": {
     "props": {
       "fullWidth": true,
@@ -163,9 +162,25 @@
     }
   },
 
-  // ----- Home: Testemony -----
+  // ----- Testemony -----
   "flex-layout.row#testimony": {
     "children": ["flex-layout.row#testimony-title-row"]
+  },
+
+  // ----- Form -----
+  "flex-layout.row#form": {
+    "props": {
+      "horizontalAlign": "right",
+      "blockClass": "form"
+    },
+    "children": ["flex-layout.col#form"]
+  },
+  "flex-layout.col#form": {
+    "props": {
+      "width": "50%",
+      "blockClass": "form"
+    },
+    "children": ["formulario"]
   }
 
 }
