@@ -34,7 +34,8 @@
                 "desktop": 5,
                 "tablet": 3,
                 "phone": 1
-            }
+            },
+            "blockClass": "slider-timeACCT"
        
         }
     },
@@ -65,7 +66,8 @@
         "props":{
             "text": " **Ammon Cunha** \n Head of Business Intelligence",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person1"
         }
     },
 
@@ -86,7 +88,8 @@
        "props":{
            "text": " **Ana Lebre** \n Sales Analyst",
            "textAlignment": "CENTER",
-           "textPosition": "CENTER"
+           "textPosition": "CENTER",
+           "blockClass": "text-person2"
        }
    },
 
@@ -107,7 +110,8 @@
         "props":{
             "text": " **André Dudek** \n Director & Partner",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person3"
         }
     },
     
@@ -128,7 +132,8 @@
        "props":{
            "text": " **Ana Chimenes** \n Head de Controladoria e \n Backoffice",
            "textAlignment": "CENTER",
-           "textPosition": "CENTER"
+           "textPosition": "CENTER",
+           "blockClass": "text-person4"
        }
    },
 
@@ -149,7 +154,8 @@
         "props":{
             "text": " **Bárbara Cruz** \n Design Experience",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person5"
         }
     },
 
@@ -170,7 +176,8 @@
         "props":{
             "text": " **Camila Santos** \n Sales Analyst",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person6"
         }
     },
     
@@ -191,7 +198,8 @@
         "props":{
             "text": " **Carlos Oliveira** \n Sales Manager Brazil",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person7"
         }
     },
 
@@ -212,7 +220,8 @@
         "props":{
             "text": " **Cecília Pereira** \n Head of Trainning and \n Development",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person8"
         }
     },
 
@@ -233,7 +242,8 @@
         "props":{
             "text": " **Fábio Feichtinger** \n CTO & Partner",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person9"
         }
     },
 
@@ -254,7 +264,8 @@
         "props":{
             "text": " **Fátima Raizaro** \n Head of RH",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person10"
         }
     },
 
@@ -275,7 +286,8 @@
         "props":{
             "text": " **Frederico Heitmann** \n CEO & Partner",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person11"
         }
     },
 
@@ -296,7 +308,8 @@
         "props":{
             "text": " **Guilherme Cardoso** \n Head of Engineering",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person12"
         }
     },
 
@@ -317,7 +330,8 @@
         "props":{
             "text": " **Juan Nader** \n Head of Marketing",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person13"
         }
     },
 
@@ -338,7 +352,8 @@
         "props":{
             "text": " **Marcos Cipriani** \n General Manager Europe",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person14"
         }
     },
 
@@ -359,7 +374,8 @@
         "props":{
             "text": " **Rafael Esberard** \n SVP of Global Sales",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person15"
         }
     },
 
@@ -380,7 +396,8 @@
         "props":{
             "text": " **Rafael Rossini** \n Developer",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person16"
         }
     },
 
@@ -401,7 +418,8 @@
         "props":{
             "text": " **Rodrigo de Gouveia** \n Design Experience Director",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person17"
         }
     },
 
@@ -422,7 +440,8 @@
         "props":{
             "text": " **Urânia Reis** \n Head of Quality Assurance",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person18"
         }
     },
 
@@ -443,7 +462,8 @@
         "props":{
             "text": " **Victor Angelotti** \n Designer",
             "textAlignment": "CENTER",
-            "textPosition": "CENTER"
+            "textPosition": "CENTER",
+            "blockClass": "text-person19"
         }
     }
 

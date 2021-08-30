@@ -26,11 +26,26 @@
   height: auto;
 }
 
-.imageElement--icon-engenharia {
+.imageElement--icon-engenharia, .imageElement--icon-habilidades, 
+.imageElement--icon-lider, .imageElement--icon-suporte,
+.imageElement--icon-seguranca {
   margin-left: 70px;
   margin-right: 70px;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
+.imageElement--icon-engenharia:hover, .imageElement--icon-habilidades:hover,
+.imageElement--icon-lider:hover, .imageElement--icon-suporte:hover,
+.imageElement--icon-seguranca:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 0.5;
+}
+
+/*
 .imageElement--icon-habilidades {
   margin-left: 70px;
   margin-right: 70px;
@@ -50,118 +65,24 @@
   margin-left: 70px;
   margin-right: 70px;
 }
+*/
 
-.imageElement--person1 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person2 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person3 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person4 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person5 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person6 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person7 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person8 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person9 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person10 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person11 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person12 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person13 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person14 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person15 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person16 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person17 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
-.imageElement--person18 {
-  border-radius: 50%;
-  border-color: lightgrey;
-  border-width: 3px 3px;
-  border-style: solid;
-}
+.imageElement--person1, .imageElement--person2,
+.imageElement--person3, .imageElement--person4,
+.imageElement--person5, .imageElement--person6,
+.imageElement--person7, .imageElement--person8,
+.imageElement--person9, .imageElement--person10,
+.imageElement--person11, .imageElement--person12,
+.imageElement--person13, .imageElement--person14,
+.imageElement--person15, .imageElement--person16,
+.imageElement--person17, .imageElement--person18,
 .imageElement--person19 {
   border-radius: 50%;
   border-color: lightgrey;
   border-width: 3px 3px;
   border-style: solid;
+}
+
+.container--somos {
+  padding-bottom: 100px;
 }

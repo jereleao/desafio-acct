@@ -2,10 +2,11 @@
     "store.custom#about-us": { /* front-end da página SOBRE-NOS utilizando o vtex io */
     "blocks": [ 
       "stack-layout#about-us",
-      "flex-layout.row#title-projetando",
+      "rich-text#projetando",
       "flex-layout.row#somos",
       "rich-text#porque-acct",
       "flex-layout.row#icons-porque",
+      "clients",
       "rich-text#time",
       "rich-text#time-subtitle",
       "slider-layout#about-us", /* slider com os integrantes do Time ACCT, arquivo /pages/slider-layout.jsonc */
@@ -35,25 +36,15 @@
       }
     },
 
-    "flex-layout.row#title-projetando":{
-      "children":["rich-text#projetando1", "rich-text#projetando2"]
-    },
-
-    "rich-text#projetando1":{ /* título projetando...digital e suas configurações */
+    "rich-text#projetando":{ /* título projetando...digital e suas configurações */
       "props":{
         "textAlignment": "CENTER",
         "textPosition": "CENTER",
-        "text": "Projetando o"
+        "text": " **Projetando o** futuro do comércio digital",
+        "blockClass": "projetando"
       }
     },
-    "rich-text#projetando2":{ /* título projetando...digital e suas configurações */
-      "props":{
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER",
-        "text": "futuro do comércio digital"
-      }
-    },
-
+ 
     "flex-layout.row#somos": { /* bloco destinado as colunas após o título projetando..., que descreve o propósito da ACCT */
       "children": ["flex-layout.col#text-somos", "image#somos-image"] /* conteúdos da flex-laoytu.row#somos, hierarquia children */
     },
@@ -83,7 +74,8 @@
       "props":{
         "textAlignment": "CENTER",
         "textPosition": "CENTER",
-        "text": "### Por que a ACCT?"
+        "text": "**Por que a ACCT?**_",
+        "blockClass": "title-porque"
       }
     },
 
@@ -100,11 +92,17 @@
         "flex-layout.col#lider",
         "flex-layout.col#suporte",
         "flex-layout.col#seguranca"      
-        ]  /* declaração dos blocos de cada ícone a ser usado */
+        ],  /* declaração dos blocos de cada ícone a ser usado */
+        "props":{
+          "blockClass": "icons-por-que"
+        }
         
     },
     "flex-layout.col#engenharia":{  /* bloco referente ao ícone engenharia */
-      "children":["image#icon-engenharia", "rich-text#title-engenharia"]
+      "children":["image#icon-engenharia", "rich-text#title-engenharia"],
+      "props":{
+        "blockClass": "col-engenharia"
+      }
     },
     "image#icon-engenharia": { /* imagem do ícone engenharia */
       "props": {
@@ -118,11 +116,15 @@
       "props": {
         "textAlignment": "CENTER",
         "textPosition": "CENTER",
-        "text": "Engenharia de Dados de Alta Complexidade"
+        "text": "Engenharia de Dados de Alta \n Complexidade",
+        "blockClass": "title-engenharia"
       }
     },
     "flex-layout.col#habilidades":{ /* bloco referente ao ícone habilidades */
-      "children":["image#icon-habilidades", "rich-text#title-habilidades"]
+      "children":["image#icon-habilidades", "rich-text#title-habilidades"],
+      "props":{
+        "blockClass": "col-habilidades"
+      }
     },
     "image#icon-habilidades": { /* imagem do ícone habilidades */
       "props": {
@@ -136,11 +138,15 @@
       "props": {
         "textAlignment": "CENTER",
         "textPosition": "CENTER",
-        "text": "Habilidades Técnicas"
+        "text": "Habilidades Técnicas",
+        "blockClass": "title-habilidades"
       }
     },
     "flex-layout.col#lider":{ /* bloco referente ao ícone líder */
-      "children":["image#icon-lider", "rich-text#title-lider"]
+      "children":["image#icon-lider", "rich-text#title-lider"],
+      "props":{
+        "blockClass": "col-lider"
+      }
     },
     "image#icon-lider": { /* imagem do ícone líder */
       "props": {
@@ -154,11 +160,15 @@
       "props": {
         "textAlignment": "CENTER",
         "textPosition": "CENTER",
-        "text": "Líder de Mercado em Implementações \n VTEX IO"
+        "text": "Líder de Mercado em Implementações \n VTEX IO",
+        "blockClass": "title-lider"
       }
     },
     "flex-layout.col#suporte":{ /* bloco referente ao ícone suporte */
-      "children":["image#icon-suporte", "rich-text#title-suporte"]
+      "children":["image#icon-suporte", "rich-text#title-suporte"],
+      "props":{
+        "blockClass": "col-suporte"
+      }
     },
     "image#icon-suporte": { /* imagem do ícone suporte */
       "props": {
@@ -172,11 +182,15 @@
       "props": {
         "textAlignment": "CENTER",
         "textPosition": "CENTER",
-        "text": "Excelente Suporte ao Cliente"
+        "text": "Excelente Suporte ao Cliente",
+        "blockClass": "title-suporte"
       }
     },
     "flex-layout.col#seguranca":{ /* bloco referente ao ícone segurança */
-      "children":["image#icon-seguranca", "rich-text#title-seguranca"]
+      "children":["image#icon-seguranca", "rich-text#title-seguranca"],
+      "props":{
+        "blockClass": "col-seguranca"
+      }
     },
     "image#icon-seguranca": { /* imagem do ícone segurança */
       "props": {
@@ -190,7 +204,8 @@
       "props": {
         "text": "Segurança e Confiabilidade",
         "textAlignment": "CENTER",
-        "textPosition": "CENTER"
+        "textPosition": "CENTER",
+        "blockClass": "title-seguranca"
       }
     },
 
@@ -198,14 +213,16 @@
       "props":{
         "textAlignment": "CENTER",
         "textPosition": "CENTER",
-        "text": "Time"
+        "text": "**Time**_",
+        "blockClass": "title-time"
       }
     },
     "rich-text#time-subtitle":{ /* subtítulo da seção Time_ */
       "props":{
         "textAlignment": "CENTER",
         "textPosition": "CENTER",
-        "text": "A ACCT tem uma equipe interna de alto desempenho com recursos de 360 graus para fornecer soluções de tecnologia de alta complexidade."
+        "text": "**A ACCT tem uma equipe interna de alto desempenho** com recursos de 360 graus para fornecer soluções de tecnologia de alta complexidade.",
+        "blockClass": "subtitle-time"
       }
     },
 
