@@ -39,4 +39,13 @@
     align-items: center;
   }
 }
-
+.flexColChild--form {
+  max-width: 540px;
+}
+.flexRow--form {
+  background-image: url('assets/bg-form.jpg');
+  margin: 0;
+  background-size: cover;
+  background-position-x: center;
+  padding: 96px 20px;
+}
