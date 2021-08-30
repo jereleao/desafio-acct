@@ -46,3 +46,29 @@
   background-position-x: center;
   padding: 96px 20px;
 }
+.flexCol--product-shelf {
+  margin: 30px 11px;
+  padding: 30px 45px;
+}
+.flexColChild--product-shelf :global(.vtex-button) {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.flexColChild--product-shelf :global(.vtex-button):hover {
+  background-color: #fff;
+  color: #000;
+  animation: fade 0.5s linear;
+  -webkit-animation: fade 0.5s linear;
+}
+
+@keyframes fade {
+  0% {
+    background-color: transparent;
+    color: #fff;
+  }
+  100% {
+    background-color: #fff;
+    color: #000;
+  }
+}

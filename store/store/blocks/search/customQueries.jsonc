@@ -39,13 +39,10 @@
     }
   },
   "product-summary.shelf#customQuery": {
-    "children": [
-      "product-summary-name",
-      "stack-layout#product-shelf",
-      "product-summary-description",
-      "product-summary-price",
-      "product-summary-buy-button"
-    ]
+    "props": {
+      "blockClass": "product-shelf"
+    },
+    "children": ["stack-layout#product-shelf"]
   },
   "stack-layout#product-shelf": {
     "children": ["product-summary-image", "flex-layout.col#product-shelf"]
@@ -54,6 +51,22 @@
     "props": {
       "blockClass": "product-shelf"
     },
-    "children": ["product-summary-name"]
+    "children": [
+      "product-summary-description",
+      "product-summary-name",
+      "product-summary-price",
+      "add-to-cart-button"
+    ]
+  },
+  "product-summary-buy-button": {
+    "props": {
+      "isOneClickBuy": false,
+      "buyButtonText": "HA"
+    }
+  },
+  "add-to-cart-button": {
+    "props": {
+      "text": "saiba mais"
+    }
   }
 }
