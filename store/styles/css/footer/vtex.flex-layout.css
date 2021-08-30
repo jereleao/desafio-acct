@@ -1,0 +1,19 @@
+/* .flexCol .footer-GPTW-logo-desktop{
+  background-color: yellow;
+} */
+.flexCol--colAddressesFranklin{ 
+  align-items: left;
+  justify-content: left;
+  justify-items:left;
+}
+.flexCol--colStampFranklin{ 
+  align-items:flex-end;
+  /* justify-content: right;
+  justify-items:left; */
+}
+.flexRow--logoRowFranklin{
+  /* background-color:turquoise; */
+  align-items: right;
+  justify-content: right;
+  justify-items:right;
+}

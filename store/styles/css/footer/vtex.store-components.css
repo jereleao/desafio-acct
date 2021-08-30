@@ -1,0 +1,21 @@
+
+.sizeDesktop--sizeDesktopFranklin{
+  /* background-color: green; */
+  align-items: center;
+  justify-content:space-between;
+}
+.logoContainer--logoContainerFranklin{
+  /* background-color: blue; */
+  align-items: center;
+  justify-content:space-between;
+}
+.logoImage--logoImageFranklin{
+  /* margin: 10px;
+  padding: 10px; */
+}
+.logoLink--logoLinkFranklin{
+  /* background-color: yellow; */
+  align-items: right;
+  justify-content: right;
+}
+

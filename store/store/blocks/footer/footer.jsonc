@@ -1,12 +1,21 @@
+
 {
   "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    "blocks": [
+      "footer-layout.desktop", 
+      "footer-layout.mobile"
+    ]
   },
   "footer-layout.desktop": {
-    "children": ["flex-layout.row#footer-desktop"]
+    "children": [
+      "flex-layout.row#footer-desktop-franklin"
+    ]
   },
-
-  "flex-layout.row#footer-desktop": {
+  //
+  //
+  //                                Desktop section starts here
+  /////////////////////////////////////////////////////////////
+  "flex-layout.row#footer-desktop-franklin": {
     "children": [
       "flex-layout.col#footer-GPTW-logo-desktop",
       "flex-layout.col#footer-logo-social-desktop",
@@ -23,22 +32,25 @@
 
   "flex-layout.col#footer-GPTW-logo-desktop": {
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "top",
+      "blockClass": "colStampFranklin"
     },
-    "children": ["logo#GPTW"]
+    "children": [
+      "logo#GPTW"
+    ]
   },
   "logo#GPTW": {
     "props": {
       "title": "Logo GPTW Stamp",
       "href": "/",
       "url": "assets/selo-gptw-2021.svg",
-      "width": "100"
+      "width": "120"
     }
   },
 
   "flex-layout.col#footer-logo-social-desktop": {
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "top"
     },
     "children": [
       "flex-layout.row#footer-logo-desktop",
@@ -49,12 +61,14 @@
   "flex-layout.row#footer-logo-desktop": {
     "props": {
       "verticalAlign": "middle",
-      "horizontalAlign": "middle"
+      "horizontalAlign": "center",
+      "blockClass": "logoRowFranklin"
     },
     "children": ["logo#acct"]
   },
   "logo#acct": {
     "props": {
+      "blockClass": "logoLinkFranklin",
       "title": "Logo ACCT",
       "href": "/",
       "url": "assets/logo-acct-black.svg",
@@ -83,7 +97,8 @@
           "name": "Instagram",
           "url": "https://www.instagram.com/acct.global"
         }
-      ]
+      ],
+      "showInColor": false
     }
   },
   "flex-layout.row#footer-email-desktop": {
@@ -103,64 +118,84 @@
 
   "flex-layout.col#footer-places-brazil-desktop": {
     "props": {
-      "verticalAlign": "top"
+      "verticalAlign": "top",
+      "blockClass": "colAddressesFranklin"
     },
     "children": ["rich-text#footer-brazil"]
   },
-  "flex-layout.col#footer-places-us-desktop": {
+  "flex-layout.col#footer-places-spain-desktop": {
     "props": {
-      "verticalAlign": "top"
+      "verticalAlign": "top",
+      "blockClass": "colAddressesFranklin"
     },
     "children": ["rich-text#footer-spain"]
   },
-  "flex-layout.col#footer-places-spain-desktop": {
+  "flex-layout.col#footer-places-us-desktop": {
     "props": {
-      "verticalAlign": "top"
+      "verticalAlign": "top",
+      "blockClass": "colAddressesFranklin"
     },
     "children": ["rich-text#footer-us"]
   },
   "rich-text#footer-brazil": {
     "props": {
-      "text": "**BRAZIL** \n \n Al. Prof. Lucas Nogueira \n Garcez, 1395 \n Atibaia - SP \n \n Av. das Nações Unidas, 11.857 - 8º Andar \n Brooklin \n São Paulo - SP",
-      "blockClass": "footer"
+      "text": "**BRAZIL** \n \n Al. Prof. Lucas Nogueira Garcez, 1395 \n Atibaia - SP \n \n Av. das Nações Unidas, 11.857 - 8º Andar - Brooklin - São Paulo - SP",
+      "blockClass": "richTextAddressesFranklin"
     }
   },
   "rich-text#footer-spain": {
     "props": {
       "text": "**SPAIN** \n \n Carrer Provença, 339 \n 08037 - Barcelona",
-      "blockClass": "footer"
+      "blockClass": "richTextAddressesFranklin"
     }
   },
   "rich-text#footer-us": {
     "props": {
       "text": "**UNITED STATES** \n \n 12 East 49th Street \n NY \n 10017 - New York",
-      "blockClass": "footer"
+      "blockClass": "richTextAddressesFranklin"
     }
   },
-
+  //
+  //
+  //                                Mobile section starts here
+  ////////////////////////////////////////////////////////////
   "footer-layout.mobile": {
-    "children": ["flex-layout.row#footer-mobile-row-1"]
+    "children": [
+      "flex-layout.row#footer-mobile-row-1"
+    ]
   },
   "flex-layout.row#footer-mobile-row-1": {
-    "children": ["flex-layout.row#footer-mobile-row-1-col-1"],
+    "children": [
+      "flex-layout.row#footer-mobile-row-1-col-1"
+    ],
     "props": {
-      "blockClass": "credits",
+      // "blockClass": "credits",
       "paddingTop": 4,
       "paddingBottom": 4
     }
   },
   "flex-layout.row#footer-mobile-row-1-col-1": {
     "children": [
+      "flex-layout.row#footer-images-mobile",
       "flex-layout.col#footer-GPTW-stamp-mobile",
-      "flex-layout.col#footer-logo-mobile"
+      "flex-layout.col#footer-logo-mobile",
+      "rich-text#footer-brazil",
+      "rich-text#footer-spain",
+      "rich-text#footer-us"
     ],
     "props": {
-      "blockClass": "credits",
+      // "blockClass": "credits",
       "paddingTop": 4,
       "paddingBottom": 4,
       "rowGap": 1,
       "colGap": 1
     }
+  },
+  "flex-layout.row#footer-images-mobile": {
+    "children":[
+      "logo#GPTW-mobile",
+      "logo#acct-mobile"
+    ]
   },
   "flex-layout.col#footer-GPTW-stamp-mobile": {
     "props": {
@@ -171,7 +206,6 @@
   "logo#GPTW-mobile": {
     "props": {
       "title": "Logo GPTW Stamp",
-      "href": "/",
       "url": "assets/selo-gptw-2021.svg",
       "width": "100"
     }
@@ -195,7 +229,7 @@
       "paddingTop": 4,
       "paddingBottom": 4
     },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+    "children": []
   },
   "rich-text#footer-mobile": {
     "props": {

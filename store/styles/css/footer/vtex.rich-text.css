@@ -1,0 +1,46 @@
+/* .paragraph--page-title {
+  margin: 80px 0;
+  font-size: 36px;
+} */
+.paragraph--footer{
+  /* color: #fcc200;
+  margin: 80px 0; */
+  /* font-size: 36px; */
+}
+
+/* .strong--footer{
+  color: red;
+  font-size: small;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 900;
+  font-stretch: condensed;
+} */
+.container,
+.container--footer{ 
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.container--addresses--franklin{ 
+  align-items: center;
+  justify-content: center;
+  justify-items:left
+}
+
+.link--footer {
+  text-decoration: none;
+  text-align: center;;
+  align-items: center;
+}
+
+.container--richTextAddressesFranklin{
+  /* background-color: tomato; */
+  justify-items: left;
+  justify-content: left;
+}
+
+.strong--richTextAddressesFranklin {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+}

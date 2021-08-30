@@ -1,0 +1,46 @@
+/**
+ * Copyright 2021 Franklin Siqueira.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/* .footer .strong--footer{
+    color: red;
+}
+
+.flexRowContent--credits{
+     background-color: black;
+     font-family: 'Open Sans Condensed', sans-serif;
+ }
+ */
+.socialNetworksContainer{
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+} 
+.socialNetworkImage--youtube{
+    /* background-color: blue;
+    color: red; */
+    border-radius: 50%;
+}
+.socialNetworkImage--linkedin{
+    /* background-color: blue;
+    color: red; */
+    border-radius: 50%;
+}
+.socialNetworkImage--instagram{
+    /* background-color: blue;
+    color: red; */
+    border-radius: 50%;
+}
+
+/* .paragraph--footer{
+    color: red;
+    font-family: 'Open Sans Condensed', sans-serif !important;
+}
+.strong--footer{
+    color: red;
+}
+
+.row--credits{
+    background-color: blue;
+  } */
