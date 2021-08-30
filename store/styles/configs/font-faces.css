@@ -1,41 +1,96 @@
+/* open-sans-300 - latin */
 @font-face {
   font-family: 'Open Sans';
   src: url(assets/fonts/open-sans-v23-latin-300.woff), url(assets/fonts/open-sans-v23-latin-300.woff2);
   font-weight: 300;
 }
 
+/* open-sans-400 - latin */
 @font-face {
   font-family: 'Open Sans';
   src: url(assets/fonts/open-sans-v23-latin-regular.woff), url(assets/fonts/open-sans-v23-latin-regular.woff2);
   font-weight: 400;
 }
 
+/* open-sans-600 - latin */
 @font-face {
   font-family: 'Open Sans';
   src: url(assets/fonts/open-sans-v23-latin-600.woff), url(assets/fonts/open-sans-v23-latin-600.woff2);
   font-weight: 600;
 }
 
+/* open-sans-700 - latin */
 @font-face {
   font-family: 'Open Sans';
   src: url(assets/fonts/open-sans-v23-latin-700.woff), url(assets/fonts/open-sans-v23-latin-700.woff2);
   font-weight: 700;
 }
 
+/* open-sans-800 - latin */
 @font-face {
   font-family: 'Open Sans';
   src: url(assets/fonts/open-sans-v23-latin-800.woff), url(assets/fonts/open-sans-v23-latin-800.woff2);
   font-weight: 800;
 }
 
+/* open-sans-condensed-300 - latin */
 @font-face {
   font-family: 'Open Sans Condensed';
   src: url(assets/fonts/open-sans-condensed-v15-latin-300.woff), url(assets/fonts/open-sans-condensed-v15-latin-300.woff2);
   font-weight: 300;
 }
 
+/* open-sans-condensed-700 - latin */
 @font-face {
   font-family: 'Open Sans Condensed';
   src: url(assets/fonts/open-sans-condensed-v15-latin-700.woff), url(assets/fonts/open-sans-condensed-v15-latin-700.woff2);
   font-weight: 700;
+}
+
+/* roboto-100 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url(assets/fonts/roboto-v27-latin-100.woff2), url(assets/fonts/roboto-v27-latin-100.woff);
+}
+
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(assets/fonts/roboto-v27-latin-300.woff2), url(assets/fonts/roboto-v27-latin-300.woff);
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(assets/fonts/roboto-v27-latin-regular.woff2), url(assets/fonts/roboto-v27-latin-regular.woff);
+}
+
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url(assets/fonts/roboto-v27-latin-500.woff2), url(assets/fonts/roboto-v27-latin-500.woff);
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(assets/fonts/roboto-v27-latin-700.woff2), url(assets/fonts/roboto-v27-latin-700.woff);
+}
+
+/* roboto-900 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url(assets/fonts/roboto-v27-latin-900.woff2), url(assets/fonts/roboto-v27-latin-900.woff);
 }

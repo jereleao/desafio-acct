@@ -15,21 +15,59 @@
   }
 }
 
+/* ----- Home: About-us ----- */
+.container--about-title,
+.container--about-title-yellow,
+.container--about-button {
+  width: 100%;
+}
+
 .paragraph--about-title,
+.paragraph--about-title-yellow,
 .paragraph--about-text {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
 }
 
-.paragraph--about-title {
+.paragraph--about-title,
+.paragraph--about-title-yellow {
   font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.paragraph--about-title {
+  margin-right: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .paragraph--about-text {
+  width: 90%;
   font-size: 1.25rem;
+  margin: 1.46rem auto 4rem;
 }
 
 .paragraph--about-button {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0.625em 1.25em;
+
+  outline: 0;
+  background: transparent;
+  border: 2px solid #5974c7;
+  border-radius: 4px;
+  color: #5974c7;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 5%);
+  cursor: pointer;
+  line-height: 1;
+}
+
+.paragraph--about-button:hover {
+  color: #ffffff;
+  border: 2px solid #5974c7;
+  background: #5974c7;
 }

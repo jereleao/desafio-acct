@@ -3,18 +3,40 @@
 }
 
 .flexRowContent--about-flex-card {
-  width: 100%;
+  width: 90%;
   flex-direction: column;
-  align-items: center;
-  padding: 8em 8em 4em;
+  margin: 0 auto;
+  padding: 8em 0;
 }
 
-.flexRow--about-title-row {
+@media(min-width: 900px) {
+  .flexRowContent--about-flex-card {
+    width: 80%;
+  }
+}
+
+.flexRow--about-title-row,
+.flexRow--about-title-row1,
+.flexRow--about-title-row2,
+.flexRow--about-button-row {
   width: 100%;
 }
 
 .flexRowContent--about-title-row {
   width: 100%;
   flex-direction: column;
+
   align-items: center;
 }
+
+  margin: 1rem 0 2rem;
+}
+
+@media(max-width: 840px) {
+  .flexRowContent--about-title-row1,
+  .flexRowContent--about-title-row2 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

@@ -1,6 +1,7 @@
 {
-    "store.custom#about-us": {
-    "blocks": ["info-card#info-card-banner", 
+  "store.custom#about-us": {
+    "blocks": [
+      "stack-layout#about-us",
       "rich-text#projetando",
       "flex-layout.row#somos",
       "rich-text#porque-acct",
@@ -10,170 +11,186 @@
       "slider-layout#about-us",
       "back-to-top-button"
     ]
-    },
-
-    "info-card#info-card-banner":{
-      "props":{
-        "isFullModeStyle": true,
-        "headline": "Sobre nós",
-        "textPosition": "LEFT",
-        "textAlignment": "LEFT",
-        "font": "Open Sans Condensed"
-      }
-    },
-
-    "rich-text#projetando":{
-      "props":{
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER",
-        "text": "## Projetando o futuro do comércio digital"
-      }
-    },
-
-    "flex-layout.row#somos": {
-      "children": ["flex-layout.col#text-somos", "image#somos-image"]
-    },
-    "flex-layout.col#text-somos": {
-      "children": ["rich-text#description-somos"],
-      "props": {
-        "blockclass": "textColumn",
-        "preventVerticalStretch": true
-      }
-    },
-    "image#somos-image": {
-      "props": {
-        "src": "assets/about-us/fundos/img-about-us-1536x1053.jpg",
-        "maxHeight": 400,
-        "maxWidth": "100%",
-        "blockClass": "somos-img"
-      }
-    },
-    "rich-text#description-somos": {
-      "props": {
-        "text": "Somos uma empresa de arquitetura e engenharia de software com 11 anos de história solucionando problemas de negócios com tecnologia. \n \n A **ACCT** passou por um rápido crescimento nos últimos 5 anos e hoje tem mais de 200 funcionários, em 3 países diferentes. \n \n Nós também temos o orgulho de dizer que a **ACCT** esteve envolvida em algumas das maiores implementações e projetos de e-commerce do mundo. \n \n Clientes globais como Unilever, Ab-Inbev, Carrefour e Whirpool nos escolheram para desenvolver seus produtos digitais porque confiam em nossa capacidade de fornecer soluções com a mais alta qualidade de design, engenharia e desenvolvimento.",
-        "blockClass": "about"
-      }
-    },
-
-    "rich-text#porque-acct": {
-      "props":{
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER",
-        "text": "### Por que a ACCT?"
-      }
-    },
-
-    "flex-layout.row#icons-porque": {
-      "children": ["flex-layout.row#img-icons"]
-    },
-
-    "flex-layout.row#img-icons":{
-      "children": ["flex-layout.col#engenharia", 
-        "flex-layout.col#habilidades", 
-        "flex-layout.col#lider",
-        "flex-layout.col#suporte",
-        "flex-layout.col#seguranca"      
-        ]
-    },
-    "flex-layout.col#engenharia":{
-      "children":["image#icon-engenharia", "rich-text#title-engenharia"]
-    },
-    "image#icon-engenharia": {
-      "props": {
-        "src": "assets/about-us/icones/icon_dashboard.svg",
-        "maxHeight": 100,
-        "maxWidth": 100,
-        "blockClass": "icon-engenharia"
-      }
-    },
-    "rich-text#title-engenharia":{
-      "props": {
-        "text": "Engenharia de Dados de Alta Complexidade"
-      }
-    },
-    "flex-layout.col#habilidades":{
-      "children":["image#icon-habilidades", "rich-text#title-habilidades"]
-    },
-    "image#icon-habilidades": {
-      "props": {
-        "src": "assets/about-us/icones/icon_development.svg",
-        "maxHeight": 100,
-        "maxWidth": 100,
-        "blockClass": "icon-habilidades"
-      }
-    },
-    "rich-text#title-habilidades":{
-      "props": {
-        "text": "Habilidades Técnicas"
-      }
-    },
-    "flex-layout.col#lider":{
-      "children":["image#icon-lider", "rich-text#title-lider"]
-    },
-    "image#icon-lider": {
-      "props": {
-        "src": "assets/about-us/icones/icon_integration.svg",
-        "maxHeight": 100,
-        "maxWidth": 100,
-        "blockClass": "icon-lider"
-      }
-    },
-    "rich-text#title-lider":{
-      "props": {
-        "text": "Líder de Mercado em Implementações \n VTEX IO"
-      }
-    },
-    "flex-layout.col#suporte":{
-      "children":["image#icon-suporte", "rich-text#title-suporte"]
-    },
-    "image#icon-suporte": {
-      "props": {
-        "src": "assets/about-us/icones/icon_customer-service.svg",
-        "maxHeight": 100,
-        "maxWidth": 100,
-        "blockClass": "icon-suporte"
-      }
-    },
-    "rich-text#title-suporte":{
-      "props": {
-        "text": "Excelente Suporte ao Cliente"
-      }
-    },
-    "flex-layout.col#seguranca":{
-      "children":["image#icon-seguranca", "rich-text#title-seguranca"]
-    },
-    "image#icon-seguranca": {
-      "props": {
-        "src": "assets/about-us/icones/icon_shield.svg",
-        "maxHeight": 100,
-        "maxWidth": 100,
-        "blockClass": "icon-seguranca"
-      }
-    },
-    "rich-text#title-seguranca":{
-      "props": {
-        "text": "Segurança e Confiabilidade"
-      }
-    },
-
-    "rich-text#time":{
-      "props":{
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER",
-        "text": "### Time_"
-      }
-    },
-    "rich-text#time-subtitle":{
-      "props":{
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER",
-        "text": "###### A ACCT tem uma equipe interna de alto desempenho com recursos de 360 graus para fornecer soluções de tecnologia de alta complexidade."
-      }
-    },
-
-    "back-to-top-button": {
-        "props": {
-          "display": "caret-icon"
-        }
+  },
+  "stack-layout#about-us": {
+    "children": ["image#about-us-banner", "flex-layout.row#about-us-title"]
+  },
+  "flex-layout.row#about-us-title": {
+    "children": ["rich-text#about-us-title", "rich-text#underscore"],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
     }
+  },
+  "rich-text#about-us-title": {
+    "props": {
+      "text": "SOBRE NÓS",
+      "font": "t-heading-1",
+      "textColor": "c-action-secondary",
+      "blockClass": "page-title"
+    }
+  },
+  "image#about-us-banner": {
+    "props": {
+      "src": "assets/about-us/fundos/cover-about-us.jpg",
+      "blockClass": "page-banner"
+    }
+  },
+  "rich-text#projetando": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Projetando o futuro do comércio digital"
+    }
+  },
+
+  "flex-layout.row#somos": {
+    "children": ["flex-layout.col#text-somos", "image#somos-image"]
+  },
+  "flex-layout.col#text-somos": {
+    "children": ["rich-text#description-somos"],
+    "props": {
+      "blockclass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+  "image#somos-image": {
+    "props": {
+      "src": "assets/about-us/fundos/img-about-us-1536x1053.jpg",
+      "maxHeight": 400,
+      "maxWidth": "100%",
+      "blockClass": "somos-img"
+    }
+  },
+  "rich-text#description-somos": {
+    "props": {
+      "text": "Somos uma empresa de arquitetura e engenharia de software com 11 anos de história solucionando problemas de negócios com tecnologia. \n \n A **ACCT** passou por um rápido crescimento nos últimos 5 anos e hoje tem mais de 200 funcionários, em 3 países diferentes. \n \n Nós também temos o orgulho de dizer que a **ACCT** esteve envolvida em algumas das maiores implementações e projetos de e-commerce do mundo. \n \n Clientes globais como Unilever, Ab-Inbev, Carrefour e Whirpool nos escolheram para desenvolver seus produtos digitais porque confiam em nossa capacidade de fornecer soluções com a mais alta qualidade de design, engenharia e desenvolvimento.",
+      "blockClass": "about"
+    }
+  },
+
+  "rich-text#porque-acct": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Por que a ACCT?"
+    }
+  },
+
+  "flex-layout.row#icons-porque": {
+    "children": ["flex-layout.row#img-icons"]
+  },
+
+  "flex-layout.row#img-icons": {
+    "children": [
+      "flex-layout.col#engenharia",
+      "flex-layout.col#habilidades",
+      "flex-layout.col#lider",
+      "flex-layout.col#suporte",
+      "flex-layout.col#seguranca"
+    ]
+  },
+  "flex-layout.col#engenharia": {
+    "children": ["image#icon-engenharia", "rich-text#title-engenharia"]
+  },
+  "image#icon-engenharia": {
+    "props": {
+      "src": "assets/about-us/icones/icon_dashboard.svg",
+      "maxHeight": 100,
+      "maxWidth": 100,
+      "blockClass": "icon-engenharia"
+    }
+  },
+  "rich-text#title-engenharia": {
+    "props": {
+      "text": "Engenharia de Dados de Alta Complexidade"
+    }
+  },
+  "flex-layout.col#habilidades": {
+    "children": ["image#icon-habilidades", "rich-text#title-habilidades"]
+  },
+  "image#icon-habilidades": {
+    "props": {
+      "src": "assets/about-us/icones/icon_development.svg",
+      "maxHeight": 100,
+      "maxWidth": 100,
+      "blockClass": "icon-habilidades"
+    }
+  },
+  "rich-text#title-habilidades": {
+    "props": {
+      "text": "Habilidades Técnicas"
+    }
+  },
+  "flex-layout.col#lider": {
+    "children": ["image#icon-lider", "rich-text#title-lider"]
+  },
+  "image#icon-lider": {
+    "props": {
+      "src": "assets/about-us/icones/icon_integration.svg",
+      "maxHeight": 100,
+      "maxWidth": 100,
+      "blockClass": "icon-lider"
+    }
+  },
+  "rich-text#title-lider": {
+    "props": {
+      "text": "Líder de Mercado em Implementações \n VTEX IO"
+    }
+  },
+  "flex-layout.col#suporte": {
+    "children": ["image#icon-suporte", "rich-text#title-suporte"]
+  },
+  "image#icon-suporte": {
+    "props": {
+      "src": "assets/about-us/icones/icon_customer-service.svg",
+      "maxHeight": 100,
+      "maxWidth": 100,
+      "blockClass": "icon-suporte"
+    }
+  },
+  "rich-text#title-suporte": {
+    "props": {
+      "text": "Excelente Suporte ao Cliente"
+    }
+  },
+  "flex-layout.col#seguranca": {
+    "children": ["image#icon-seguranca", "rich-text#title-seguranca"]
+  },
+  "image#icon-seguranca": {
+    "props": {
+      "src": "assets/about-us/icones/icon_shield.svg",
+      "maxHeight": 100,
+      "maxWidth": 100,
+      "blockClass": "icon-seguranca"
+    }
+  },
+  "rich-text#title-seguranca": {
+    "props": {
+      "text": "Segurança e Confiabilidade"
+    }
+  },
+
+  "rich-text#time": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Time_"
+    }
+  },
+  "rich-text#time-subtitle": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "###### A ACCT tem uma equipe interna de alto desempenho com recursos de 360 graus para fornecer soluções de tecnologia de alta complexidade."
+    }
+  },
+
+  "back-to-top-button": {
+    "props": {
+      "display": "caret-icon"
+    }
+  }
 }

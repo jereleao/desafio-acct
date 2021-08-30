@@ -38,6 +38,7 @@
       }
     },
     {
+
       "name": "outbound-access",
       "attrs": {
         "host": "portal.vtexcommercestable.com.br",
@@ -45,6 +46,7 @@
       }
     },
     {
+
       "name": "Get_Account_By_Identifier"
     },
     {
@@ -67,6 +69,13 @@
     },
     {
       "name": "POWER_USER_CRM"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/profile-system/*"
+      }
     }
   ],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
