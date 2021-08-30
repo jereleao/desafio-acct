@@ -2,6 +2,7 @@
 
     "store.custom#about-us": { /* front-end da página SOBRE-NOS utilizando o vtex io */
     "blocks": [ 
+      "back-to-top-btn",
       "stack-layout#about-us",
       "rich-text#projetando",
       "flex-layout.row#somos",
@@ -10,15 +11,15 @@
       "clients",
       "rich-text#time",
       "rich-text#time-subtitle",
-      "slider-layout#about-us", /* slider com os integrantes do Time ACCT, arquivo /pages/slider-layout.jsonc */
-      "back-to-top-button"
+      "slider-layout#about-us" /* slider com os integrantes do Time ACCT, arquivo /pages/slider-layout.jsonc */
     ]
     },
 
-    "stack-layout#about-us": {
+
+    "stack-layout#about-us": { /* Bloco que configura o banner da página */
       "children": ["flex-layout.row#about-us-title"]
     },
-    "flex-layout.row#about-us-title": {
+    "flex-layout.row#about-us-title": { /* estilo flex-layout.row para a estrutura */
       "children": ["rich-text#about-us-title", "rich-text#underscore"],
       "props": {
         "horizontalAlign": "left",
@@ -28,7 +29,7 @@
         "blockClass": "about-us-title"
       }
     },
-    "rich-text#about-us-title": {
+    "rich-text#about-us-title": { /* título do banner da página */
       "props": {
         "text": "SOBRE NÓS",
         "font": "t-heading-1",
@@ -225,13 +226,5 @@
         "text": "**A ACCT tem uma equipe interna de alto desempenho** com recursos de 360 graus para fornecer soluções de tecnologia de alta complexidade.",
         "blockClass": "subtitle-time"
       }
-    },
-
-    "back-to-top-button": { /* botão de voltar ao topo */
-        "props": {
-          "display": "caret-icon"
-        }
-
     }
-  }
 }
