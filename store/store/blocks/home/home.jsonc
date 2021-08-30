@@ -1,6 +1,7 @@
 {
   "store.home": {
     "blocks": [
+      "back-to-top-btn",
       "slider-layout#home",
       "flex-layout.row#about-us",
       "clients",
