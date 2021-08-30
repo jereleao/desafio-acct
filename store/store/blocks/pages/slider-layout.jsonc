@@ -57,7 +57,8 @@
     },
     "image#person1":{
         "props":{
-            "src": "assets/about-us/time/ammon-cunha-150x150.jpg"
+            "src": "assets/about-us/time/ammon-cunha-150x150.jpg",
+            "blockClass": "person1"
         }
     },    
     "rich-text#person1":{
@@ -77,7 +78,8 @@
    },
     "image#person2":{
         "props":{
-            "src": "assets/about-us/time/ana-lebre-150x150.png"
+            "src": "assets/about-us/time/ana-lebre-150x150.png",
+            "blockClass": "person2"
         }
     },
    "rich-text#person2":{
@@ -97,7 +99,8 @@
     },
     "image#person3":{
             "props":{
-                "src": "assets/about-us/time/andre-dudek-150x150.png"
+                "src": "assets/about-us/time/andre-dudek-150x150.png",
+                "blockClass": "person3"
             }
         },
     "rich-text#person3":{
@@ -117,7 +120,8 @@
    },
     "image#person4":{
         "props":{
-            "src": "assets/about-us/time/anna-chimenes-150x150.png"
+            "src": "assets/about-us/time/anna-chimenes-150x150.png",
+            "blockClass": "person4"
         }
     },    
    "rich-text#person4":{
@@ -137,7 +141,8 @@
     },
     "image#person5":{
         "props":{
-            "src": "assets/about-us/time/barbara-cruz-150x150.png"
+            "src": "assets/about-us/time/barbara-cruz-150x150.png",
+            "blockClass": "person5"
         }
     },
     "rich-text#person5":{
@@ -157,7 +162,8 @@
     },
     "image#person6":{
         "props":{
-            "src": "assets/about-us/time/camila-santos-150x150.png"
+            "src": "assets/about-us/time/camila-santos-150x150.png",
+            "blockClass": "person6"
         }
     },   
     "rich-text#person6":{
@@ -177,7 +183,8 @@
     },
     "image#person7":{
         "props":{
-            "src": "assets/about-us/time/carlos-oliveira-150x150.png"
+            "src": "assets/about-us/time/carlos-oliveira-150x150.png",
+            "blockClass": "person7"
         }
     },  
     "rich-text#person7":{
@@ -197,7 +204,8 @@
     },
     "image#person8":{
         "props":{
-            "src": "assets/about-us/time/cecilia-pereira-150x150.png"
+            "src": "assets/about-us/time/cecilia-pereira-150x150.png",
+            "blockClass": "person8"
         }
     },  
     "rich-text#person8":{
@@ -217,7 +225,8 @@
     },
     "image#person9":{
         "props":{
-            "src": "assets/about-us/time/fabio-feichtinger-150x150.png"
+            "src": "assets/about-us/time/fabio-feichtinger-150x150.png",
+            "blockClass": "person9"
         }
     },    
     "rich-text#person9":{
@@ -237,7 +246,8 @@
     },
     "image#person10":{
         "props":{
-            "src": "assets/about-us/time/fatima-raizaro-150x150.png"
+            "src": "assets/about-us/time/fatima-raizaro-150x150.png",
+            "blockClass": "person10"
         }
     },  
     "rich-text#person10":{
@@ -257,7 +267,8 @@
     },
     "image#person11":{
         "props":{
-            "src": "assets/about-us/time/frederico-heitmann-150x150.png"
+            "src": "assets/about-us/time/frederico-heitmann-150x150.png",
+            "blockClass": "person11"
         }
     },
     "rich-text#person11":{
@@ -277,7 +288,8 @@
     },
     "image#person12":{
         "props":{
-            "src": "assets/about-us/time/guilherme-cardoso-150x150.png"
+            "src": "assets/about-us/time/guilherme-cardoso-150x150.png",
+            "blockClass": "person12"
         }
     },   
     "rich-text#person12":{
@@ -297,7 +309,8 @@
     },    
     "image#person13":{
         "props":{
-            "src": "assets/about-us/time/juan-nader-150x150.jpg"
+            "src": "assets/about-us/time/juan-nader-150x150.jpg",
+            "blockClass": "person13"
         }
     },   
     "rich-text#person13":{
@@ -317,7 +330,8 @@
     },
     "image#person14":{
         "props":{
-            "src": "assets/about-us/time/marcos-cipriani-150x150.png"
+            "src": "assets/about-us/time/marcos-cipriani-150x150.png",
+            "blockClass": "person14"
         }
     },   
     "rich-text#person14":{
@@ -337,7 +351,8 @@
     },
     "image#person15":{
         "props":{
-            "src": "assets/about-us/time/rafael-esberard-150x150.png"
+            "src": "assets/about-us/time/rafael-esberard-150x150.png",
+            "blockClass": "person15"
         }
     },   
     "rich-text#person15":{
@@ -357,7 +372,8 @@
     },
     "image#person16":{
         "props":{
-            "src": "assets/about-us/time/rafael-rossini-150x150.jpg"
+            "src": "assets/about-us/time/rafael-rossini-150x150.jpg",
+            "blockClass": "person16"
         }
     },  
     "rich-text#person16":{
@@ -377,7 +393,8 @@
     },
     "image#person17":{
         "props":{
-            "src": "assets/about-us/time/rodrigo-de-gouveia-150x150.png"
+            "src": "assets/about-us/time/rodrigo-de-gouveia-150x150.png",
+            "blockClass": "person17"
         }
     },
     "rich-text#person17":{
@@ -397,7 +414,8 @@
     },
     "image#person18":{
         "props":{
-            "src": "assets/about-us/time/urania-reis-150x150.png"
+            "src": "assets/about-us/time/urania-reis-150x150.png",
+            "blockClass": "person18"
         }
     },  
     "rich-text#person18":{
@@ -417,7 +435,8 @@
     },
     "image#person19":{
         "props":{
-            "src": "assets/about-us/time/victor-angelotti-150x150.png"
+            "src": "assets/about-us/time/victor-angelotti-150x150.png",
+            "blockClass": "person19"
         }
     },  
     "rich-text#person19":{

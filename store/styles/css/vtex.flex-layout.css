@@ -19,3 +19,17 @@
   align-items: center;
 }
 
+.flexRow--about-us-title{
+  background-image: url(https://acct.global/wp-content/uploads/2020/10/cover-about-us.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: .5rem 0rem .5rem 0rem;
+}
+
+.flexRowContent--about-us-title {
+  margin-left: 80px;
+}
+
+.container--icons-porqueACCT {
+  padding: 100px 0px;
+}
