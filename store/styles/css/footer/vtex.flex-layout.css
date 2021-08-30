@@ -1,0 +1,37 @@
+/* 
+//
+//  Hiring Coders 2021 | Gama Academy | ACCT | VTEXT 
+//
+//  Projeto ACCT Clone
+//  Grupo 13
+//
+//
+//
+//                     Footer Section | flex-layout overrides
+//                                          Franklin Siqueira
+///////////////////////////////////////////////////////////// 
+*/
+.flexCol--colAddressesFranklin{ 
+  align-items: left;
+  justify-content: left;
+  justify-items:left;
+}
+.flexCol--colStampFranklin{ 
+  align-items:flex-end;
+  /* justify-content: right;
+  justify-items:left; */
+}
+.flexRow--logoRowFranklin{
+  /* background-color:turquoise; */
+  align-items: right;
+  justify-content: right;
+  justify-items:right;
+}
+.flexColChild--colACCTFranklin{
+  flex-grow: 1;
+}
+.flexCol--colAddressesMobileFranklin{ 
+  align-items: center;
+  justify-content: center;
+  justify-items:center;
+}
