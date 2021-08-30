@@ -41,10 +41,19 @@
   "product-summary.shelf#customQuery": {
     "children": [
       "product-summary-name",
-      "product-summary-image",
+      "stack-layout#product-shelf",
       "product-summary-description",
       "product-summary-price",
       "product-summary-buy-button"
     ]
+  },
+  "stack-layout#product-shelf": {
+    "children": ["product-summary-image", "flex-layout.col#product-shelf"]
+  },
+  "flex-layout.col#product-shelf": {
+    "props": {
+      "blockClass": "product-shelf"
+    },
+    "children": ["product-summary-name"]
   }
 }

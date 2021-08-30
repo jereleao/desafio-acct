@@ -30,7 +30,7 @@ input InputLeadPT {
 
 type Query {
   # Cache control can only be set at root fields
-  lead(phone: String!): Lead
+  lead(email: String!): Lead
   leads: [Lead] @cacheControl(scope: PUBLIC, maxAge: SHORT)
 
 }

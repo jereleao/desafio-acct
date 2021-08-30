@@ -1,5 +1,5 @@
 export const lead = async (
   _: any,
-  { phone }: { phone: string },
+  { email }: { email: string },
   { clients: { leads: AWSClient } }: Context
-) => AWSClient.getLead(phone)
+) => AWSClient.getLead(email)
