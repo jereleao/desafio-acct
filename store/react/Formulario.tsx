@@ -57,7 +57,7 @@ console.log({loading, data, error })
                 required
                 onChange={({
                   target: { value },
-                }: React.ChangeEvent<HTMLInputElement>) =>
+                }: any) =>
                   handleFormChange("nome", value)
                 }
               />
@@ -72,7 +72,7 @@ console.log({loading, data, error })
                 required
                 onChange={({
                   target: { value },
-                }: React.ChangeEvent<HTMLInputElement>) =>
+                }: any) =>
                   handleFormChange("email", value)
                 }
               />
@@ -89,7 +89,7 @@ console.log({loading, data, error })
                 required
                 onChange={({
                   target: { value },
-                }: React.ChangeEvent<HTMLInputElement>) =>
+                }: any) =>
                   handleFormChange("telefone", value)
                 }
               />
@@ -105,7 +105,7 @@ console.log({loading, data, error })
                 required
                 onChange={({
                   target: { value },
-                }: React.ChangeEvent<HTMLInputElement>) =>
+                }: any) =>
                   handleFormChange("pais", value)
                 }
               />
@@ -123,7 +123,7 @@ console.log({loading, data, error })
                 required
                 onChange={({
                   target: { value },
-                }: React.ChangeEvent<HTMLInputElement>) =>
+                }: any) =>
                   handleFormChange("empresa", value)
                 }
               />
@@ -138,7 +138,7 @@ console.log({loading, data, error })
                 value={lead.cargo}
                 onChange={({
                   target: { value },
-                }: React.ChangeEvent<HTMLInputElement>) =>
+                }: any) =>
                   handleFormChange("cargo", value)
                 }
               />
@@ -158,7 +158,7 @@ console.log({loading, data, error })
                 value={lead.numcolaboradores}
                 onChange={({
                   target: { value },
-                }: React.ChangeEvent<HTMLInputElement>) =>
+                }: any) =>
                   handleFormChange("numcolaboradores", value)
                 }
               />
@@ -173,7 +173,7 @@ console.log({loading, data, error })
                 value={lead.url}
                 onChange={({
                   target: { value },
-                }: React.ChangeEvent<HTMLInputElement>) =>
+                }: any) =>
                   handleFormChange("url", value)
                 }
               />
@@ -190,7 +190,7 @@ console.log({loading, data, error })
                 required
                 onChange={({
                   target: { value },
-                }: React.ChangeEvent<HTMLTextAreaElement>) =>
+                }: any) =>
                   handleFormChange("caixa", value)
                 }
               ></textarea>
