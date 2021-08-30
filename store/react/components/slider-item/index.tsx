@@ -20,6 +20,16 @@ const SliderItem: React.FC<ISliderItem> = ({
           <p>{text}</p>
         </S.Info>
       </S.InfoContainer>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1920 121"
+        preserveAspectRatio="none"
+      >
+        <path
+          fill="RGBA(255,255,255,1)"
+          d="M0,123L1920,123L1920,6C1596,0,869,-26,0,108L0,123z">
+        </path>
+      </svg>
     </S.Container>
   );
 };

@@ -16,5 +16,8 @@
   },
   "slider-product": {
     "component": "SliderProduct"
+  },
+  "slider-info": {
+    "component": "SliderInfo"
   }
 }
