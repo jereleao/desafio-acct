@@ -1,46 +1,40 @@
-import React from "react";
-import { useMutation, useQuery } from 'react-apollo';
-import ADD_LEAD from "./graphql/addlead.gql"
+import React from 'react'
 
-interface InputLeadPT {
-  nome: string;
-  telefone: string;
-  empresa: string;
-  numcolaboradores: string;
-  email: string;
-  pais: string;
-  cargo: string;
-  url: string;
-  caixa: string;
+interface Lead {
+  nome: string
+  telefone: string
+  empresa: string
+  numcolaboradores: string
+  email: string
+  pais: string
+  cargo: string
+  url: string
+  caixa: string
 }
 
 const Formulario: StorefrontFunctionComponent = () => {
-  const clearLead = {
-    nome: "",
-    telefone: "",
-    empresa: "",
-    numcolaboradores: "",
-    email: "",
-    pais: "",
-    cargo: "",
-    url: "",
-    caixa: "",
-  }
-  const [lead, setLead] = React.useState(clearLead);
-const[addLead,{loading, data, error }]  = useMutation(ADD_LEAD, {onCompleted:() => setLead(clearLead)})
-console.log({loading, data, error })
+  const [lead, setLead] = React.useState({
+    nome: '',
+    telefone: '',
+    empresa: '',
+    numcolaboradores: '',
+    email: '',
+    pais: '',
+    cargo: '',
+    url: '',
+    caixa: '',
+  })
 
   const handleFormChange = (property: string, value: string) =>
-    setLead((prev) => ({ ...prev, [property]: value }));
+    setLead(prev => ({ ...prev, [property]: value }))
 
-  const sendLead = (lead: InputLeadPT) => {
-    addLead({variables:{lead}})
-  };
+  const sendLead = (lead: Lead) => {
+    console.log(lead)
+  }
   const handleSubmit = (e: React.SyntheticEvent) => {
-    e.preventDefault();
-    sendLead(lead);
-  };
-
+    e.preventDefault()
+    sendLead(lead)
+  }
 
   return (
       <div className="flex justify-end center w-70">
@@ -203,19 +197,18 @@ console.log({loading, data, error })
           >
             Enviar
           </button>
-          {data && <p className="c-button-blue">Obrigado pela sua mensagem, já foi enviada</p>}
-          {error && <p className="b--warning ba bw1 b--solid pv3 ph6">Ocorreu um erro ao tentar enviar sua mensagem. Por favor, tente novamente mais tarde.</p> }
+          {/*{data && <p className="c-button-blue">Obrigado pela sua mensagem, já foi enviada</p>}
+          {error && <p className="b--warning ba bw1 b--solid pv3 ph6">Ocorreu um erro ao tentar enviar sua mensagem. Por favor, tente novamente mais tarde.</p> } */}
         </form>
       </div>
-    
-  );
-};
+  )
+}
 
 Formulario.schema = {
-  title: "editor.Formulario.title",
-  description: "editor.Formulario.description",
-  type: "object",
+  title: 'editor.Formulario.title',
+  description: 'editor.Formulario.description',
+  type: 'object',
   properties: {},
-};
+}
 
-export default Formulario;
+export default Formulario

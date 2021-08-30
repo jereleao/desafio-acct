@@ -18,6 +18,11 @@ export const Container = styled.div<ICard>`
   background-color: #eee;
   cursor: grab;
 
+  svg {
+    position: absolute;
+    bottom: 0;
+  }
+
   @media (min-width: 700px) {
     height: 800px;
   }

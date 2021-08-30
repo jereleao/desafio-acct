@@ -1,0 +1,120 @@
+{
+  "flex-layout.row#testimony-gustavo": {
+    "props": {
+      "fullwidth": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "testimony"
+    },
+    "children": [
+      "flex-layout.row#testimony-gustavo-title-row",
+      "image#testimony-gustavo-quote",
+      "rich-text#testimony-gustavo-text",
+      "flex-layout.row#testimony-gustavo-profile-row"
+    ]
+  },
+
+  "flex-layout.row#testimony-gustavo-title-row": {
+    "props": {
+      "fullwidth": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "testimony-title-row"
+    },
+    "children": ["rich-text#testimony-gustavo-title", "rich-text#testimony-gustavo_"]
+  },
+  "rich-text#testimony-gustavo-title": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Depoimentos",
+      "textColor": "c-default",
+      "blockClass": "testimony-title"
+    }
+  },
+  "rich-text#testimony-gustavo_": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "_",
+      "textColor": "c-link",
+      "blockClass": "testimony_"
+    }
+  },
+
+  "image#testimony-gustavo-quote": {
+    "props": {
+      "src": "assets/quote.svg",
+      "blockClass": "testimony-quote"
+    }
+  },
+
+  "rich-text#testimony-gustavo-text": {
+    "props": {
+      "textPosition": "CENTER",
+      "text": "Foi gratificante ter um parceiro que concordou com esse projeto, pois sabíamos que as regras do negócio poderiam gerar várias mudanças ao longo do caminho. A equipe da ACCT foi flexível o suficiente para lidar com as mudanças no planejamento e se adaptou ao processo.",
+      "textColor": "c-muted-1",
+      "blockClass": "testimony-text"
+    }
+  },
+
+  "flex-layout.row#testimony-gustavo-profile-row": {
+    "props": {
+      "fullwidth": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "testimony-profile-row"
+    },
+    "children": [
+      "image#testimony-gustavo-profile-img",
+      "flex-layout.row#testimony-gustavo-profile-text-row"
+    ]
+  },
+
+  "flex-layout.row#testimony-gustavo-profile-text-row": {
+    "props": {
+      "fullwidth": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "testimony-profile-text-row"
+    },
+    "children": [
+      "rich-text#testimony-gustavo-profile-name",
+      "rich-text#testimony-gustavo-profile-occupation"
+    ]
+  },
+  "image#testimony-gustavo-profile-img": {
+    "props": {
+      "src": "assets/testimony/gustavo-rios-vtex.jpg",
+      "blockClass": "testimony-profile-img"
+    }
+  },
+  "rich-text#testimony-gustavo-profile-name": {
+    "props": {
+      // "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "GUSTAVO RIOS",
+      "blockClass": "testimony-profile-name"
+    }
+  },
+  "rich-text#testimony-gustavo-profile-occupation": {
+    "props": {
+      "textPosition": "CENTER",
+      "text": "Diretor de Clientes - VTEX",
+      "textColor": "c-muted-1",
+      "blockClass": "testimony-profile-occupation"
+    }
+  }
+}

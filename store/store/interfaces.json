@@ -8,6 +8,9 @@
   "clients": {
     "component": "Clients"
   },
+  "back-to-top-btn": {
+    "component": "BackToTopBtn"
+  },
   "slider-tecnology": {
     "component": "SliderTecnology"
   },
@@ -16,5 +19,8 @@
   },
   "slider-product": {
     "component": "SliderProduct"
+  },
+  "slider-info": {
+    "component": "SliderInfo"
   }
 }
