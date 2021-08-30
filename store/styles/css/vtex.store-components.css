@@ -38,3 +38,9 @@
     margin-right: 0;
   }
 }
+
+.imageElement--clients-images {
+  margin-bottom: 20px;
+  border-radius: 100px;
+  max-width: 240px !important;
+}

@@ -28,11 +28,13 @@
 .flexRow--about-title-row,
 .flexRow--about-title-row1,
 .flexRow--about-title-row2,
+.flexRow--row-clients,
 .flexRow--about-button-row {
   width: 100%;
 }
 
-.flexRowContent--about-title-row {
+.flexRowContent--about-title-row,
+.flexRowContent--row-clients {
   width: 100%;
   flex-direction: column;
   align-items: center;
@@ -86,6 +88,39 @@
 .flexRowContent--testimony-profile-text-row {
   height: 100%;
   justify-content: center;
+}
+
+/* ----- Histórias e Clientes ----- */
+.flexRow--row-clients {
+  padding: 5rem 18rem;
+}
+
+.flexRow--clients-title-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.flexRowContent--clients-title-row {
+  width: 100%;
+  margin: 1rem 0 2rem;
+}
+
+.flexCol--clients-col {
+  align-items: center;
+}
+
+.flexColContent--clients-col {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.flexRow--clients-content-row {
+  padding: 1rem 5rem;
+}
+
+.flexRowConten--clients-content-row {
+  margin: 0;
 }
 
 /* ----- Form ----- */

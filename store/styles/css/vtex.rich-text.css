@@ -123,3 +123,40 @@
     text-align: center;
   }
 }
+
+/* ----- Home: Histórias e Clientes ----- */
+.paragraph--underscore {
+  color: #fcc200; 
+  margin-top: 2rem;
+  margin-left: 0;
+  font-size: 1.85rem;
+
+}
+
+.paragraph--clients-sec-title {
+  width: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.paragraph--clients-title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.container--clients-content {
+  margin: 0 1rem;
+  justify-self: start;
+  padding: 0 0.75rem;
+}
+
+.paragraph--clients-content {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: left;
+  text-justify: auto;
+}
