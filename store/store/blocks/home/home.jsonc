@@ -5,6 +5,7 @@
       "flex-layout.row#about-us",
       "clients",
       "services",
+      "flex-layout.row#testimony",
       "formulario"
     ]
   },
@@ -160,5 +161,12 @@
       "text": "Saiba mais sobre nós",
       "blockClass": "about-button"
     }
+  },
+
+  // ----- Home: Testemony -----
+  "flex-layout.row#testimony": {
+    "children": ["flex-layout.row#testimony-title-row"]
   }
+
 }
+

@@ -1,0 +1,32 @@
+{
+  "flex-layout.row#testimony-title-row": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "testimony-title-row"
+    },
+    "children": ["rich-text#testimony-title", "rich-text#testimony_"]
+  },
+
+  "rich-text#testimony-title": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Depoimentos",
+      "textColor": "c-default",
+      "blockClass": "testimony-title"
+    }
+  },
+
+  "rich-text#testimony_": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "_",
+      "textColor": "c-link",
+      "blockClass": "testimony_"
+    }
+  }
+}
