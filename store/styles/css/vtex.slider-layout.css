@@ -51,3 +51,35 @@
   }
 
 }
+
+/* ----- Testimony ----- */
+.sliderLeftArrow--testimony-slider,
+.sliderRightArrow--testimony-slider {
+  border: 3px solid #aaa;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+
+.sliderLeftArrow--testimony-slider  { left: 0; }
+.sliderRightArrow--testimony-slider { right: 0; }
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .sliderLeftArrow--testimony-slider  { left: 5em; }
+  .sliderRightArrow--testimony-slider { right: 5em; }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .sliderLeftArrow--testimony-slider  { left: 11em; }
+  .sliderRightArrow--testimony-slider { right: 11em; }
+}
+@media (min-width: 1400px) {
+  .sliderLeftArrow--testimony-slider  { left: 20%; }
+  .sliderRightArrow--testimony-slider { right: 20%; }
+}
+
+.caretIcon--testimony-slider {
+  width: 12px;
+  height: 12px;
+  color: #aaa;
+  stroke-width: 3px;
+
+}

@@ -195,4 +195,97 @@
   border: 2px solid #5974c7;
   background: #5974c7;
 
+
 }
+
+}
+
+/* ----- Home: Testimony ----- */
+.paragraph--testimony-title,
+.paragraph--testimony_ {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.container--testimony-text {
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 700px) {
+  .container--testimony-text {
+    width: 750px;
+  }
+}
+
+.paragraph--testimony-text {
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.paragraph--testimony-profile-name,
+.paragraph--testimony-profile-occupation {
+  margin: 0;
+}
+
+.paragraph--testimony-profile-name {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 1px;
+  margin-bottom: 0.25rem;
+}
+
+.paragraph--testimony-profile-occupation {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 400px) {
+  .paragraph--testimony-profile-occupation {
+    width: 200px;
+    text-align: center;
+  }
+}
+
+/* ----- Home: Histórias e Clientes ----- */
+.paragraph--underscore {
+  color: #fcc200; 
+  margin-top: 2rem;
+  margin-left: 0;
+  font-size: 1.85rem;
+
+}
+
+.paragraph--clients-sec-title {
+  width: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.paragraph--clients-title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.container--clients-content {
+  margin: 0 1rem;
+  justify-self: start;
+  padding: 0 0.75rem;
+}
+
+.paragraph--clients-content {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: left;
+  text-justify: auto;
+}
+

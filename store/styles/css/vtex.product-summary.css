@@ -1,0 +1,31 @@
+.image {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.currencyContainer {
+  color: #fff;
+  font-weight: bold;
+}
+
+.nameContainer {
+  padding: 15px 0 0 0;
+}
+.brandName {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  margin: 0;
+  color: #ebebeb;
+  font-family: 'Open Sans Condensed';
+}
+.description {
+  color: #aaa;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}

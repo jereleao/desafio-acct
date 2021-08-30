@@ -1,0 +1,120 @@
+{
+  "flex-layout.row#testimony-nelson": {
+    "props": {
+      "fullwidth": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "testimony"
+    },
+    "children": [
+      "flex-layout.row#testimony-title-row",
+      "image#testimony-quote",
+      "rich-text#testimony-text",
+      "flex-layout.row#testimony-profile-row"
+    ]
+  },
+
+  "flex-layout.row#testimony-title-row": {
+    "props": {
+      "fullwidth": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "testimony-title-row"
+    },
+    "children": ["rich-text#testimony-title", "rich-text#testimony_"]
+  },
+  "rich-text#testimony-title": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Depoimentos",
+      "textColor": "c-default",
+      "blockClass": "testimony-title"
+    }
+  },
+  "rich-text#testimony_": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "_",
+      "textColor": "c-link",
+      "blockClass": "testimony_"
+    }
+  },
+
+  "image#testimony-quote": {
+    "props": {
+      "src": "assets/quote.svg",
+      "blockClass": "testimony-quote"
+    }
+  },
+
+  "rich-text#testimony-text": {
+    "props": {
+      "textPosition": "CENTER",
+      "text": "A ACCT e Empório da Cerveja trabalharam em conjunto com nossa equipe interna para que eles pudessem ser treinados para liderar as operações posteriormente. Na minha opinião, tivemos uma parceria muito rica, feita em equipe, que incluiu troca de conhecimento e comunicação transparente.",
+      "textColor": "c-muted-1",
+      "blockClass": "testimony-text"
+    }
+  },
+
+  "flex-layout.row#testimony-profile-row": {
+    "props": {
+      "fullwidth": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "testimony-profile-row"
+    },
+    "children": [
+      "image#testimony-profile-img",
+      "flex-layout.row#testimony-profile-text-row"
+    ]
+  },
+
+  "flex-layout.row#testimony-profile-text-row": {
+    "props": {
+      "fullwidth": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "testimony-profile-text-row"
+    },
+    "children": [
+      "rich-text#testimony-profile-name",
+      "rich-text#testimony-profile-occupation"
+    ]
+  },
+  "image#testimony-profile-img": {
+    "props": {
+      "src": "assets/testimony/nelson-emporio-da-cerveja.jpg",
+      "blockClass": "testimony-profile-img"
+    }
+  },
+  "rich-text#testimony-profile-name": {
+    "props": {
+      // "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "NELSON DE MOURA",
+      "blockClass": "testimony-profile-name"
+    }
+  },
+  "rich-text#testimony-profile-occupation": {
+    "props": {
+      "textPosition": "CENTER",
+      "text": "Ex-gerente de Produto - Empório da Cerveja",
+      "textColor": "c-muted-1",
+      "blockClass": "testimony-profile-occupation"
+    }
+  }
+}

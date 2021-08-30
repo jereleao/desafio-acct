@@ -1,3 +1,14 @@
+  //
+  //  Hiring Coders 2021 | Gama Academy | ACCT | VTEXT 
+  //
+  //  Projeto ACCT Clone
+  //  Grupo 13
+  //
+  //
+  //
+  //                                        Header/Menu Section
+  //                          Franklin Siqueira / Jeremias Leão
+  /////////////////////////////////////////////////////////////
 {
   "header": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
@@ -8,6 +19,10 @@
   "header-layout.desktop": {
     "children": ["sticky-layout#desktop"]
   },
+  //
+  //
+  //                                Desktop section starts here
+  /////////////////////////////////////////////////////////////
   "sticky-layout#desktop": {
     "props": {
       "blockClass": "sticky-header"
@@ -71,14 +86,10 @@
       "isActive": true
     }
   },
-
   //
-
   //
-
-  //
-
-  //
+  //                                 Mobile section starts here
+  /////////////////////////////////////////////////////////////
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },
@@ -87,11 +98,11 @@
   },
   "flex-layout.row#mobile": {
     "children": [
-      "drawer",
       "logo",
       "flex-layout.col#spacer",
       "login",
-      "minicart.v2"
+      "minicart.v2",
+      "drawer"
     ],
     "props": {
       "blockClass": "main-header-mobile",
@@ -99,8 +110,5 @@
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
-  },
-  "drawer": {
-    "children": []
   }
 }

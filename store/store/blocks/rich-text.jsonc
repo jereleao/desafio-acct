@@ -5,5 +5,13 @@
       "font": "t-heading-1",
       "blockClass": "page-title-blink"
     }
+  },
+
+  "rich-text#underscore-static": {
+    "props": {
+      "text": "_",
+      "font": "t-heading-1",
+      "blockClass": "underscore"
+    }
   }
 }

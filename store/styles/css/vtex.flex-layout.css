@@ -1,7 +1,17 @@
+/* ----- Header ----- */
+.flexCol--nav-down {
+  padding-right: 0.75rem;
+}
+
 .flexRow--menu-item:hover {
   color: #fcc200;
 }
 
+.flexRowContent--main-header-mobile {
+  align-items: center;
+}
+
+/* ----- Home: About-us ----- */
 .flexRowContent--about-flex-card {
   width: 90%;
   flex-direction: column;
@@ -9,7 +19,7 @@
   padding: 8em 0;
 }
 
-@media(min-width: 900px) {
+@media (min-width: 900px) {
   .flexRowContent--about-flex-card {
     width: 80%;
   }
@@ -18,15 +28,17 @@
 .flexRow--about-title-row,
 .flexRow--about-title-row1,
 .flexRow--about-title-row2,
+.flexRow--row-clients,
 .flexRow--about-button-row {
   width: 100%;
 }
 
-.flexRowContent--about-title-row {
+.flexRowContent--about-title-row,
+.flexRowContent--row-clients {
   width: 100%;
   flex-direction: column;
-
   align-items: center;
+
 }
 
 
@@ -49,10 +61,12 @@
   
 }
 
+=======
+
   margin: 1rem 0 2rem;
 }
 
-@media(max-width: 840px) {
+@media (max-width: 840px) {
   .flexRowContent--about-title-row1,
   .flexRowContent--about-title-row2 {
     flex-direction: column;
@@ -60,4 +74,118 @@
   }
 }
 
+
+/* ----- Testimony ----- */
+.flexRow--testimony {
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.flexRowContent--testimony {
+  width: calc(100% - 10px);
+  align-items: center;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+@media (min-width: 700px) {
+  .flexRowContent--testimony {
+    width: calc(100% - 150px);
+  }
+}
+
+@media (max-width: 400px) {
+  .flexRowContent--testimony-profile-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flexRowContent--testimony-profile-text-row {
+    align-items: center;
+  }
+}
+
+
+.flexRowContent--testimony,
+.flexRowContent--testimony-profile-text-row {
+  flex-direction: column;
+}
+
+.flexRowContent--testimony-profile-text-row {
+  height: 100%;
+  justify-content: center;
+}
+
+/* ----- Histórias e Clientes ----- */
+.flexRow--row-clients {
+  padding: 5rem 18rem;
+}
+
+.flexRow--clients-title-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.flexRowContent--clients-title-row {
+  width: 100%;
+  margin: 1rem 0 2rem;
+}
+
+.flexCol--clients-col {
+  align-items: center;
+}
+
+.flexColContent--clients-col {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.flexRow--clients-content-row {
+  padding: 1rem 5rem;
+}
+
+.flexRowConten--clients-content-row {
+  margin: 0;
+}
+
+/* ----- Form ----- */
+.flexColChild--form {
+  max-width: 540px;
+}
+.flexRow--form {
+  background-image: url('assets/bg-form.jpg');
+  margin: 0;
+  background-size: cover;
+  background-position-x: center;
+  padding: 96px 20px;
+}
+
+/* ----- Serices Cards ----- */
+.flexCol--product-shelf {
+  margin: 30px 11px;
+  padding: 30px 45px;
+}
+.flexColChild--product-shelf :global(.vtex-button) {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.flexColChild--product-shelf :global(.vtex-button):hover {
+  background-color: #fff;
+  color: #000;
+  animation: fade 0.5s linear;
+  -webkit-animation: fade 0.5s linear;
+}
+
+@keyframes fade {
+  0% {
+    background-color: transparent;
+    color: #fff;
+  }
+  100% {
+    background-color: #fff;
+    color: #000;
+  }
+}
 
