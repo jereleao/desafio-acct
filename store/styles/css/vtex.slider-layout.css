@@ -1,3 +1,31 @@
+
+.slideChildrenContainer--slider-timeACCT {
+    padding: 50px 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.caretIcon--slider-timeACCT {
+    border: 3px solid silver;
+    border-radius: 50%;
+    color: silver;
+    width: 15px;
+    height: 15px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 2px 2px;
+    
+}
+
+.caretIcon--slider-timeACCT:hover{
+    border-color: grey;
+    color: grey;
+}
+
+.slide--slider-timeACCT {
+    
+
 .sliderArrows {
   color: #fff;
   border: 1px solid gray;
@@ -21,6 +49,7 @@
   .sliderRightArrow--slider {
     right: 10px;
   }
+
 }
 
 /* ----- Testimony ----- */
@@ -52,4 +81,5 @@
   height: 12px;
   color: #aaa;
   stroke-width: 3px;
+
 }
