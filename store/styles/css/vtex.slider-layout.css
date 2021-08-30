@@ -1,30 +1,28 @@
-
 .slideChildrenContainer--slider-timeACCT {
-    padding: 50px 25px;
-    margin-left: 30px;
-    margin-right: 30px;
+  padding: 50px 25px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .caretIcon--slider-timeACCT {
-    border: 3px solid silver;
-    border-radius: 50%;
-    color: silver;
-    width: 15px;
-    height: 15px;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-top: 20px;
-    padding: 2px 2px;
-    
+  border: 3px solid silver;
+  border-radius: 50%;
+  color: silver;
+  width: 15px;
+  height: 15px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 20px;
+  padding: 2px 2px;
 }
 
-.caretIcon--slider-timeACCT:hover{
-    border-color: grey;
-    color: grey;
+.caretIcon--slider-timeACCT:hover {
+  border-color: grey;
+  color: grey;
 }
 
 .slide--slider-timeACCT {
-    
+}
 
 .sliderArrows {
   color: #fff;
@@ -49,7 +47,6 @@
   .sliderRightArrow--slider {
     right: 10px;
   }
-
 }
 
 /* ----- Testimony ----- */
@@ -60,20 +57,36 @@
   padding: 0.25rem;
 }
 
-.sliderLeftArrow--testimony-slider  { left: 0; }
-.sliderRightArrow--testimony-slider { right: 0; }
+.sliderLeftArrow--testimony-slider {
+  left: 0;
+}
+.sliderRightArrow--testimony-slider {
+  right: 0;
+}
 
 @media (min-width: 1000px) and (max-width: 1199px) {
-  .sliderLeftArrow--testimony-slider  { left: 5em; }
-  .sliderRightArrow--testimony-slider { right: 5em; }
+  .sliderLeftArrow--testimony-slider {
+    left: 5em;
+  }
+  .sliderRightArrow--testimony-slider {
+    right: 5em;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .sliderLeftArrow--testimony-slider  { left: 11em; }
-  .sliderRightArrow--testimony-slider { right: 11em; }
+  .sliderLeftArrow--testimony-slider {
+    left: 11em;
+  }
+  .sliderRightArrow--testimony-slider {
+    right: 11em;
+  }
 }
 @media (min-width: 1400px) {
-  .sliderLeftArrow--testimony-slider  { left: 20%; }
-  .sliderRightArrow--testimony-slider { right: 20%; }
+  .sliderLeftArrow--testimony-slider {
+    left: 20%;
+  }
+  .sliderRightArrow--testimony-slider {
+    right: 20%;
+  }
 }
 
 .caretIcon--testimony-slider {
@@ -81,5 +94,4 @@
   height: 12px;
   color: #aaa;
   stroke-width: 3px;
-
 }
