@@ -6,6 +6,7 @@
       "flex-layout.row#about-us",
       "clients",
       "services",
+      "flex-layout.row#testimony",
       "flex-layout.row#form"
     ]
   },
@@ -45,20 +46,18 @@
         "phone": 1
       },
       "blockClass": "slider",
-      // O slide não funciona se o showNavigationArrows estiver ativo
-      // "showNavigationArrows": "desktopOnly",
       "usePagination": true,
-      "showPaginationDots": "never"
-      // "infinite": true,
-      // "autoplay": {
-      //   "timeout": 5000,
-      //   "stopOnHover": true
-      // }
+      "showPaginationDots": "never",
+      "infinite": true,
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      }
     },
     "children": ["slider-tecnology", "slider-engineering", "slider-product", "slider-info"]
   },
 
-  // ----- Home: About-us -----
+  // ----- About-us -----
   "flex-layout.row#about-us": {
     "props": {
       "fullWidth": true,
@@ -161,7 +160,14 @@
       "text": "Saiba mais sobre nós",
       "blockClass": "about-button"
     }
-    },
+  },
+
+  // ----- Testemony -----
+  "flex-layout.row#testimony": {
+    "children": ["flex-layout.row#testimony-title-row"]
+  },
+
+  // ----- Form -----
   "flex-layout.row#form": {
     "props": {
       "horizontalAlign": "right",
@@ -176,4 +182,6 @@
     },
     "children": ["formulario"]
   }
+
 }
+
