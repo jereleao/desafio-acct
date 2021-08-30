@@ -1,6 +1,8 @@
 import React from 'react'
+import { useMutation } from 'react-apollo'
+import ADD_LEAD from './graphql/addlead.gql'
 
-interface Lead {
+interface InputLeadPT {
   nome: string
   telefone: string
   empresa: string
@@ -13,7 +15,7 @@ interface Lead {
 }
 
 const Formulario: StorefrontFunctionComponent = () => {
-  const [lead, setLead] = React.useState({
+  const clearLead = {
     nome: '',
     telefone: '',
     empresa: '',
@@ -23,14 +25,21 @@ const Formulario: StorefrontFunctionComponent = () => {
     cargo: '',
     url: '',
     caixa: '',
+  }
+
+  const [lead, setLead] = React.useState(clearLead)
+
+  const [addLead, { data, error }] = useMutation(ADD_LEAD, {
+    onCompleted: () => setLead(clearLead),
   })
 
   const handleFormChange = (property: string, value: string) =>
     setLead(prev => ({ ...prev, [property]: value }))
 
-  const sendLead = (lead: Lead) => {
-    console.log(lead)
+  const sendLead = (lead: InputLeadPT) => {
+    addLead({ variables: { lead } })
   }
+
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault()
     sendLead(lead)
@@ -48,9 +57,7 @@ const Formulario: StorefrontFunctionComponent = () => {
             type="text"
             value={lead.nome}
             required
-            onChange={({
-              target: { value },
-            }: React.ChangeEvent<HTMLInputElement>) =>
+            onChange={({ target: { value } }: any) =>
               handleFormChange('nome', value)
             }
           />
@@ -63,9 +70,7 @@ const Formulario: StorefrontFunctionComponent = () => {
             name="email"
             value={lead.email}
             required
-            onChange={({
-              target: { value },
-            }: React.ChangeEvent<HTMLInputElement>) =>
+            onChange={({ target: { value } }: any) =>
               handleFormChange('email', value)
             }
           />
@@ -80,9 +85,7 @@ const Formulario: StorefrontFunctionComponent = () => {
             type="tel"
             value={lead.telefone}
             required
-            onChange={({
-              target: { value },
-            }: React.ChangeEvent<HTMLInputElement>) =>
+            onChange={({ target: { value } }: any) =>
               handleFormChange('telefone', value)
             }
           />
@@ -96,9 +99,7 @@ const Formulario: StorefrontFunctionComponent = () => {
             name="pais"
             value={lead.pais}
             required
-            onChange={({
-              target: { value },
-            }: React.ChangeEvent<HTMLInputElement>) =>
+            onChange={({ target: { value } }: any) =>
               handleFormChange('pais', value)
             }
           />
@@ -114,9 +115,7 @@ const Formulario: StorefrontFunctionComponent = () => {
             name="empresa"
             value={lead.empresa}
             required
-            onChange={({
-              target: { value },
-            }: React.ChangeEvent<HTMLInputElement>) =>
+            onChange={({ target: { value } }: any) =>
               handleFormChange('empresa', value)
             }
           />
@@ -129,9 +128,7 @@ const Formulario: StorefrontFunctionComponent = () => {
             type="text"
             name="cargo"
             value={lead.cargo}
-            onChange={({
-              target: { value },
-            }: React.ChangeEvent<HTMLInputElement>) =>
+            onChange={({ target: { value } }: any) =>
               handleFormChange('cargo', value)
             }
           />
@@ -146,9 +143,7 @@ const Formulario: StorefrontFunctionComponent = () => {
             type="number"
             name="colaboradores"
             value={lead.numcolaboradores}
-            onChange={({
-              target: { value },
-            }: React.ChangeEvent<HTMLInputElement>) =>
+            onChange={({ target: { value } }: any) =>
               handleFormChange('numcolaboradores', value)
             }
           />
@@ -161,10 +156,7 @@ const Formulario: StorefrontFunctionComponent = () => {
             type="text"
             name="url"
             value={lead.url}
-            required
-            onChange={({
-              target: { value },
-            }: React.ChangeEvent<HTMLInputElement>) =>
+            onChange={({ target: { value } }: any) =>
               handleFormChange('url', value)
             }
           />
@@ -194,6 +186,17 @@ const Formulario: StorefrontFunctionComponent = () => {
       >
         Enviar
       </button>
+      {data && (
+        <p className="c-button-blue">
+          Obrigado pela sua mensagem, já foi enviada
+        </p>
+      )}
+      {error && (
+        <p className="b--warning ba bw1 b--solid pv3 ph6">
+          Ocorreu um erro ao tentar enviar sua mensagem. Por favor, tente
+          novamente mais tarde.
+        </p>
+      )}
     </form>
   )
 }
