@@ -37,6 +37,18 @@
       "quadranteImg": "assets/slide/quadrante_vtex_2021.webp"
     }
   },
+  "slider-tetrix": {
+    "props": {
+      "tetrixImg": "assets/slide/tetrix.svg",
+      "teacherImg": "assets/slide/illustrations/teacher.png",
+      "manImg": "assets/slide/illustrations/man.png",
+      "womanImg": "assets/slide/illustrations/woman.png",
+      "monitorImg": "assets/slide/illustrations/monitor.png",
+      "orangeImg": "assets/slide/illustrations/orange.png",
+      "blueImg": "assets/slide/illustrations/blue.png",
+      "yellowImg": "assets/slide/illustrations/yellow-points.png"
+    }
+  },
 
   // ----- Main Slider -----
   "slider-layout#home": {
@@ -48,14 +60,20 @@
       },
       "blockClass": "slider",
       "usePagination": true,
-      "showPaginationDots": "never",
-      "infinite": true,
-      "autoplay": {
-        "timeout": 5000,
-        "stopOnHover": true
-      }
+      "showPaginationDots": "never"
+      // "infinite": true,
+      // "autoplay": {
+      //   "timeout": 5000,
+      //   "stopOnHover": true
+      // }
     },
-    "children": ["slider-tecnology", "slider-engineering", "slider-product", "slider-info"]
+    "children": [
+      "slider-tecnology",
+      "slider-engineering",
+      "slider-product",
+      "slider-info",
+      "slider-tetrix"
+    ]
   },
 
   // ----- Testimony Slider -----
@@ -83,7 +101,7 @@
     ]
   },
 
-  // ----- Home: Histórias e Clientes ----- 
+  // ----- Home: Histórias e Clientes -----
   "flex-layout.row#historias-e-clientes": {
     "props": {
       "fullWidth": true,
@@ -98,7 +116,7 @@
       "rich-text#historias-e-clientes-button"
     ]
   },
-  
+
   "flex-layout.row#historias-e-clientes-title-row": {
     "props": {
       "fullWidth": true,

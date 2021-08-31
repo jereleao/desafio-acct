@@ -22,5 +22,8 @@
   },
   "slider-info": {
     "component": "SliderInfo"
+  },
+  "slider-tetrix": {
+    "component": "SliderTetrix"
   }
 }
