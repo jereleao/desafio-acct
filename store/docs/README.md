@@ -1,153 +1,84 @@
 <h1 align="center">
-      <a href="#" alt="DESAFIO ACCT - GRUPO 13 - HC"> DESAFIO ACCT - GRUPO 13 - HC </a>
+      <a href="#" alt="DESAFIO ACCT - GRUPO 13 - Hiring Coders 2021"> DESAFIO ACCT - GRUPO 13 - Hiring Coders 2021 </a>
 </h1>
 
 <h3 align="center">
-     Recriamos o site da ACCT. 
+     Desafio: Desenvolver um projeto de website de acordo com a temática ACCT, com uso da API VTEX IO e fazer a ligação entre ela e a API AWS GATEWAY.
+O grupo para a entrega do desafio, também utilizou a API AWS Lambda em conjunto com o Amazon DynamoDB.
 </h3>
 
 Tabela de conteúdos
 =================
 <!--ts-->
-   * [Sobre o projeto](#-sobre-o-projeto)
-   * [Funcionalidades](#-funcionalidades)
-   * [Layout](#-layout)
-     * [Mobile](#mobile)
-     * [Web](#web)
-   * [Como executar o projeto](#-como-executar-o-projeto)
-     * [Pré-requisitos](#pré-requisitos)
-     * [Rodando o Backend (servidor)](#user-content--rodando-o-backend-servidor)
-     * [Rodando a aplicação web (Frontend)](#user-content--rodando-a-aplicação-web-frontend)
-   * [Tecnologias](#-tecnologias)
-     * [WebSite](#user-content-website--react----typescript)
-     * [Server](#user-content-server--nodejs----typescript)
-   * [Contribuidores](#-contribuidores)
-   * [Como contribuir no projeto](#-como-contribuir-no-projeto)
-   * [Autor](#-autor)
-   * [Licença](#user-content--licença)
+   * Sobre o projeto
+   * Desenvolvimento do Backend - API AWS e VTEX
+   * Contribuidores
 <!--te-->
 
 
 ## 💻 Sobre o projeto
 
-Desenvolver um projeto com o uso de API da Vtex IO com a temática do patrocinador ACCT.
+Para a conclusão do projeto, devemos concluir os seguintes requisitos:
+
+- Utilizando o VTEX IO, reproduzir o site da ACCT, patrocinadora do Hiring Coders 2021;
+- Criar uma API para servir os projetos e os pedidos vendidos (API VTEX);
+- Criar uma API para gerenciamento de venda ativa na AWS, com o objetivo de gerenciar os clientes que se cadastraram em uma lead ou os clientes que
+já compraram no e-commerce, fazendo com que a equipe de pós-venda possa
+entrar em contato com os clientes tentando fazer venda Ativa/Casada ou
+UPSELL;
+- Integrar ambas as APIs com o objetivo de, ao concluir uma compra, verificar se o usuário que finalizou é o mesmo usuário cadastrado na lead da API AWS e, caso seja, marcar este usuário que era somente um prospect na lead agora como cliente; e
+- Criar uma página para trazer a lista das leads cadastradas na API Gateway na
+AWS, listando os clientes cadastrados. Opcionalmente, implementar essa página no admin.
+
+
 
 ---
 
-## ⚙️ Funcionalidades
+## ⚙️ Desenvolvimento do Backend - API AWS e VTEX
 
-- [x] Neste front-end teremos a temática da ACCT, com logo da ACCT cores da
-ACCT e a missão e valores da ACCT em uma página de sobre e mostrar as virtudes do serviço da ACCT,
-onde poderão:
-  - [x] acessar os serviços da ACCT
-  - [x] saber os valores de cada serviço
-  - [x] adicionar no carrinho
-  - [x] navegar entre as páginas, conhecendo os valores da empresa.
+### - **API VTEX**
+A implementação da API VTEX foi realizada através da criação de um service app, responsável por ouvir os eventos de compras finalizadas.
 
----
+O serviço conta com dois middlewares:
+- **getEmail**: Ouve o evento de compra e recebe a orderId através do context. Com base na orderId, realiza a requisição das informações sobre a ordem através do cliente OMS. Por fim, com base no userProfileId recebido nas informações da ordem, faz a requisição do email através do cliente Profile e o repassa para o context para acesso pelo próximo middleware.
 
-## 🎨 Layout
+- **leadUpdater**: A partir do email recebido através do context, realiza a requisição à API AWS e verifica se o referido email está cadastrado na base de dados. Caso esteja, altera o status da lead de "PROSPECT" para a "CLIENT".
 
-Seguem telas:
+Além do service app, a API VTEX também conta com uma camada GraphQL responsável por dois processos:
+- **Cadastro de Leads**: Através do formulário disponível no site, o usuário realiza o cadastro de suas informações. Essas, por sua vez, são verificadas pela camada GraphQL que, posteriormente, realiza uma mutation para a API AWS.
 
----
-
-## 🚀 Como executar o projeto
-
-Este projeto é divido em duas partes:
-1. Backend (pasta aws) 
-2. Frontend (pasta store)
+- **Buscas das Leads**: Para a implementação da página de exibição das Leads cadastradas, a camada GraphQL realiza a requisição à API AWS para receber a informação de todas as Leads cadastradas.
 
 
-### Pré-requisitos
+### - **API AWS**
+A implementação da API AWS foi realizada utilizando os serviços API AWS Gateway, API Lambda Function e DynamoDB.
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+Através da API AWS Gateway, os dados são recebidos pela função lambda que, por sua vez, faz a conexão com o DynamoDB.
 
-#### 🎲 Rodando o Backend (servidor)
-
-```bash
-
-# Clone este repositório
-$ git clone https://github.com/JerryLion91/desafio-acct
-
-# Instale as dependências
-$ npm install
-
-```
-
-#### 🧭 Rodando a aplicação web (Frontend)
-
-```bash
-
-# Clone este repositório
-$ git clone https://github.com/JerryLion91/desafio-acct
-
-# Vá para a pasta da aplicação Front End
-$ cd web
-
-# Instale as dependências
-$ npm install
-
-# Execute a aplicação em modo de desenvolvimento
-$ npm run start
-
-
-```
----
-
-## 🛠 Tecnologias
-
-As seguintes ferramentas foram usadas na construção do projeto:
-
-
----
+Métodos disponíveis de requisição à API AWS:
+- GET;
+- PUT;
+- POST.
 
 ## 👨‍💻 Contribuidores
 
-💜 Um super thanks 👏 para essa galera que fez esse produto sair do campo da ideia e concluir o desafio :)
+
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
-  <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/gabrielaraujr"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/36744423?v=4" width="100px;" alt=""/><br /><sub><b>Gabriel Araújo</b></sub></a><br /></td>
+  <td align="center"><a href="https://github.com/JerryLion91"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/73080834?v=4" width="100px;" alt=""/><br /><sub><b>Jeremias Leão</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/arielyth"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/52684278?v=4" width="100px;" alt=""/><br /><sub><b>Arielle Cardoso
+</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Franklin-Siqueira"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86517033?v=4" width="100px;" alt=""/><br /><sub><b>Franklin Siqueira</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/igor7x7"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/80541299?v=4" width="100px;" alt=""/><br /><sub><b>Igor Barbosa</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/hugooleal"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/77586151?v=4" width="100px;" alt=""/><br /><sub><b>Hugo Leal</b></sub></a><br /></td>
     
   </tr>
   <tr>
-   <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
+   <td align="center"><a href="https://github.com/isaCSF"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/87619544?v=4" width="100px;" alt=""/><br /><sub><b>Isadora Silva</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://ca.slack-edge.com/T02CG6LJLMP-U02BP80CLBH-acda0369d2d0-512" width="90px;" alt=""/><br /><sub><b>Maria Luiza Andrade</b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
     
   </tr>
 </table>
-
-## 💪 Como contribuir no projeto
-
-1. Faça um **fork** do projeto.
-2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
-3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
-4. Envie as suas alterações: `git push origin my-feature`
-> Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
-
----
-
-## 🦸 Autor
-
-
----
-
-## 📝 Licença
-
-Este projeto esta sobe a licença [MIT](./LICENSE).
-Com autorização para uso da Vtex no Hiring Coders.
-
-
----
-
