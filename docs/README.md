@@ -1,11 +1,9 @@
-
-
 <h1 align="center">
       <a href="#" alt="DESAFIO ACCT - GRUPO 13 - HC"> Ecoleta </a>
 </h1>
 
 <h3 align="center">
-     Recriamos o site da ACCT com dados armazenados . 
+     Recriamos o site da ACCT. 
 </h3>
 
 
