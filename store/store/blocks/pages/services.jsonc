@@ -22,7 +22,7 @@
       "text": "SERVIÇOS",
       "font": "t-heading-1",
       "textColor": "c-action-secondary",
-      "blockClass": "page-title"
+      "blockClass": "page-title-servicos"
     }
   },
   "image#service-banner": {

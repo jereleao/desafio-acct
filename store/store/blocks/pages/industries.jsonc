@@ -36,6 +36,7 @@
       "querySchema": {
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
         "queryField": "2",
         "mapField": "c"
       }

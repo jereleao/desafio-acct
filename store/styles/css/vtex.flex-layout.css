@@ -3,6 +3,7 @@
   padding-right: 0.75rem;
 }
 
+
 .flexRow--menu-item:hover {
   color: #fcc200;
 }
@@ -49,7 +50,7 @@
   padding: .5rem 0rem .5rem 0rem;
 }
 
-.flexRowContent--about-us-title {
+.flexRowContent--about-us-title{
   margin-left: 80px;
 }
 
