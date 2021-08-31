@@ -1,0 +1,23 @@
+.minicartCheckoutButton :global(.vtex-button){
+    background-color: #9c9c9c;
+    border-color: #9c9c9c;
+}
+.minicartCheckoutButton :global(.vtex-button):hover{
+    background-color: white;
+    border-color: #9c9c9c;
+    color: #9c9c9c;
+    animation: fade 0.2s linear;
+  -webkit-animation: fade 0.2s linear;
+}
+@keyframes fade {
+  0% {
+    background-color: #9c9c9c;
+    border-color: #9c9c9c;
+    color: #fff;
+  }
+  100% {
+    background-color: #fff;
+    border-color: #9c9c9c;
+    color: #9c9c9c;
+  }
+}
