@@ -1,14 +1,14 @@
-  //
-  //  Hiring Coders 2021 | Gama Academy | ACCT | VTEXT 
-  //
-  //  Projeto ACCT Clone
-  //  Grupo 13
-  //
-  //
-  //
-  //                                        Header/Menu Section
-  //                          Franklin Siqueira / Jeremias Leão
-  /////////////////////////////////////////////////////////////
+//
+//  Hiring Coders 2021 | Gama Academy | ACCT | VTEXT
+//
+//  Projeto ACCT Clone
+//  Grupo 13
+//
+//
+//
+//                                        Header/Menu Section
+//                          Franklin Siqueira / Jeremias Leão
+/////////////////////////////////////////////////////////////
 {
   "header": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]

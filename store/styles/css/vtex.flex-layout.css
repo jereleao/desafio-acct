@@ -3,7 +3,6 @@
   padding-right: 0.75rem;
 }
 
-
 .flexRow--menu-item:hover {
   color: #fcc200;
 }
@@ -39,27 +38,26 @@
   width: 100%;
   flex-direction: column;
   align-items: center;
-
 }
 
-
-.flexRow--about-us-title{
+.flexRow--about-us-title {
   background-image: url(https://acct.global/wp-content/uploads/2020/10/cover-about-us.jpg);
   background-position: center center;
   background-size: cover;
-  padding: .5rem 0rem .5rem 0rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
 }
 
-.flexRowContent--about-us-title{
+.flexRowContent--about-us-title {
   margin-left: 80px;
 }
 
-.flexColChild--col-engenharia, .flexColChild--col-habilidades,
-.flexColChild--col-lider, .flexColChild--col-suporte,
+.flexColChild--col-engenharia,
+.flexColChild--col-habilidades,
+.flexColChild--col-lider,
+.flexColChild--col-suporte,
 .flexColChild--col-seguranca {
   padding-top: 50px;
   padding-bottom: 50px;
-  
 }
 
 @media (max-width: 840px) {
@@ -69,7 +67,6 @@
     align-items: center;
   }
 }
-
 
 /* ----- Testimony ----- */
 .flexRow--testimony {
@@ -100,7 +97,6 @@
     align-items: center;
   }
 }
-
 
 .flexRowContent--testimony,
 .flexRowContent--testimony-profile-text-row {
@@ -135,8 +131,8 @@
 }
 
 .flexColContent--clients-col {
-    margin-top: 0;
-    width: max-content;
+  margin-top: 0;
+  width: max-content;
 }
 
 @media (max-width: 810px) {
@@ -154,7 +150,6 @@
     align-items: center;
     padding: 0 1rem;
   }
-
 }
 
 .flexRowContent--clients-content-row {
@@ -202,27 +197,34 @@
 }
 
 /* ----- Footer ----- */
-.flexCol--colAddressesFranklin{ 
+.flexCol--colAddressesFranklin {
   align-items: left;
   justify-content: left;
-  justify-items:left;
+  justify-items: left;
 }
-.flexCol--colStampFranklin{ 
-  align-items:flex-end;
+.flexCol--colStampFranklin {
+  align-items: flex-end;
   /* justify-content: right;
   justify-items:left; */
 }
-.flexRow--logoRowFranklin{
+.flexRow--logoRowFranklin {
   /* background-color:turquoise; */
   align-items: right;
   justify-content: right;
-  justify-items:right;
+  justify-items: right;
 }
-.flexColChild--colACCTFranklin{
-  flex-grow: 1;
+.flexColChild--colACCTFranklin {
+  display: flex;
+  justify-content: center;
 }
-.flexCol--colAddressesMobileFranklin{ 
+@media (min-width: 600px) {
+  .flexColChild--colACCTFranklin {
+    display: initial;
+    flex-grow: 1;
+  }
+}
+.flexCol--colAddressesMobileFranklin {
   align-items: center;
   justify-content: center;
-  justify-items:center;
+  justify-items: center;
 }

@@ -10,6 +10,7 @@ interface ISliderTetrix {
   orangeImg: string
   blueImg: string
   yellowImg: string
+  leafImg: string
 }
 
 const SliderTetrix: StorefrontFunctionComponent<ISliderTetrix> = ({
@@ -21,6 +22,7 @@ const SliderTetrix: StorefrontFunctionComponent<ISliderTetrix> = ({
   orangeImg,
   blueImg,
   yellowImg,
+  leafImg,
 }) => {
   return (
     <S.Container>
@@ -34,6 +36,7 @@ const SliderTetrix: StorefrontFunctionComponent<ISliderTetrix> = ({
             <img className="orange-img" src={orangeImg} alt="Ilustração de uma arte laranja" />
             <img className="blue-img" src={blueImg} alt="Ilustração de uma arte azul" />
             <img className="yellow-img" src={yellowImg} alt="Ilustração de uma arte com pontos amarelos" />
+            <img className="leaf-img" src={leafImg} alt="Ilustração de uma folha" />
           </S.Media>
         </S.MediaContainer>
         <S.InfoContainer>
@@ -85,6 +88,10 @@ SliderTetrix.schema = {
       default: '',
     },
     yellowImg: {
+      type: 'string',
+      default: '',
+    },
+    leafImg: {
       type: 'string',
       default: '',
     }

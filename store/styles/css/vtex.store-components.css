@@ -15,8 +15,6 @@
 .infoCardHeadline--about-info-card {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2.5rem;
-
-
 }
 
 .imageElement--somos-img {
@@ -28,8 +26,10 @@
   height: auto;
 }
 
-.imageElement--icon-engenharia, .imageElement--icon-habilidades, 
-.imageElement--icon-lider, .imageElement--icon-suporte,
+.imageElement--icon-engenharia,
+.imageElement--icon-habilidades,
+.imageElement--icon-lider,
+.imageElement--icon-suporte,
 .imageElement--icon-seguranca {
   margin-left: 70px;
   margin-right: 70px;
@@ -39,8 +39,10 @@
   transform: scale(1.1);
 }
 
-.imageElement--icon-engenharia:hover, .imageElement--icon-habilidades:hover,
-.imageElement--icon-lider:hover, .imageElement--icon-suporte:hover,
+.imageElement--icon-engenharia:hover,
+.imageElement--icon-habilidades:hover,
+.imageElement--icon-lider:hover,
+.imageElement--icon-suporte:hover,
 .imageElement--icon-seguranca:hover {
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -69,15 +71,24 @@
 }
 */
 
-.imageElement--person1, .imageElement--person2,
-.imageElement--person3, .imageElement--person4,
-.imageElement--person5, .imageElement--person6,
-.imageElement--person7, .imageElement--person8,
-.imageElement--person9, .imageElement--person10,
-.imageElement--person11, .imageElement--person12,
-.imageElement--person13, .imageElement--person14,
-.imageElement--person15, .imageElement--person16,
-.imageElement--person17, .imageElement--person18,
+.imageElement--person1,
+.imageElement--person2,
+.imageElement--person3,
+.imageElement--person4,
+.imageElement--person5,
+.imageElement--person6,
+.imageElement--person7,
+.imageElement--person8,
+.imageElement--person9,
+.imageElement--person10,
+.imageElement--person11,
+.imageElement--person12,
+.imageElement--person13,
+.imageElement--person14,
+.imageElement--person15,
+.imageElement--person16,
+.imageElement--person17,
+.imageElement--person18,
 .imageElement--person19 {
   border-radius: 50%;
   border-color: lightgrey;
@@ -89,13 +100,12 @@
   padding-bottom: 100px;
 }
 
-
 /* ----- Home: Testimony ----- */
 .imageElement--testimony-quote {
   width: 60px;
   height: 60px;
   transform: rotate(180deg);
-  margin: 1.50rem 0 1.25rem;
+  margin: 1.5rem 0 1.25rem;
 }
 
 .imageElement--testimony-profile-img {
@@ -118,23 +128,34 @@
   max-width: 240px !important;
 }
 
-.sizeDesktop--sizeDesktopFranklin{
+.sizeDesktop--sizeDesktopFranklin {
   /* background-color: green; */
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
 }
-.logoContainer--logoContainerFranklin{
+.logoContainer--logoContainerFranklin {
   /* background-color: blue; */
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
 }
-.logoImage--logoImageFranklin{
-  /* margin: 10px;
-  padding: 10px; */
-}
-.logoLink--logoLinkFranklin{
+/* .logoImage--logoImageFranklin {
+  margin: 0;
+  padding: 0;
+} */
+.logoLink--logoLinkFranklin {
   /* background-color: yellow; */
-  align-items: right;
-  justify-content: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+@media (min-width: 600px) {
+  .logoLink--logoLinkFranklin {
+    padding: 0;
+    margin: 0.75rem 0 0 0;
+  }
+  .logoImage--logoLinkFranklin {
+    margin: 0;
+    padding: 0;
+  }
+}

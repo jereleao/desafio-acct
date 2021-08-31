@@ -46,7 +46,8 @@
       "monitorImg": "assets/slide/illustrations/monitor.png",
       "orangeImg": "assets/slide/illustrations/orange.png",
       "blueImg": "assets/slide/illustrations/blue.png",
-      "yellowImg": "assets/slide/illustrations/yellow-points.png"
+      "yellowImg": "assets/slide/illustrations/yellow-points.png",
+      "leafImg": "assets/slide/illustrations/leaf.png"
     }
   },
 
@@ -60,12 +61,12 @@
       },
       "blockClass": "slider",
       "usePagination": true,
-      "showPaginationDots": "never"
-      // "infinite": true,
-      // "autoplay": {
-      //   "timeout": 5000,
-      //   "stopOnHover": true
-      // }
+      "showPaginationDots": "never",
+      "infinite": true,
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      }
     },
     "children": [
       "slider-tecnology",
@@ -134,7 +135,7 @@
   },
 
   "rich-text#historias-e-clientes": {
-    "props":{
+    "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Histórias e Clientes",
@@ -185,6 +186,4 @@
     },
     "children": ["formulario"]
   }
-
 }
-

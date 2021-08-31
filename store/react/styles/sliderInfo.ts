@@ -1,4 +1,39 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components'
+
+const animationInfo = css`
+  .title-info {
+    animation-name: title-info-animation;
+    animation-duration: 0.8s;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50% 0px;
+
+    @keyframes title-info-animation {
+      from {
+        transform: translate3d(-40px, -20px, 0px);
+      }
+      to {
+        transform: translate3d(0px, 0px, 0px);
+      }
+    }
+  }
+
+  .list,
+  .btn-info {
+    animation-name: list-animation;
+    animation-duration: 0.8s;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50% 0px;
+
+    @keyframes list-animation {
+      from {
+        transform: translate3d(-20px, 30px, 0px);
+      }
+      to {
+        transform: translate3d(0px, 0px, 0px);
+      }
+    }
+  }
+`
 
 export const Container = styled.div`
   position: relative;
@@ -15,7 +50,11 @@ export const Container = styled.div`
   @media (min-width: 700px) {
     height: 800px;
   }
-`;
+
+  :hover {
+    ${animationInfo}
+  }
+`
 
 export const Content = styled.div`
   position: relative;
@@ -26,7 +65,7 @@ export const Content = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0.50rem 1rem 1.50rem;
+  padding: 0.5rem 1rem 1.5rem;
 
   @media (min-width: 700px) {
     flex-direction: row-reverse;
@@ -37,11 +76,11 @@ export const Content = styled.div`
     width: 80%;
     margin: 0 auto;
   }
-`;
+`
 
 export const MediaContainer = styled.div`
   width: calc(100% - 20px);
-`;
+`
 
 export const Media = styled.div`
   width: 100%;
@@ -68,8 +107,13 @@ export const Media = styled.div`
     transform-origin: 50% -80% 20px;
 
     @keyframes side-by-side {
-      from,to { transform: translate3d(-30px, 0px, 0px) rotateY(-8deg) rotateX(8deg); }
-      50% { transform: translate3d(30px, 0px, 0px) rotateY(8deg) rotateX(8deg); }
+      from,
+      to {
+        transform: translate3d(-30px, 0px, 0px) rotateY(-8deg) rotateX(8deg);
+      }
+      50% {
+        transform: translate3d(30px, 0px, 0px) rotateY(8deg) rotateX(8deg);
+      }
     }
   }
 
@@ -79,23 +123,30 @@ export const Media = styled.div`
       top: 22%;
     }
 
-    .quadrante-img { width: 570px; }
+    .quadrante-img {
+      width: 570px;
+    }
   }
 
-  @media (min-width: 700px) and (max-width: 1199px){
+  @media (min-width: 700px) and (max-width: 1199px) {
     .rocket-img {
       width: 92px;
       top: 27%;
     }
 
-    .quadrante-img { width: 370px; }
+    .quadrante-img {
+      width: 370px;
+    }
   }
 
   @media (min-width: 700px) {
     position: initial;
-    .rocket-img { left: 0px; }
+    .rocket-img {
+      left: 0px;
+      transform: translate(0, -25%);
+    }
   }
-`;
+`
 
 export const InfoContainer = styled.div`
   width: calc(100% - 20px);
@@ -107,7 +158,7 @@ export const InfoContainer = styled.div`
   @media (min-width: 700px) and (max-width: 1199px) {
     width: calc(100% - 200px);
   }
-`;
+`
 
 export const Info = styled.div`
   width: 100%;
@@ -115,7 +166,7 @@ export const Info = styled.div`
   flex-direction: column;
   align-items: center;
 
-  h4 {
+  .title-info {
     font-family: 'Roboto', sans-serif;
     font-size: 1.75rem;
     font-weight: 600;
@@ -126,7 +177,7 @@ export const Info = styled.div`
     margin: 0;
   }
 
-  ul {
+  .list {
     list-style: none;
     padding: 0;
     margin: 0.75rem 0;
@@ -144,17 +195,19 @@ export const Info = styled.div`
 
       svg {
         margin-right: 0.25rem;
-        circle { fill: #fcc200; }
+        circle {
+          fill: #fcc200;
+        }
       }
     }
   }
 
-  button {
+  .btn-info {
     width: 104px;
-    background: RGBA(15,29,64,1);
+    background: RGBA(15, 29, 64, 1);
     opacity: 1;
     padding: 10px 20px 10px 20px;
-    border: 1px solid RGBA(15,29,64,1);
+    border: 1px solid RGBA(15, 29, 64, 1);
     border-radius: 99px;
 
     font-family: 'Roboto', sans-serif;
@@ -170,19 +223,23 @@ export const Info = styled.div`
       color: #000000;
       border: 1px solid #ffffff;
       background: #ffffff;
-      box-shadow: 0px 2px 10px 0px RGBA(0,0,0,0.13);
+      box-shadow: 0px 2px 10px 0px RGBA(0, 0, 0, 0.13);
     }
   }
 
   @media (min-width: 1200px) {
-    h4 {
+    .title-info {
       font-size: 3.5rem !important;
       font-weight: 600 !important;
     }
 
-    ul { li { font-size: 1.125rem !important; } }
+    .list {
+      li {
+        font-size: 1.125rem !important;
+      }
+    }
 
-    button {
+    .btn-info {
       width: 120px;
       font-size: 1rem;
     }
@@ -191,13 +248,13 @@ export const Info = styled.div`
   @media (min-width: 700px) {
     align-items: flex-start;
 
-    h4 {
+    .title-info {
       text-align: left;
-      font-size: 2.10rem;
+      font-size: 2.1rem;
       font-weight: 500;
     }
 
-    ul {
+    .list {
       margin: 1.5rem 0;
 
       li {
@@ -205,14 +262,16 @@ export const Info = styled.div`
         align-items: flex-start;
         justify-content: flex-start;
         text-align: left;
-        font-size: 0.90rem;
+        font-size: 0.9rem;
 
         svg {
           width: 20px;
           margin: 0.2525rem;
-          circle { fill: #fcc200;  }
+          circle {
+            fill: #fcc200;
+          }
         }
       }
     }
   }
-`;
+`
