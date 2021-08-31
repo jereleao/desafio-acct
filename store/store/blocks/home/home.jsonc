@@ -68,11 +68,11 @@
       // }
     },
     "children": [
+      "slider-info",
+      "slider-tetrix",
       "slider-tecnology",
       "slider-engineering",
-      "slider-product",
-      "slider-info",
-      "slider-tetrix"
+      "slider-product"
     ]
   },
 
@@ -134,7 +134,7 @@
   },
 
   "rich-text#historias-e-clientes": {
-    "props":{
+    "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Histórias e Clientes",
@@ -185,6 +185,4 @@
     },
     "children": ["formulario"]
   }
-
 }
-
