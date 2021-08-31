@@ -38,7 +38,6 @@
       }
     },
     {
-
       "name": "outbound-access",
       "attrs": {
         "host": "portal.vtexcommercestable.com.br",
@@ -46,7 +45,6 @@
       }
     },
     {
-
       "name": "Get_Account_By_Identifier"
     },
     {

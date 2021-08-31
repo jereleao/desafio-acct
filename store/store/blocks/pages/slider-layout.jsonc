@@ -1,128 +1,470 @@
 {
-    "slider-layout#about-us": {
-        "children": [
-            "image#person1",
-            "image#person2",
-            "image#person3",
-            "image#person4",
-            "image#person5",
-            "image#person6",
-            "image#person7",
-            "image#person8",
-            "image#person9",
-            "image#person10",
-            "image#person11",
-            "image#person12",
-            "image#person13",
-            "image#person14",
-            "image#person15",
-            "image#person16",
-            "image#person17",
-            "image#person18",
-            "image#person19"
+    "slider-layout#about-us": { /* Display dos membros do time ACCT, utilizando o slider-layout */
+        "children": [ /* blocos dos respectivos elementos do slider-layout */
+            "flex-layout.row#person11",
+            "flex-layout.row#person9",
+            "flex-layout.row#person3",
+            "flex-layout.row#person10",
+            "flex-layout.row#person13",
+            "flex-layout.row#person4",
+            "flex-layout.row#person14",
+            "flex-layout.row#person15",
+            "flex-layout.row#person7",
+            "flex-layout.row#person8",
+            "flex-layout.row#person18",
+            "flex-layout.row#person12",
+            "flex-layout.row#person17",
+            "flex-layout.row#person1",
+            "flex-layout.row#person5",
+            "flex-layout.row#person2",
+            "flex-layout.row#person19",
+            "flex-layout.row#person6",
+            "flex-layout.row#person16"
         ],
 
         "props": {
             "autoplay": {
                 "timeout": 5000,
                 "stopOnHover": true
-            }
+            },
+
+            "showPaginationDots": "never",
+
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 3,
+                "phone": 1
+            },
+            "blockClass": "slider-timeACCT"
+       
         }
     },
 
+    /*
+    Os blocos a seguir correspondem a estrutura dos elementos que corrospondem ao children do slider-layout
+    Ou seja, para cada imagem utilizada no slider, precisamos dos seguintes blocos:
+       - flex-layout.row#person -> flex-layout que organiza a imagem e sua descrição no mesmo lugar
+       - flex-layout.col#person -> flex-layout que organiza a imagem e sua descrição como coluna
+       - image#person -> imagem utilizada
+       - rich-text#person -> título da imagem
+    */
+
+    /* Pessoa "1" */
+    "flex-layout.row#person1":{
+         "children": ["flex-layout.col#person1"]
+    },
+    "flex-layout.col#person1":{
+        "children":["image#person1", "rich-text#person1"]
+    },
     "image#person1":{
         "props":{
-            "src": "assets/about-us/time/ammon-cunha-150x150.jpg"
+            "src": "assets/about-us/time/ammon-cunha-150x150.jpg",
+            "blockClass": "person1"
+        }
+    },    
+    "rich-text#person1":{
+        "props":{
+            "text": " **Ammon Cunha** \n Head of Business Intelligence",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person1"
         }
     },
+
+    /* Pessoa "2" */
+    "flex-layout.row#person2":{
+        "children": ["flex-layout.col#person2"]
+   },
+   "flex-layout.col#person2":{
+       "children":["image#person2", "rich-text#person2"]
+   },
     "image#person2":{
         "props":{
-            "src": "assets/about-us/time/ana-lebre-150x150.png"
+            "src": "assets/about-us/time/ana-lebre-150x150.png",
+            "blockClass": "person2"
         }
+    },
+   "rich-text#person2":{
+       "props":{
+           "text": " **Ana Lebre** \n Sales Analyst",
+           "textAlignment": "CENTER",
+           "textPosition": "CENTER",
+           "blockClass": "text-person2"
+       }
+   },
+
+    /* Pessoa "3" */
+    "flex-layout.row#person3":{
+        "children": ["flex-layout.col#person3"]
+    },
+    "flex-layout.col#person3":{
+    "children":["image#person3", "rich-text#person3"]
     },
     "image#person3":{
+            "props":{
+                "src": "assets/about-us/time/andre-dudek-150x150.png",
+                "blockClass": "person3"
+            }
+        },
+    "rich-text#person3":{
         "props":{
-            "src": "assets/about-us/time/andre-dudek-150x150.png"
+            "text": " **André Dudek** \n Director & Partner",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person3"
         }
     },
+    
+    /* Pessoa "4" */
+    "flex-layout.row#person4":{
+        "children": ["flex-layout.col#person4"]
+   },
+   "flex-layout.col#person4":{
+       "children":["image#person4", "rich-text#person4"]
+   },
     "image#person4":{
         "props":{
-            "src": "assets/about-us/time/anna-chimenes-150x150.png"
+            "src": "assets/about-us/time/anna-chimenes-150x150.png",
+            "blockClass": "person4"
         }
+    },    
+   "rich-text#person4":{
+       "props":{
+           "text": " **Ana Chimenes** \n Head de Controladoria e \n Backoffice",
+           "textAlignment": "CENTER",
+           "textPosition": "CENTER",
+           "blockClass": "text-person4"
+       }
+   },
+
+   /* Pessoa "5" */
+   "flex-layout.row#person5":{
+        "children": ["flex-layout.col#person5"]
+    },
+    "flex-layout.col#person5":{
+        "children":["image#person5", "rich-text#person5"]
     },
     "image#person5":{
         "props":{
-            "src": "assets/about-us/time/barbara-cruz-150x150.png"
+            "src": "assets/about-us/time/barbara-cruz-150x150.png",
+            "blockClass": "person5"
         }
+    },
+    "rich-text#person5":{
+        "props":{
+            "text": " **Bárbara Cruz** \n Design Experience",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person5"
+        }
+    },
+
+    /* Pessoa "6" */
+    "flex-layout.row#person6":{
+        "children": ["flex-layout.col#person6"]
+    },
+    "flex-layout.col#person6":{
+        "children":["image#person6", "rich-text#person6"]
     },
     "image#person6":{
         "props":{
-            "src": "assets/about-us/time/camila-santos-150x150.png"
+            "src": "assets/about-us/time/camila-santos-150x150.png",
+            "blockClass": "person6"
         }
+    },   
+    "rich-text#person6":{
+        "props":{
+            "text": " **Camila Santos** \n Sales Analyst",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person6"
+        }
+    },
+    
+    /* Pessoa "7" */
+    "flex-layout.row#person7":{
+        "children": ["flex-layout.col#person7"]
+    },
+    "flex-layout.col#person7":{
+        "children":["image#person7", "rich-text#person7"]
     },
     "image#person7":{
         "props":{
-            "src": "assets/about-us/time/carlos-oliveira-150x150.png"
+            "src": "assets/about-us/time/carlos-oliveira-150x150.png",
+            "blockClass": "person7"
         }
+    },  
+    "rich-text#person7":{
+        "props":{
+            "text": " **Carlos Oliveira** \n Sales Manager Brazil",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person7"
+        }
+    },
+
+    /* Pessoa "8" */
+    "flex-layout.row#person8":{
+        "children": ["flex-layout.col#person8"]
+    },
+    "flex-layout.col#person8":{
+        "children":["image#person8", "rich-text#person8"]
     },
     "image#person8":{
         "props":{
-            "src": "assets/about-us/time/cecilia-pereira-150x150.png"
+            "src": "assets/about-us/time/cecilia-pereira-150x150.png",
+            "blockClass": "person8"
         }
+    },  
+    "rich-text#person8":{
+        "props":{
+            "text": " **Cecília Pereira** \n Head of Trainning and \n Development",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person8"
+        }
+    },
+
+    /* Pessoa "9" */
+    "flex-layout.row#person9":{
+        "children": ["flex-layout.col#person9"]
+    },
+    "flex-layout.col#person9":{
+        "children":["image#person9", "rich-text#person9"]
     },
     "image#person9":{
         "props":{
-            "src": "assets/about-us/time/fabio-feichtinger-150x150.png"
+            "src": "assets/about-us/time/fabio-feichtinger-150x150.png",
+            "blockClass": "person9"
         }
+    },    
+    "rich-text#person9":{
+        "props":{
+            "text": " **Fábio Feichtinger** \n CTO & Partner",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person9"
+        }
+    },
+
+    /* Pessoa "10" */
+    "flex-layout.row#person10":{
+        "children": ["flex-layout.col#person10"]
+    },
+    "flex-layout.col#person10":{
+        "children":["image#person10", "rich-text#person10"]
     },
     "image#person10":{
         "props":{
-            "src": "assets/about-us/time/fatima-raizaro-150x150.png"
+            "src": "assets/about-us/time/fatima-raizaro-150x150.png",
+            "blockClass": "person10"
         }
+    },  
+    "rich-text#person10":{
+        "props":{
+            "text": " **Fátima Raizaro** \n Head of RH",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person10"
+        }
+    },
+
+    /* Pessoa "11" */
+    "flex-layout.row#person11":{
+        "children": ["flex-layout.col#person11"]
+    },
+    "flex-layout.col#person11":{
+        "children":["image#person11", "rich-text#person11"]
     },
     "image#person11":{
         "props":{
-            "src": "assets/about-us/time/frederico-heitmann-150x150.png"
+            "src": "assets/about-us/time/frederico-heitmann-150x150.png",
+            "blockClass": "person11"
         }
+    },
+    "rich-text#person11":{
+        "props":{
+            "text": " **Frederico Heitmann** \n CEO & Partner",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person11"
+        }
+    },
+
+    /* Pessoa "12" */
+    "flex-layout.row#person12":{
+        "children": ["flex-layout.col#person12"]
+    },
+    "flex-layout.col#person12":{
+        "children":["image#person12", "rich-text#person12"]
     },
     "image#person12":{
         "props":{
-            "src": "assets/about-us/time/guilherme-cardoso-150x150.png"
+            "src": "assets/about-us/time/guilherme-cardoso-150x150.png",
+            "blockClass": "person12"
+        }
+    },   
+    "rich-text#person12":{
+        "props":{
+            "text": " **Guilherme Cardoso** \n Head of Engineering",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person12"
         }
     },
+
+    /* Pessoa "13" */
+    "flex-layout.row#person13":{
+        "children": ["flex-layout.col#person13"]
+    },
+    "flex-layout.col#person13":{
+        "children":["image#person13", "rich-text#person13"]
+    },    
     "image#person13":{
         "props":{
-            "src": "assets/about-us/time/juan-nader-150x150.jpg"
+            "src": "assets/about-us/time/juan-nader-150x150.jpg",
+            "blockClass": "person13"
         }
+    },   
+    "rich-text#person13":{
+        "props":{
+            "text": " **Juan Nader** \n Head of Marketing",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person13"
+        }
+    },
+
+    /* Pessoa "14" */
+    "flex-layout.row#person14":{
+        "children": ["flex-layout.col#person14"]
+    },
+    "flex-layout.col#person14":{
+        "children":["image#person14", "rich-text#person14"]
     },
     "image#person14":{
         "props":{
-            "src": "assets/about-us/time/marcos-cipriani-150x150.png"
+            "src": "assets/about-us/time/marcos-cipriani-150x150.png",
+            "blockClass": "person14"
         }
+    },   
+    "rich-text#person14":{
+        "props":{
+            "text": " **Marcos Cipriani** \n General Manager Europe",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person14"
+        }
+    },
+
+    /* Pessoa "15" */
+    "flex-layout.row#person15":{
+        "children": ["flex-layout.col#person15"]
+    },
+    "flex-layout.col#person15":{
+        "children":["image#person15", "rich-text#person15"]
     },
     "image#person15":{
         "props":{
-            "src": "assets/about-us/time/rafael-esberard-150x150.png"
+            "src": "assets/about-us/time/rafael-esberard-150x150.png",
+            "blockClass": "person15"
         }
+    },   
+    "rich-text#person15":{
+        "props":{
+            "text": " **Rafael Esberard** \n SVP of Global Sales",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person15"
+        }
+    },
+
+    /* Pessoa "16" */
+    "flex-layout.row#person16":{
+        "children": ["flex-layout.col#person16"]
+    },
+    "flex-layout.col#person16":{
+        "children":["image#person16", "rich-text#person16"]
     },
     "image#person16":{
         "props":{
-            "src": "assets/about-us/time/rafael-rossini-150x150.jpg"
+            "src": "assets/about-us/time/rafael-rossini-150x150.jpg",
+            "blockClass": "person16"
         }
+    },  
+    "rich-text#person16":{
+        "props":{
+            "text": " **Rafael Rossini** \n Developer",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person16"
+        }
+    },
+
+    /* Pessoa "17" */
+    "flex-layout.row#person17":{
+        "children": ["flex-layout.col#person17"]
+    },
+    "flex-layout.col#person17":{
+        "children":["image#person17", "rich-text#person17"]
     },
     "image#person17":{
         "props":{
-            "src": "assets/about-us/time/rodrigo-de-gouveia-150x150.png"
+            "src": "assets/about-us/time/rodrigo-de-gouveia-150x150.png",
+            "blockClass": "person17"
         }
+    },
+    "rich-text#person17":{
+        "props":{
+            "text": " **Rodrigo de Gouveia** \n Design Experience Director",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person17"
+        }
+    },
+
+    /* Pessoa "18" */
+    "flex-layout.row#person18":{
+        "children": ["flex-layout.col#person18"]
+    },
+    "flex-layout.col#person18":{
+        "children":["image#person18", "rich-text#person18"]
     },
     "image#person18":{
         "props":{
-            "src": "assets/about-us/time/urania-reis-150x150.png"
+            "src": "assets/about-us/time/urania-reis-150x150.png",
+            "blockClass": "person18"
         }
+    },  
+    "rich-text#person18":{
+        "props":{
+            "text": " **Urânia Reis** \n Head of Quality Assurance",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person18"
+        }
+    },
+
+    /* Pessoa "19" */
+    "flex-layout.row#person19":{
+        "children": ["flex-layout.col#person19"]
+    },
+    "flex-layout.col#person19":{
+        "children":["image#person19", "rich-text#person19"]
     },
     "image#person19":{
         "props":{
-            "src": "assets/about-us/time/victor-angelotti-150x150.png"
+            "src": "assets/about-us/time/victor-angelotti-150x150.png",
+            "blockClass": "person19"
+        }
+    },  
+    "rich-text#person19":{
+        "props":{
+            "text": " **Victor Angelotti** \n Designer",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-person19"
         }
     }
+
 }

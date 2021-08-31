@@ -1,0 +1,43 @@
+{
+    "flex-layout.col#emporio-da-cerveja": {
+        "props": {
+            "verticalAlign": "top",
+            "horizontalAlign": "center",
+            "blockClass": "clients-col",
+            "fullWidth": true
+        },
+        "children": [
+            "image#emporio-da-cerveja",
+            "rich-text#emporio-da-cerveja-title",
+            "rich-text#emporio-da-cerveja-content"
+        ]
+        },
+
+        "image#emporio-da-cerveja": {
+        "props": {
+            "src": "assets/customers/emporio.jpg",
+            "maxHeight": 240,
+            "blockClass": "clients-images"
+        }
+        },
+
+        "rich-text#emporio-da-cerveja-title": {
+        "props":{
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Empório da Cerveja",
+            "textColor": "c-default",
+            "blockClass": "clients-title"
+        }
+        },
+
+        "rich-text#emporio-da-cerveja-content": {
+        "props":{
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Como parte da ZX Ventures, o braço de inovação global do maior grupo cervejeiro do mundo, a AB InBev.",
+            "textColor": "c-default",
+            "blockClass": "clients-content"
+        }
+    }
+}

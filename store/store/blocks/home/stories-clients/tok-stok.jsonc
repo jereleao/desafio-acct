@@ -1,0 +1,43 @@
+{
+    "flex-layout.col#tok-stok": {
+        "props": {
+          "verticalAlign": "top",
+          "horizontalAlign": "center",
+          "blockClass": "clients-col",
+          "fullWidth": true
+        },
+        "children": [
+          "image#tok-stok",
+          "rich-text#tok-stok-title",
+          "rich-text#tok-stok-content"
+        ]
+      },
+    
+      "image#tok-stok": {
+        "props": {
+          "src": "assets/customers/tokstok.jpg",
+          "maxHeight": 240,
+          "blockClass": "clients-images"
+        }
+      },
+    
+      "rich-text#tok-stok-title": {
+        "props":{
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Tok&Stok",
+          "textColor": "c-default",
+          "blockClass": "clients-title"
+        }
+      },
+    
+      "rich-text#tok-stok-content": {
+        "props":{
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Presente em vários estados do Brasil e também no Distrito Federal, com lojas distribuídas em várias cidades brasileiras, a Tok&Stok é referência em móveis e decoração.",
+          "textColor": "c-default",
+          "blockClass": "clients-content"
+        }
+      }
+}

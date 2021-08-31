@@ -1,6 +1,6 @@
 {
   "vendor": "hiringcoders202113",
-  "name": "desafio-acct-store",
+  "name": "desafio-acct-admin",
   "version": "0.0.0",
   "builders": {
     "docs": "0.x",
@@ -8,7 +8,8 @@
     "styles": "2.x",
     "react": "3.x",
     "store": "0.x",
-    "messages": "1.x"
+    "messages": "1.x",
+    "admin": "0.x"
   },
   "scripts": {
     "postreleasy": "vtex publish --verbose"
