@@ -107,8 +107,7 @@
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "blockClass": "clients-title-row",
-      "colGap": 0
-
+      "preserveLayoutOnMobile": true
     },
     "children": [
       "rich-text#historias-e-clientes",
@@ -128,133 +127,20 @@
 
   "flex-layout.row#historias-e-clientes-content-row": {
     "props": {
-      "blockClass": "clients-content-row"
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "blockClass": "clients-content-row",
+      "preserveLayoutOnMobile": true,
+      "width": {
+        "mobile": "grow",
+        "tablet": "grow"
+      }
     },
     "children": [
       "flex-layout.col#tok-stok",
       "flex-layout.col#emporio-da-cerveja",
       "flex-layout.col#forma-turismo"
     ]
-  },
-
-  "flex-layout.col#tok-stok": {
-    "props": {
-      "verticalAlign": "top",
-      "blockClass": "clients-col"
-    },
-    "children": [
-      "image#tok-stok",
-      "rich-text#tok-stok-title",
-      "rich-text#tok-stok-content"
-    ]
-  },
-
-  "image#tok-stok": {
-    "props": {
-      "src": "assets/customers/tokstok.jpg",
-      "maxHeight": 240,
-      "blockClass": "clients-images"
-    }
-  },
-
-  "rich-text#tok-stok-title": {
-    "props":{
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "Tok&Stok",
-      "textColor": "c-default",
-      "blockClass": "clients-title"
-    }
-  },
-
-  "rich-text#tok-stok-content": {
-    "props":{
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "Presente em vários estados do Brasil e também no Distrito Federal, com lojas distribuídas em várias cidades brasileiras, a Tok&Stok é referência em móveis e decoração.",
-      "textColor": "c-default",
-      "blockClass": "clients-content"
-    }
-  },
-
-  "flex-layout.col#emporio-da-cerveja": {
-    "props": {
-      "verticalAlign": "top",
-      "horizontalAlign": "center"
-    },
-    "children": [
-      "image#emporio-da-cerveja",
-      "rich-text#emporio-da-cerveja-title",
-      "rich-text#emporio-da-cerveja-content"
-    ]
-  },
-
-  "image#emporio-da-cerveja": {
-    "props": {
-      "src": "assets/customers/emporio.jpg",
-      "maxHeight": 240,
-      "blockClass": "clients-images"
-    }
-  },
-
-  "rich-text#emporio-da-cerveja-title": {
-    "props":{
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "Empório da Cerveja",
-      "textColor": "c-default",
-      "blockClass": "clients-title"
-    }
-  },
-
-  "rich-text#emporio-da-cerveja-content": {
-    "props":{
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "Como parte da ZX Ventures, o braço de inovação global do maior grupo cervejeiro do mundo, a AB InBev.",
-      "textColor": "c-default",
-      "blockClass": "clients-content"
-    }
-  },
-
-  "flex-layout.col#forma-turismo": {
-    "props": {
-      "verticalAlign": "top",
-      "horizontalAlign": "center"
-    },
-    "children": [
-      "image#forma-turismo",
-      "rich-text#forma-turismo-title",
-      "rich-text#forma-turismo-content"
-    ]
-  },
-
-  "image#forma-turismo": {
-    "props": {
-      "src": "assets/customers/forma-turismo.jpg",
-      "maxHeight": 240,
-      "blockClass": "clients-images"
-    }
-  },
-
-  "rich-text#forma-turismo-title": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "Forma Turismo",
-      "textColor": "c-default",
-      "blockClass": "clients-title"
-    }
-  },
-
-  "rich-text#forma-turismo-content": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "A Forma Turismo é uma agência de turismo especializada em viagens estudantis. Rapidamente se tornou um importante player no setor de turismo no Brasil.",
-      "textColor": "c-default",
-      "blockClass": "clients-content"
-    }
   },
 
   "rich-text#historias-e-clientes-button": {

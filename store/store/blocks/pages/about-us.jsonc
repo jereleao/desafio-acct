@@ -2,6 +2,7 @@
   "store.custom#about-us": {
     /* front-end da página SOBRE-NOS utilizando o vtex io */
     "blocks": [
+      "back-to-top-btn",
       "stack-layout#about-us",
       "rich-text#projetando",
       "flex-layout.row#somos",
@@ -10,8 +11,7 @@
       "clients",
       "rich-text#time",
       "rich-text#time-subtitle",
-      "slider-layout#about-us" /* slider com os integrantes do Time ACCT, arquivo /pages/slider-layout.jsonc */,
-      "back-to-top-button"
+      "slider-layout#about-us" /* slider com os integrantes do Time ACCT, arquivo /pages/slider-layout.jsonc */
     ]
   },
 
