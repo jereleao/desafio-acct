@@ -13,7 +13,6 @@ interface InputLeadPT {
   url: string
   caixa: string
 }
-
 const Formulario: StorefrontFunctionComponent = () => {
   const clearLead = {
     nome: '',
@@ -26,27 +25,23 @@ const Formulario: StorefrontFunctionComponent = () => {
     url: '',
     caixa: '',
   }
-
   const [lead, setLead] = React.useState(clearLead)
-
-  const [addLead, { data, error }] = useMutation(ADD_LEAD, {
+  const [addLead, { loading, data, error }] = useMutation(ADD_LEAD, {
     onCompleted: () => setLead(clearLead),
   })
-
+  console.log({ loading, data, error })
   const handleFormChange = (property: string, value: string) =>
     setLead(prev => ({ ...prev, [property]: value }))
-
   const sendLead = (lead: InputLeadPT) => {
     addLead({ variables: { lead } })
   }
-
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault()
     sendLead(lead)
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-column w-50">
+    <form onSubmit={handleSubmit} className="flex flex-column w-100">
       <h3>Solicite nosso contato:</h3>
       <div className="flex mb5">
         <label className="w-50  flex flex-column mr4">

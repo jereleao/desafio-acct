@@ -66,8 +66,7 @@
   line-height: 1;
 }
 
-
-.wrapper--about{
+.wrapper--about {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin-left: 70px;
@@ -77,29 +76,47 @@
 
 /* ---- configurações dos textos com os nomes dos membros do Time, na página sobre-nos  */
 
-.paragraph--text-person1, .paragraph--text-person2,
-.paragraph--text-person3, .paragraph--text-person4,
-.paragraph--text-person5, .paragraph--text-person6,
-.paragraph--text-person7, .paragraph--text-person8,
-.paragraph--text-person9, .paragraph--text-person10,
-.paragraph--text-person11, .paragraph--text-person12,
-.paragraph--text-person13, .paragraph--text-person14,
-.paragraph--text-person15, .paragraph--text-person16,
-.paragraph--text-person17, .paragraph--text-person18,
+.paragraph--text-person1,
+.paragraph--text-person2,
+.paragraph--text-person3,
+.paragraph--text-person4,
+.paragraph--text-person5,
+.paragraph--text-person6,
+.paragraph--text-person7,
+.paragraph--text-person8,
+.paragraph--text-person9,
+.paragraph--text-person10,
+.paragraph--text-person11,
+.paragraph--text-person12,
+.paragraph--text-person13,
+.paragraph--text-person14,
+.paragraph--text-person15,
+.paragraph--text-person16,
+.paragraph--text-person17,
+.paragraph--text-person18,
 .paragraph--text-person19 {
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   font-weight: 400;
 }
-.strong--text-person1, .strong--text-person2,
-.strong--text-person3, .strong--text-person4,
-.strong--text-person5, .strong--text-person6,
-.strong--text-person7, .strong--text-person8,
-.strong--text-person9, .strong--text-person10,
-.strong--text-person11, .strong--text-person12,
-.strong--text-person13, .strong--text-person14,
-.strong--text-person15, .strong--text-person16,
-.strong--text-person17, .strong--text-person18,
+.strong--text-person1,
+.strong--text-person2,
+.strong--text-person3,
+.strong--text-person4,
+.strong--text-person5,
+.strong--text-person6,
+.strong--text-person7,
+.strong--text-person8,
+.strong--text-person9,
+.strong--text-person10,
+.strong--text-person11,
+.strong--text-person12,
+.strong--text-person13,
+.strong--text-person14,
+.strong--text-person15,
+.strong--text-person16,
+.strong--text-person17,
+.strong--text-person18,
 .strong--text-person19 {
   font-family: 'Open Sans Condensed', sans-serif;
   color: black;
@@ -145,15 +162,19 @@
 
 /* ---- configurações do título dos ícones pertencentes a Por que ACCT?_, na página sobre-nos  */
 
-.wrapper--title-engenharia, .wrapper--title-habilidades, .wrapper--title-lider,
- .wrapper--title-suporte, .wrapper--title-seguranca {
+.wrapper--title-engenharia,
+.wrapper--title-habilidades,
+.wrapper--title-lider,
+.wrapper--title-suporte,
+.wrapper--title-seguranca {
   padding-bottom: 100px;
   margin-top: -100px;
-
 }
 
-.paragraph--title-engenharia, .paragraph--title-habilidades,
-.paragraph--title-lider, .paragraph--title-suporte, 
+.paragraph--title-engenharia,
+.paragraph--title-habilidades,
+.paragraph--title-lider,
+.paragraph--title-suporte,
 .paragraph--title-seguranca {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 14px;
@@ -189,15 +210,11 @@
   font-family: 'Open Sans', sans-serif;
   color: #fcc200;
   font-weight: 600;
-
+}
 .paragraph--about-button:hover {
   color: #ffffff;
   border: 2px solid #5974c7;
   background: #5974c7;
-
-
-}
-
 }
 
 /* ----- Home: Testimony ----- */
@@ -254,11 +271,10 @@
 
 /* ----- Home: Histórias e Clientes ----- */
 .paragraph--underscore {
-  color: #fcc200; 
+  color: #fcc200;
   margin-top: 2rem;
   margin-left: 0;
   font-size: 1.85rem;
-
 }
 
 .paragraph--clients-sec-title {
@@ -288,4 +304,3 @@
   text-align: left;
   text-justify: auto;
 }
-
