@@ -1,64 +1,153 @@
-# Minimum Boilerplate Theme
+<h1 align="center">
+      <a href="#" alt="DESAFIO ACCT - GRUPO 13 - HC"> DESAFIO ACCT - GRUPO 13 - HC </a>
+</h1>
 
-The minimum Boilerplate Theme is basic store front model based on the VTEX IO Store Framework.
+<h3 align="center">
+     Recriamos o site da ACCT. 
+</h3>
 
-It should be used only when you want to start a new store theme without any pre-set configurations, as is the case with [Store Theme](https://github.com/vtex-apps/store-theme). 
+Tabela de conteúdos
+=================
+<!--ts-->
+   * [Sobre o projeto](#-sobre-o-projeto)
+   * [Funcionalidades](#-funcionalidades)
+   * [Layout](#-layout)
+     * [Mobile](#mobile)
+     * [Web](#web)
+   * [Como executar o projeto](#-como-executar-o-projeto)
+     * [Pré-requisitos](#pré-requisitos)
+     * [Rodando o Backend (servidor)](#user-content--rodando-o-backend-servidor)
+     * [Rodando a aplicação web (Frontend)](#user-content--rodando-a-aplicação-web-frontend)
+   * [Tecnologias](#-tecnologias)
+     * [WebSite](#user-content-website--react----typescript)
+     * [Server](#user-content-server--nodejs----typescript)
+   * [Contribuidores](#-contribuidores)
+   * [Como contribuir no projeto](#-como-contribuir-no-projeto)
+   * [Autor](#-autor)
+   * [Licença](#user-content--licença)
+<!--te-->
 
-While Store Theme gives developers a ready-to-go default store front structure, the Minimum Boilerplate Theme will enable you to build you store freely from scratch.
 
-## Configuration
+## 💻 Sobre o projeto
 
-### Step 1 -  Basic setup
+Desenvolver um projeto com o uso de API da Vtex IO com a temática do patrocinador ACCT.
 
-Access the VTEX IO [basic setup guide](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1) and follow all the given steps. 
+---
 
-By the end of the setup, you should have the VTEX command line interface (Toolbelt) installed along with a developer workspace you can work in.
+## ⚙️ Funcionalidades
 
-### Step 2 - Cloning the Minimum Boilerplate Theme repository
+- [x] Neste front-end teremos a temática da ACCT, com logo da ACCT cores da
+ACCT e a missão e valores da ACCT em uma página de sobre e mostrar as virtudes do serviço da ACCT,
+onde poderão:
+  - [x] acessar os serviços da ACCT
+  - [x] saber os valores de cada serviço
+  - [x] adicionar no carrinho
+  - [x] navegar entre as páginas, conhecendo os valores da empresa.
 
-[Clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) this repository to your local files to be able to effectively start working on it.
+---
 
-Then, access the repository's directory using your terminal. 
+## 🎨 Layout
 
-### Step 3 - Editing the `Manifest.json`
+Seguem telas:
 
-Once in the repository directory, it is time to edit the Minimum Boilerplate `manifest.json` file. 
+---
 
-Once you are in the file, you must replace the `vendor` and `account` values. `vendor` is the account name you are working on and `account` is anything you want to name your theme. For example:
+## 🚀 Como executar o projeto
 
-```json
-{
-  "vendor": "storecomponents",
-  "name": "my-test-theme",
-}
+Este projeto é divido em duas partes:
+1. Backend (pasta aws) 
+2. Frontend (pasta store)
+
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+#### 🎲 Rodando o Backend (servidor)
+
+```bash
+
+# Clone este repositório
+$ git clone https://github.com/JerryLion91/desafio-acct
+
+# Instale as dependências
+$ npm install
+
 ```
 
-### Step 4 -  Installing required apps
+#### 🧭 Rodando a aplicação web (Frontend)
 
-In order to use Store Framework and work on your store theme, it is needed to have both `vtex.store-sitemap` and `vtex.store` installed.
+```bash
 
-Run  `vtex list`  and check whether those apps are already installed. 
+# Clone este repositório
+$ git clone https://github.com/JerryLion91/desafio-acct
 
-If they aren't, run the following command to install them: `vtex install vtex.store-sitemap vtex.store -f`
+# Vá para a pasta da aplicação Front End
+$ cd web
 
-### Step 5 -  Uninstalling any existing theme
+# Instale as dependências
+$ npm install
 
-By running `vtex list`,  you can verify if any theme is installed.
+# Execute a aplicação em modo de desenvolvimento
+$ npm run start
 
-It is common to already have a `vtex.store-theme`  installed when you start the store's front development process. 
 
-Therefore, if you find it in the app's list, copy its name and use it together with the command `vtex uninstall`. For example:
-
-```json
-vtex uninstall vtex.store-theme
 ```
+---
 
-### Step 6- Run and preview your store
+## 🛠 Tecnologias
 
-Then time has come to upload all the changes you made in your local files to the platform. For that, use the `vtex link` command. 
+As seguintes ferramentas foram usadas na construção do projeto:
 
-If the process runs without any errors, the following message will be displayed: `App linked successfully`. Then, run the `vtex browse` command to open a browser window having your linked store in it.
 
-This will enable you to see the applied changes in real time, through the account and workspace in which you are working.
+---
 
-Linha exemplo pull request Arielle.
+## 👨‍💻 Contribuidores
+
+💜 Um super thanks 👏 para essa galera que fez esse produto sair do campo da ideia e concluir o desafio :)
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
+  <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
+    
+  </tr>
+  <tr>
+   <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/ambitencourt"><img style="border-radius: 50%;" src="https://scontent.fssa5-1.fna.fbcdn.net/v/t1.18169-9/72920_395081970525336_1562693111_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7NBO2XrPV6kAX_Zv_Ig&_nc_ht=scontent.fssa5-1.fna&oh=bf3bf42c6003ab26813c0a861286478d&oe=6151708B" width="100px;" alt=""/><br /><sub><b>Adriano Bitencourt</b></sub></a><br /></td>
+    
+  </tr>
+</table>
+
+## 💪 Como contribuir no projeto
+
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
+> Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
+
+---
+
+## 🦸 Autor
+
+
+---
+
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+Com autorização para uso da Vtex no Hiring Coders.
+
+
+---
+

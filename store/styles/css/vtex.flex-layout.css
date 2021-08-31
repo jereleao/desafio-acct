@@ -130,18 +130,34 @@
 
 .flexCol--clients-col {
   align-items: center;
+  padding: 0 1rem;
+  width: min-content;
 }
 
 .flexColContent--clients-col {
-  margin-top: 0;
-  padding-top: 0;
+    margin-top: 0;
+    width: max-content;
 }
 
-.flexRow--clients-content-row {
-  padding: 1rem 5rem;
+@media (max-width: 810px) {
+  .flexRowContent--clients-content-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flexRow--row-clients {
+    padding: 5rem 0;
+  }
+
+  .flexCol--clients-col {
+    align-items: center;
+    padding: 0 1rem;
+  }
+
 }
 
-.flexRowConten--clients-content-row {
+.flexRowContent--clients-content-row {
   margin: 0;
 }
 
@@ -185,3 +201,28 @@
   }
 }
 
+/* ----- Footer ----- */
+.flexCol--colAddressesFranklin{ 
+  align-items: left;
+  justify-content: left;
+  justify-items:left;
+}
+.flexCol--colStampFranklin{ 
+  align-items:flex-end;
+  /* justify-content: right;
+  justify-items:left; */
+}
+.flexRow--logoRowFranklin{
+  /* background-color:turquoise; */
+  align-items: right;
+  justify-content: right;
+  justify-items:right;
+}
+.flexColChild--colACCTFranklin{
+  flex-grow: 1;
+}
+.flexCol--colAddressesMobileFranklin{ 
+  align-items: center;
+  justify-content: center;
+  justify-items:center;
+}

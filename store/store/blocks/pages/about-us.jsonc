@@ -1,7 +1,9 @@
 {
+
   "store.custom#about-us": {
     /* front-end da página SOBRE-NOS utilizando o vtex io */
     "blocks": [
+      "back-to-top-btn",
       "stack-layout#about-us",
       "rich-text#projetando",
       "flex-layout.row#somos",
@@ -10,10 +12,10 @@
       "clients",
       "rich-text#time",
       "rich-text#time-subtitle",
-      "slider-layout#about-us" /* slider com os integrantes do Time ACCT, arquivo /pages/slider-layout.jsonc */,
-      "back-to-top-button"
+      "slider-layout#about-us" /* slider com os integrantes do Time ACCT, arquivo /pages/slider-layout.jsonc */
     ]
   },
+
 
   "stack-layout#about-us": {
     "children": ["flex-layout.row#about-us-title"]
@@ -36,6 +38,7 @@
       "blockClass": "page-title"
     }
   },
+
 
   "rich-text#projetando": {
     /* título projetando...digital e suas configurações */
@@ -98,6 +101,7 @@
       "blockClass": "icons-porqueACCT"
     }
   },
+
 
   "flex-layout.row#img-icons": {
     /* bloco do tipo flex layout que organiza os ícones e seus respectivos títulos */
@@ -261,6 +265,7 @@
     /* botão de voltar ao topo */
     "props": {
       "display": "caret-icon"
+
     }
-  }
+}
 }

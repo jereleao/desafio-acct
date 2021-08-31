@@ -1,0 +1,43 @@
+{
+    "flex-layout.col#forma-turismo": {
+        "props": {
+          "verticalAlign": "top",
+          "horizontalAlign": "center",
+          "blockClass": "clients-col",
+          "fullWidth": true
+        },
+        "children": [
+          "image#forma-turismo",
+          "rich-text#forma-turismo-title",
+          "rich-text#forma-turismo-content"
+        ]
+      },
+    
+      "image#forma-turismo": {
+        "props": {
+          "src": "assets/customers/forma-turismo.jpg",
+          "maxHeight": 240,
+          "blockClass": "clients-images"
+        }
+      },
+    
+      "rich-text#forma-turismo-title": {
+        "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Forma Turismo",
+          "textColor": "c-default",
+          "blockClass": "clients-title"
+        }
+      },
+    
+      "rich-text#forma-turismo-content": {
+        "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "A Forma Turismo é uma agência de turismo especializada em viagens estudantis. Rapidamente se tornou um importante player no setor de turismo no Brasil.",
+          "textColor": "c-default",
+          "blockClass": "clients-content"
+        }
+      }
+}
