@@ -1,5 +1,5 @@
 <h1 align="center">
-      <a href="#" alt="DESAFIO ACCT - GRUPO 13 - HC"> Ecoleta </a>
+      <a href="#" alt="DESAFIO ACCT - GRUPO 13 - HC"> DESAFIO ACCT - GRUPO 13 - HC </a>
 </h1>
 
 <h3 align="center">
