@@ -1,0 +1,80 @@
+/* Elemento pai do card*/
+.element{
+    cursor: default;
+    align-items: center;
+    
+    
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.3) ;
+    cursor: default;
+    
+}
+
+/* Nome do serviço*/
+.nameContainer{
+    cursor: default;
+}
+.productBrand{
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    font-size: 25px !important;
+    line-height: 30px !important;
+    font-family: "Open Sans Condensed";
+    margin: 0;
+    color: #ebebeb;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    cursor: default;
+}
+.brandName{
+    cursor: default;   
+}
+/* Imagem de fundo*/
+.image{
+    /* width: 450px;
+    height: 290px; */
+    cursor: default;
+  }
+
+/* Descrição do serviço*/
+.description{
+    color: #fff;
+    /* color: #aaa; */
+    cursor: default;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+/* Preço*/
+.priceContainer{
+    /* border: 2px solid #fff; */
+    /* border: 4px solid #bbb; */
+    
+    color: #fff;
+    cursor: default;
+}
+.sellingPriceContainer{
+    padding: 0px;
+}
+
+
+/* Adicionar ao carrinho*/
+.buyButton{
+    color: #fff;
+    
+}
+    
+.buyButtonContainer{
+    max-width: 180px;
+    white-space: nowrap;
+    
+}
+.buyButtonText{
+    font-size: 12px;
+    
+}
+
