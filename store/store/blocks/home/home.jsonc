@@ -69,11 +69,11 @@
       }
     },
     "children": [
+      "slider-info",
+      "slider-tetrix",
       "slider-tecnology",
       "slider-engineering",
-      "slider-product",
-      "slider-info",
-      "slider-tetrix"
+      "slider-product"
     ]
   },
 
