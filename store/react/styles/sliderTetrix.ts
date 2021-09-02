@@ -261,7 +261,7 @@ export const Media = styled.div`
   }
 
   @media (min-width: 1250px) {
-    width: 760px;
+    width: 760px !important;
 
     .man-img,
     .monitor-img,
@@ -313,6 +313,13 @@ export const Media = styled.div`
       bottom: -160px;
       right: 50px;
     }
+  }
+
+  @media (min-width: 1700px) {
+    .teacher-img { left: 130px; }
+    .orange-img { left: 170px; }
+    .blue-img { left: 35px; }
+    .yellow-img { left: 78px; }
   }
 `
 
